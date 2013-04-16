@@ -1,0 +1,1 @@
+{!Contact.FirstName}先生/小姐，您好！非常高兴今天与您一起交谈。我觉得{!Organization.Name}可以为{!Account.Name}提供许多产品和服务，期待着我们的下一次会面。顺颂商祺！  {!User.FirstName}

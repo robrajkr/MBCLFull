@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>FAQ Notice</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>FAQ Notices</value>
+    </caseValues>
+    <fields>
+        <label><!-- Message Detail --></label>
+        <name>Message_Detail__c</name>
+    </fields>
+    <layouts>
+        <layout>Notice Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Message Detail --></label>
+            <section>Message Detail</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

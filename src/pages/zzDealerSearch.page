@@ -1,0 +1,6 @@
+<apex:page showHeader="true"  sidebar="false" tabStyle="Case" StandardController="case">
+  <apex:pageBlock title="Find a dealer" >
+     <img src="{!$Resource.zzDealerSearch1}"/>
+
+  </apex:pageBlock>
+</apex:page>

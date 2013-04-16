@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Requirement / User Story</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Requirement / User Story</value>
+    </caseValues>
+    <fields>
+        <label><!-- Acceptance Criteria --></label>
+        <name>Acceptance_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Action Item --></label>
+        <name>Action_Item__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assign To SBA / BA --></label>
+        <name>Assign_To_SBA_BA__c</name>
+        <picklistValues>
+            <masterLabel>Allen Zhang</masterLabel>
+            <translation><!-- Allen Zhang --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tulipe Lee</masterLabel>
+            <translation><!-- Tulipe Lee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zibin Wang</masterLabel>
+            <translation><!-- Zibin Wang --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Assign To TA / Developer --></label>
+        <name>Assign_To_TA_Developer__c</name>
+        <picklistValues>
+            <masterLabel>Allen Zhang</masterLabel>
+            <translation><!-- Allen Zhang --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lu Bin</masterLabel>
+            <translation><!-- Lu Bin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mouse Liu</masterLabel>
+            <translation><!-- Mouse Liu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sam Wang</masterLabel>
+            <translation><!-- Sam Wang --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tony Liu</masterLabel>
+            <translation><!-- Tony Liu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tulipe Lee</masterLabel>
+            <translation><!-- Tulipe Lee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ying Jun</masterLabel>
+            <translation><!-- Ying Jun --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Assign to TA/TC (user) --></label>
+        <name>Assign_to_TA_TC_user__c</name>
+        <relationshipLabel><!-- Requirement / User Story (Assign to TA/TC (user)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Assumptions --></label>
+        <name>Assumptions__c</name>
+    </fields>
+    <fields>
+        <label><!-- BA Hours --></label>
+        <name>BA_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Build Remarks --></label>
+        <name>Build_Remarks__c</name>
+    </fields>
+    <fields>
+        <help><!-- Function user who raises or is responsible to validate this requirement --></help>
+        <label><!-- Business Owner --></label>
+        <name>Business_Owner__c</name>
+        <relationshipLabel><!-- Requirement / User Story (Business Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>Analytics</masterLabel>
+            <translation><!-- Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Configuration</masterLabel>
+            <translation><!-- Configuration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Console</masterLabel>
+            <translation><!-- Console --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data</masterLabel>
+            <translation><!-- Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flow</masterLabel>
+            <translation><!-- Flow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integration</masterLabel>
+            <translation><!-- Integration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Security (Profile/Roles/Layouts)</masterLabel>
+            <translation><!-- Security (Profile/Roles/Layouts) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training</masterLabel>
+            <translation><!-- Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trigger</masterLabel>
+            <translation><!-- Trigger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visualforce</masterLabel>
+            <translation><!-- Visualforce --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Biz Priority --></label>
+        <name>Critical__c</name>
+        <picklistValues>
+            <masterLabel>Critical</masterLabel>
+            <translation><!-- Critical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Deployment By --></label>
+        <name>Deployment_By__c</name>
+        <relationshipLabel><!-- Requirement / User Story (Deployment By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Deployment Remarks --></label>
+        <name>Deployment_Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dev Completed --></label>
+        <name>Dev_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Develop Task --></label>
+        <name>Develop_Task__c</name>
+        <relationshipLabel><!-- Requirement / User Story --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Developer Hours --></label>
+        <name>Developer_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Function Owner Remark --></label>
+        <name>Funcational_Owner_Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- High Level Solution --></label>
+        <name>High_Level_Solution__c</name>
+    </fields>
+    <fields>
+        <label><!-- IT Test Lead Remark --></label>
+        <name>IT_Test_Lead_Remark__c</name>
+    </fields>
+    <fields>
+        <label><!-- Iteration --></label>
+        <name>Iteration__c</name>
+        <relationshipLabel><!-- Requirement / User Story --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Module / Object --></label>
+        <name>Module_Object__c</name>
+        <picklistValues>
+            <masterLabel>Account</masterLabel>
+            <translation><!-- Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Address</masterLabel>
+            <translation><!-- Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aftersales Record</masterLabel>
+            <translation><!-- Aftersales Record --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Campaign</masterLabel>
+            <translation><!-- Campaign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case</masterLabel>
+            <translation><!-- Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chatter</masterLabel>
+            <translation><!-- Chatter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact</masterLabel>
+            <translation><!-- Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact / Contact</masterLabel>
+            <translation><!-- Contact / Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Address</masterLabel>
+            <translation><!-- Email Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Key</masterLabel>
+            <translation><!-- External Key --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integration</masterLabel>
+            <translation><!-- Integration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Knowledge</masterLabel>
+            <translation><!-- Knowledge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead</masterLabel>
+            <translation><!-- Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Literature</masterLabel>
+            <translation><!-- Literature --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Literature Order</masterLabel>
+            <translation><!-- Literature Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity</masterLabel>
+            <translation><!-- Opportunity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preferences</masterLabel>
+            <translation><!-- Preferences --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation><!-- Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Report/Dashboard</masterLabel>
+            <translation><!-- Report/Dashboard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Record</masterLabel>
+            <translation><!-- Sales Record --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Security</masterLabel>
+            <translation><!-- Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Console</masterLabel>
+            <translation><!-- Service Console --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media</masterLabel>
+            <translation><!-- Social Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vehicle / Asset</masterLabel>
+            <translation><!-- Vehicle / Asset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vehicle Relationship</masterLabel>
+            <translation><!-- Vehicle Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warranty Record</masterLabel>
+            <translation><!-- Warranty Record --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pre User Story --></label>
+        <name>Pre_User_Story__c</name>
+        <relationshipLabel><!-- Requirement / User Story (Pre User Story) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Proposed Approach --></label>
+        <name>Proposed_Approach__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ref BQ# --></label>
+        <name>Ref_BQ__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ref Process#/UC# --></label>
+        <name>Ref_Process_UC__c</name>
+    </fields>
+    <fields>
+        <help><!-- Related Requirement - for duplicates or joint requirements or parent/child --></help>
+        <label><!-- Related Requirement --></label>
+        <name>Related_Requirement__c</name>
+        <relationshipLabel><!-- Requirement / User Story (Related Requirement) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Release / Phase --></label>
+        <name>Release__c</name>
+        <relationshipLabel><!-- Requirement / User Story --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Remark / Question --></label>
+        <name>Remark_Question__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remark/Question by BA --></label>
+        <name>Remark_Question_by_BA__c</name>
+    </fields>
+    <fields>
+        <label><!-- *Req Unique Id --></label>
+        <name>Req_Unique_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requirement Adjustment --></label>
+        <name>Requirement_Adjustment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description of business requirement --></help>
+        <label><!-- Requirement Description --></label>
+        <name>Requirement_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>Resource__c</name>
+        <relationshipLabel><!-- Requirement / User Story (Resource) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Reviewed by SA/TA --></help>
+        <label><!-- Reviewed --></label>
+        <name>Reviewed__c</name>
+    </fields>
+    <fields>
+        <label><!-- SBA/BA Man-Days --></label>
+        <name>SBA_BA_Man_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- SBA Hours --></label>
+        <name>SBA_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Screenshot? --></label>
+        <name>Screenshot__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solution Architecture --></label>
+        <name>Solution_Architecture__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solution Type --></label>
+        <name>Solution_Type__c</name>
+        <picklistValues>
+            <masterLabel>Coding</masterLabel>
+            <translation><!-- Coding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Configuration</masterLabel>
+            <translation><!-- Configuration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Connect for Excel</masterLabel>
+            <translation><!-- Connect for Excel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Development</masterLabel>
+            <translation><!-- Custom Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Migration</masterLabel>
+            <translation><!-- Data Migration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integration</masterLabel>
+            <translation><!-- Integration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out of Box</masterLabel>
+            <translation><!-- Out of Box --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Source of Requirement --></label>
+        <name>Source_of_Requirement__c</name>
+        <picklistValues>
+            <masterLabel>Alpha Review</masterLabel>
+            <translation><!-- Alpha Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beta Review</masterLabel>
+            <translation><!-- Beta Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Original / BPR</masterLabel>
+            <translation><!-- Original / BPR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UAT</masterLabel>
+            <translation><!-- UAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workshop</masterLabel>
+            <translation><!-- Workshop --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The stage of requirement. Each status will send emails to related team automatically. --></help>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clarify with Business</masterLabel>
+            <translation><!-- Clarify with Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete Data Required</masterLabel>
+            <translation><!-- Complete Data Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Design Confirmed</masterLabel>
+            <translation><!-- Design Confirmed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dev In Progress</masterLabel>
+            <translation><!-- Dev In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate</masterLabel>
+            <translation><!-- Duplicate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Function Validated</masterLabel>
+            <translation><!-- Function Validated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Future Release</masterLabel>
+            <translation><!-- Future Release --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gap Identified - Scope</masterLabel>
+            <translation><!-- Gap Identified - Scope --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gap Identified - Solution</masterLabel>
+            <translation><!-- Gap Identified - Solution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT Tested</masterLabel>
+            <translation><!-- IT Tested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initialized</masterLabel>
+            <translation><!-- Initialized --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out Of Scope</masterLabel>
+            <translation><!-- Out Of Scope --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending on Environment</masterLabel>
+            <translation><!-- Pending on Environment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending on Function</masterLabel>
+            <translation><!-- Pending on Function --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for Testing</masterLabel>
+            <translation><!-- Ready for Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Return to Dev</masterLabel>
+            <translation><!-- Return to Dev --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Return to Testing</masterLabel>
+            <translation><!-- Return to Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training / Process</masterLabel>
+            <translation><!-- Training / Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Understand</masterLabel>
+            <translation><!-- Understand --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- TA/Developer Man-Days --></label>
+        <name>TA_Developer_Man_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- TA Hours --></label>
+        <name>TA_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test Script Ready --></label>
+        <name>Test_Script_Ready__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tested Date --></label>
+        <name>Tested_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Story Detail --></label>
+        <name>User_Story_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Requirement / User Story (User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Validated Date --></label>
+        <name>Validated_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned To BA/SBA (user) --></label>
+        <name>assign_to_BA_user__c</name>
+        <relationshipLabel><!-- Requirement / User Story (Assigned To BA/SBA (user)) --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Requirement</layout>
+        <sections>
+            <label><!-- Analyst Decision --></label>
+            <section>Analyst Decision</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Date Estimation --></label>
+            <section>Date Estimation</section>
+        </sections>
+        <sections>
+            <label><!-- Deployment --></label>
+            <section>Deployment</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Effort Estimation --></label>
+            <section>Effort Estimation</section>
+        </sections>
+        <sections>
+            <label><!-- Solution / Configuration --></label>
+            <section>Solution / Configuration</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Requirement Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>User Story Layout</layout>
+        <sections>
+            <label><!-- Analyst Decision --></label>
+            <section>Analyst Decision</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Date Estimation --></label>
+            <section>Date Estimation</section>
+        </sections>
+        <sections>
+            <label><!-- Deployment --></label>
+            <section>Deployment</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Effort Estimation --></label>
+            <section>Effort Estimation</section>
+        </sections>
+        <sections>
+            <label><!-- Solution / Configuration --></label>
+            <section>Solution / Configuration</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Requirement --></label>
+        <name>Requirement</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- User Story --></label>
+        <name>User_Story</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

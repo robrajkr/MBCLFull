@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Not_Completed</fullName>
+        <field>Status__c</field>
+        <literalValue>Not Completed</literalValue>
+        <name>Not Completed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Pass</fullName>
+        <field>Status__c</field>
+        <literalValue>Passed</literalValue>
+        <name>Pass</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>fail</fullName>
+        <field>Status__c</field>
+        <literalValue>Failed</literalValue>
+        <name>fail</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>notstart</fullName>
+        <field>Status__c</field>
+        <literalValue>Not Start</literalValue>
+        <name>notstart</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>CaseStatus</fullName>
+        <actions>
+            <name>notstart</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Test_Cases1__c.Count_Steps__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Executorfind</fullName>
+        <active>false</active>
+        <booleanFilter>1</booleanFilter>
+        <criteriaItems>
+            <field>Test_Cases1__c.Name</field>
+            <operation>notEqual</operation>
+            <value>&quot; &quot;</value>
+        </criteriaItems>
+        <description>Executor equal to Owner</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Fail</fullName>
+        <actions>
+            <name>fail</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Test_Cases1__c.Count_Failed_Step__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>1</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Not Completed</fullName>
+        <actions>
+            <name>Not_Completed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>Count_Steps__c &gt;  Count_Passed_Step__c + Count_Failed_Step__c &amp;&amp;  Count_Failed_Step__c =0</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Pass</fullName>
+        <actions>
+            <name>Pass</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>Count_Passed_Step__c  &lt;&gt; 0 &amp;&amp;  Count_Passed_Step__c  =  Count_Steps__c</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Status</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Test_Cases1__c.Name</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

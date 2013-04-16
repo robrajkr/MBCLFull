@@ -1,0 +1,1048 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- QC --></value>
+    </caseValues>
+    <fields>
+        <help><!-- 1.  记录准确的信息；
+2. 文档内容匹配通话实质。 --></help>
+        <label>文档记录准确性</label>
+        <name>Accuratecy_of_data_IB__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Appeal Comments --></label>
+        <name>Appeal_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appeal --></label>
+        <name>Appeal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appeal result --></label>
+        <name>Appeal_result__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation><!-- Success --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approved --></label>
+        <name>Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- CSR Name --></label>
+        <name>CSR_Name__c</name>
+        <relationshipLabel><!-- QC --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Calibration --></label>
+        <name>Calibration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Log --></label>
+        <name>Call_Log__c</name>
+    </fields>
+    <fields>
+        <help><!-- 1. 通过复述、重组及澄清有效组织语言，与客户确认需求及重要的基本信息；
+2. 能准确理解客户意图，不需要客户多次重复；
+3.不主观猜测或评论未经确认的信息。 --></help>
+        <label><!-- Clarify&amp;Confirm Customer Requirement --></label>
+        <name>Clarify_Confirm_Customer_Requirement__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>中</masterLabel>
+            <translation><!-- 中 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>低</masterLabel>
+            <translation><!-- 低 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>高</masterLabel>
+            <translation><!-- 高 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 按照流程要求收集必要的信息，如客户信息、销售信息、车辆信息、初始信息来源等。 --></help>
+        <label><!-- Collect Customer Information --></label>
+        <name>Collect_Customer_Information__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>中</masterLabel>
+            <translation><!-- 中 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>低</masterLabel>
+            <translation><!-- 低 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>高</masterLabel>
+            <translation><!-- 高 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 1.主动提供相关信息或额外相关帮助；
+2.适当的询问客户是否需要其他帮助；
+3.解答详尽，未出现态度懒散、一问一答、爱搭不理等情况；
+4.主动控制通话时长，把握通话通话主题。 --></help>
+        <label><!-- Communicate Ability - Initiative --></label>
+        <name>Communicate_Ability_Initiative__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>中</masterLabel>
+            <translation><!-- 中 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>低</masterLabel>
+            <translation><!-- 低 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>高</masterLabel>
+            <translation><!-- 高 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 1.主动倾听,注意力集中,常用&quot;是的、好的&quot;等及时给予客户反馈；
+2.在客户表达清晰的情况下，不需客户反复重复相同信息两次以上（不含两次）；
+3. 未出现答非所问,理解出现偏差等情况。 --></help>
+        <label><!-- Communicate Ability - Listening Ability --></label>
+        <name>Communicate_Ability_Listening_Ability__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>中</masterLabel>
+            <translation><!-- 中 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>低</masterLabel>
+            <translation><!-- 低 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>高</masterLabel>
+            <translation><!-- 高 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 对客户的需求给予快速的回应，未出现长时间冷场,甚至要客户提醒才回应客户的情况。 --></help>
+        <label><!-- Communicate Ability - Rapid Response --></label>
+        <name>Communicate_Ability_Rapid_Response__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>中</masterLabel>
+            <translation><!-- 中 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>低</masterLabel>
+            <translation><!-- 低 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>高</masterLabel>
+            <translation><!-- 高 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 不错误引导客户，主动核实客户的需求。 --></help>
+        <label><!-- Correctly Interpret The Questionnaire --></label>
+        <name>Correctly_Interpret_The_Questionnaire__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>中</masterLabel>
+            <translation><!-- 中 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>低</masterLabel>
+            <translation><!-- 低 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>高</masterLabel>
+            <translation><!-- 高 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 1、提供准确和完整的MBCL/smart产品信息。 
+2、提供准确和完整的MBCL/smart活动信息。 
+3、提供准确和完整的MBCL/smart的其它相关信息（例如车辆价格、配置信息） --></help>
+        <label>澄清并确认客户的需求</label>
+        <name>Customer_Need_IB__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 按照流程要求收集必要的信息，如客户信息、销售信息、车辆信息、初始信息来源等。 --></help>
+        <label>收集必须的客户信息</label>
+        <name>Data_Collection_IB__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 1.  记录准确的信息；
+2. 文档内容匹配通话实质。 --></help>
+        <label><!-- Document Accuracy --></label>
+        <name>Document_Accuracy__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>中</masterLabel>
+            <translation><!-- 中 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>低</masterLabel>
+            <translation><!-- 低 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>高</masterLabel>
+            <translation><!-- 高 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 1.  充分了解并完全掌握MBCL/smart产品价格、经销商分布及现行活动的知识；
+2.  充分了解汽车相关的知识。 --></help>
+        <label><!-- Familiar MBCL/Smart/ Knowledge --></label>
+        <name>Familiar_MBCL_Smart_Knowledge__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>中</masterLabel>
+            <translation><!-- 中 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>低</masterLabel>
+            <translation><!-- 低 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>高</masterLabel>
+            <translation><!-- 高 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 1.活动运营流程
+2. 销售线索运营流程
+3. 投诉处理流程
+4. 一般咨询处理流程
+5.  电话结束转接IVR流程 
+6. 核实客户共享数据及接收相关资料的意愿 --></help>
+        <label><!-- Follow The Operation Process --></label>
+        <name>Follow_The_Operation_Process__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>中</masterLabel>
+            <translation><!-- 中 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>低</masterLabel>
+            <translation><!-- 低 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>高</masterLabel>
+            <translation><!-- 高 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 1.遵循问卷逻辑；
+2.按脚本收集或表达关键信息。 --></help>
+        <label><!-- Following Questionnaire Logic --></label>
+        <name>Following_Questionnaire_Logic__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>中</masterLabel>
+            <translation><!-- 中 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>低</masterLabel>
+            <translation><!-- 低 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>高</masterLabel>
+            <translation><!-- 高 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 1.提供准确和完整的MBCL/smart产品信息；
+2.提供准确和完整的MBCL/smart活动信息；
+3.提供准确和完整的MBCL/smart的其它相关信息（例如：PDI/上牌政策等）。 --></help>
+        <label>提供准确和完整的信息/解决方案</label>
+        <name>Info_Delivery_IB__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 1.使用标准的开场白，不漏说或错说；
+2.语速适中，表达清晰；
+3.开场白中表现热情，包含服务意愿语言，并主动询问客户姓名。 --></help>
+        <label>标准的开场白</label>
+        <name>Opening_Speech_IB__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 1.使用恰当语言适时响应客户感受,如&quot;我理解您的心情&quot;,&quot;我明白…&quot;&quot;确实是…&quot; &quot;很抱歉给您带来不便&quot;等有技巧的话语;
+2.使用语言安抚客户(如投诉时),对客户问题关注,有同理心。 --></help>
+        <label><!-- Perception - Focus On Customer Feel --></label>
+        <name>Perception_Focus_On_Customer_Feel__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>中</masterLabel>
+            <translation><!-- 中 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>低</masterLabel>
+            <translation><!-- 低 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>高</masterLabel>
+            <translation><!-- 高 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 客户挂断电话后再挂机 --></help>
+        <label><!-- Perception - Hang Up --></label>
+        <name>Perception_Hang_Up__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>中</masterLabel>
+            <translation><!-- 中 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>低</masterLabel>
+            <translation><!-- 低 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>高</masterLabel>
+            <translation><!-- 高 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 1.通话中未使用让客户觉得不舒服(如顶撞/质疑/否定)的用语,如&quot;喂,啊?!我不知道,你得这么做,那没办法,这是不可能的&quot;等；
+2.不能使用反问,质问的语言,谩骂,讥讽客户；
+3.不能与客户闲聊。 --></help>
+        <label><!-- Perception - JinYongYu --></label>
+        <name>Perception_JinYongYu__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>中</masterLabel>
+            <translation><!-- 中 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>低</masterLabel>
+            <translation><!-- 低 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>高</masterLabel>
+            <translation><!-- 高 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 1.表现出良好的耐心，语气中未表现不耐烦，语速未不恰当地加快；
+2.不随意打断客户，不急于挂电话；
+3.不忽略客户的某些非重要问题；
+4.遇到无法解决的问题表示跟进，操作复杂的问题没有推托之辞。 --></help>
+        <label><!-- Perception - Patience Degree --></label>
+        <name>Perception_Patience_Degree__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>中</masterLabel>
+            <translation><!-- 中 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>低</masterLabel>
+            <translation><!-- 低 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>高</masterLabel>
+            <translation><!-- 高 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 准确转接满意度。 --></help>
+        <label><!-- Perception - Satisfaction --></label>
+        <name>Perception_Satisfaction__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>中</masterLabel>
+            <translation><!-- 中 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>低</masterLabel>
+            <translation><!-- 低 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>高</masterLabel>
+            <translation><!-- 高 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 1.活动运营流程
+2. 销售线索运营流程
+3. 投诉处理流程
+4. 一般咨询处理流程
+5.  电话结束转接IVR流程 
+6. 核实客户共享数据及接收相关资料的意愿 --></help>
+        <label>遵循运营流程</label>
+        <name>Process_flow_IB__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 1.普通话标准，不带有严重的口音；
+2.语调上扬,有抑扬顿挫的变化；
+3.语速匹配客户的情绪及需求。 --></help>
+        <label><!-- Proper Pronunciation&amp;Intonation&amp;Speed --></label>
+        <name>Proper_Pronunciation_Intonation_Speed__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>中</masterLabel>
+            <translation><!-- 中 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>低</masterLabel>
+            <translation><!-- 低 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>高</masterLabel>
+            <translation><!-- 高 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 1.提供准确和完整的MBCL/smart产品信息；
+2.提供准确和完整的MBCL/smart活动信息；
+3.提供准确和完整的MBCL/smart的其它相关信息（例如：PDI/上牌政策等）。 --></help>
+        <label><!-- Provide Accurate&amp;Complete Information --></label>
+        <name>Provide_Accurate_Complete_Information__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>中</masterLabel>
+            <translation><!-- 中 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>低</masterLabel>
+            <translation><!-- 低 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>高</masterLabel>
+            <translation><!-- 高 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Specification - Polite Language Comments --></label>
+        <name>Q10_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Specification - Spoken Language Comments --></label>
+        <name>Q11_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Communicate Ability - Listening Comments --></label>
+        <name>Q12_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Standard Conclusion Comments --></label>
+        <name>Q13_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Communicate Ability Response Comments --></label>
+        <name>Q14_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Communicate Ability -Initiative Comments --></label>
+        <name>Q15_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Perception - Focus On Customer Comments --></label>
+        <name>Q16_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Perception - Patience Degree Comments --></label>
+        <name>Q17_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Perception - JinYongYu Comments --></label>
+        <name>Q18_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Perception - Hang Up Comments --></label>
+        <name>Q19_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provide Accurate&amp;Complete Info Comments --></label>
+        <name>Q1_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q1 Criteria --></label>
+        <name>Q1_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Accuracy Comments --></label>
+        <name>Q2_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Follow The Operation Process Comments --></label>
+        <name>Q3_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Following Questionnaire Logic Comments --></label>
+        <name>Q4_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Correctly Interpret The Questio Comments --></label>
+        <name>Q5_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Familiar MBCL/Smart/ Knowledge Comments --></label>
+        <name>Q6_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Responsibility Comments --></label>
+        <name>Q7_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Standard Opening Comments --></label>
+        <name>Q8_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proper Pronunciation&amp;Intonation Comments --></label>
+        <name>Q9_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- QC Overall Comment --></label>
+        <name>QC_Overall_Comment__c</name>
+    </fields>
+    <fields>
+        <help><!-- 1.  对于超出解答能力范围的问题,与客户重复确认,主动记录并跟进；
+2.  主动和积极的介绍活动和产品信息；
+3.  积极主动澄清生词生字，如拼写客户名称、非常用字等。 --></help>
+        <label><!-- Responsibility --></label>
+        <name>Responsibility__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>中</masterLabel>
+            <translation><!-- 中 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>低</masterLabel>
+            <translation><!-- 低 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>高</masterLabel>
+            <translation><!-- 高 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SSI --></label>
+        <name>SSI__c</name>
+        <relationshipLabel><!-- QC --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- 1.使用规范的礼貌用语并贯彻通话始终；
+2.让客户等待后向客户致歉并表示感谢；
+3.在通话中得知客户姓氏后适度称呼客户姓氏；
+4.需要客户重述时适当道歉； --></help>
+        <label><!-- Specification - Polite Language --></label>
+        <name>Specification_Polite_Language__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>中</masterLabel>
+            <translation><!-- 中 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>低</masterLabel>
+            <translation><!-- 低 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>高</masterLabel>
+            <translation><!-- 高 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 1.通话中表达流畅,没有口语,土话等不专业语言；
+2.没有&quot;行啊,对呀,当然啦,就这样吧,哎,啊,成&quot;等或不必要的&quot;这个…那个…嗯…&quot;等口语和方言； --></help>
+        <label><!-- Specification - Spoken Language --></label>
+        <name>Specification_Spoken_Language__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>中</masterLabel>
+            <translation><!-- 中 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>低</masterLabel>
+            <translation><!-- 低 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>高</masterLabel>
+            <translation><!-- 高 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 1.使用标准的结束语，不错说漏说；
+2.语速适中，未出现不耐烦或语速过快表达欠清晰情况。 --></help>
+        <label><!-- Standard Conclusion --></label>
+        <name>Standard_Conclusion__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>中</masterLabel>
+            <translation><!-- 中 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>低</masterLabel>
+            <translation><!-- 低 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>高</masterLabel>
+            <translation><!-- 高 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 1.使用标准的开场白，不漏说或错说
+2.语速适中，表达清晰；
+3.开场白中表现热情，包含服务意愿语言，并主动询问客户姓名。 --></help>
+        <label><!-- Standard Opening --></label>
+        <name>Standard_Opening__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>中</masterLabel>
+            <translation><!-- 中 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>低</masterLabel>
+            <translation><!-- 低 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>高</masterLabel>
+            <translation><!-- 高 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recall</masterLabel>
+            <translation><!-- Recall --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Supervisor Comments --></label>
+        <name>Supervisor_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Supervisor Review --></label>
+        <name>Supervisor_Review__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Link --></label>
+        <name>TaskLink__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task ID --></label>
+        <name>Task_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- 1.普通话标准，不带有严重的口音；
+2.语调上扬,有抑扬顿挫的变化；
+3.语速匹配客户的情绪及需求 --></help>
+        <label>恰当的语音、语调、语速</label>
+        <name>Tone_of_speech_IB__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Score 1 --></label>
+        <name>Total_Score_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Score 2 --></label>
+        <name>Total_Score_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Score --></label>
+        <name>Total_Score__c</name>
+    </fields>
+    <layouts>
+        <layout>IB Call</layout>
+        <sections>
+            <label>业务能力</label>
+            <section>Business Knowledge</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>服务亲和力</label>
+            <section>Service Level</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>OB Call</layout>
+        <sections>
+            <label>业务能力</label>
+            <section>Business Knowledge</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>服务亲和力</label>
+            <section>Service Level</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SSI</layout>
+        <sections>
+            <label><!-- Business Knowledge --></label>
+            <section>Business Knowledge</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Service Level --></label>
+            <section>Service Level</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- QC No. --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- IB Call --></label>
+        <name>IB_Call</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- OB Call --></label>
+        <name>OB_Call</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SSI --></label>
+        <name>SSI</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- The QC is completed, you cannot edit it --></errorMessage>
+        <name>Lock_for_QC_when_complete</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SSI</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SSI</value>
+    </caseValues>
+    <fields>
+        <label><!-- CarModelCheck Status --></label>
+        <name>CarModelCheck_Status__c</name>
+        <picklistValues>
+            <masterLabel>Suspect</masterLabel>
+            <translation><!-- Suspect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valid</masterLabel>
+            <translation><!-- Valid --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- CompanyName --></label>
+        <name>CompanyName__c</name>
+    </fields>
+    <fields>
+        <label><!-- ContractDate --></label>
+        <name>ContractDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- CustomerName --></label>
+        <name>CustomerName__c</name>
+    </fields>
+    <fields>
+        <label><!-- CustomerTitle --></label>
+        <name>CustomerTitle__c</name>
+    </fields>
+    <fields>
+        <label><!-- DealerCheck Status --></label>
+        <name>DealerCheck_Status__c</name>
+        <picklistValues>
+            <masterLabel>Suspect</masterLabel>
+            <translation><!-- Suspect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valid</masterLabel>
+            <translation><!-- Valid --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DealerName --></label>
+        <name>DealerName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer --></label>
+        <name>Dealer__c</name>
+    </fields>
+    <fields>
+        <label><!-- HandoverDate --></label>
+        <name>HandoverDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- HomeMobilePhone --></label>
+        <name>HomeMobilePhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invalid Dealer Review --></label>
+        <name>Invalid_Dealer_Review__c</name>
+        <picklistValues>
+            <masterLabel>Accept</masterLabel>
+            <translation><!-- Accept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reject</masterLabel>
+            <translation><!-- Reject --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Invalid Vehicle Model Review --></label>
+        <name>Invalid_Vehicle_Model_Review__c</name>
+        <picklistValues>
+            <masterLabel>Accept</masterLabel>
+            <translation><!-- Accept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reject</masterLabel>
+            <translation><!-- Reject --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- InvoiceDate --></label>
+        <name>InvoiceDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Need 2nd Survey --></label>
+        <name>Need_2nd_Survey__c</name>
+    </fields>
+    <fields>
+        <label><!-- OfficePhone --></label>
+        <name>OfficePhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- OriginalCustomerName --></label>
+        <name>OriginalCustomerName__c</name>
+    </fields>
+    <fields>
+        <label><!-- OriginalOfficePhone --></label>
+        <name>OriginalOfficePhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original HomeMobilePhone --></label>
+        <name>Original_HomeMobilePhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ownertype --></label>
+        <name>Ownertype__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person --></label>
+        <name>Person__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>All Valid</masterLabel>
+            <translation><!-- All Valid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Process</masterLabel>
+            <translation><!-- In Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invalid</masterLabel>
+            <translation><!-- Invalid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Original</masterLabel>
+            <translation><!-- Original --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SuspectCarModel Review --></label>
+        <name>SuspectCarModel_Review__c</name>
+        <picklistValues>
+            <masterLabel>Accept</masterLabel>
+            <translation><!-- Accept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reject</masterLabel>
+            <translation><!-- Reject --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SuspectDealer Review --></label>
+        <name>SuspectDealer_Review__c</name>
+        <picklistValues>
+            <masterLabel>Accept</masterLabel>
+            <translation><!-- Accept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reject</masterLabel>
+            <translation><!-- Reject --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Suspect Reason --></label>
+        <name>Suspect_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- VehicleCBUCKD --></label>
+        <name>VehicleCBUCKD__c</name>
+        <picklistValues>
+            <masterLabel>CBU</masterLabel>
+            <translation><!-- CBU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CKD</masterLabel>
+            <translation><!-- CKD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VehicleDesc --></label>
+        <name>VehicleDesc__c</name>
+    </fields>
+    <fields>
+        <label><!-- VehicleID --></label>
+        <name>VehicleID__c</name>
+    </fields>
+    <fields>
+        <label><!-- VehicleModel --></label>
+        <name>VehicleModel__c</name>
+    </fields>
+    <fields>
+        <label><!-- VehicleUSvin --></label>
+        <name>VehicleUSvin__c</name>
+    </fields>
+    <layouts>
+        <layout>SSI Record Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- SSI Information --></label>
+            <section>SSI Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- SSI --></label>
+        <name>SSI</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- &apos;Comments&apos; fields can not be blank when field SuspectDealer Review is &apos;Accept&apos; --></errorMessage>
+        <name>Comments_mandatory_SuspectDealer_Review</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SuspectCarModel Review is &apos;Accept&apos;, Field &apos;Comments&apos; can not be blank --></errorMessage>
+        <name>Comments_mandatory_Suspectcarmodel</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Data_Cleansing --></label>
+        <name>Data_Cleansing</name>
+    </webLinks>
+</CustomObjectTranslation>

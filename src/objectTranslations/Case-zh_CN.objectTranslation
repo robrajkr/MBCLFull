@@ -1,0 +1,1705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Activity Code --></label>
+        <name>Activity_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign --></label>
+        <name>Campaign__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Car Owner --></label>
+        <name>Car_Owner__c</name>
+        <relationshipLabel><!-- Cases(Car Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case Category --></label>
+        <name>Case_Category__c</name>
+        <picklistValues>
+            <masterLabel>BBAC Complaint</masterLabel>
+            <translation><!-- BBAC Complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inquiry</masterLabel>
+            <translation><!-- Inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MBCL Complaint</masterLabel>
+            <translation><!-- MBCL Complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Smart Complaint</masterLabel>
+            <translation><!-- Smart Complaint --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>分类</label>
+        <name>Case_Class__c</name>
+        <picklistValues>
+            <masterLabel>After-Sales</masterLabel>
+            <translation>售后</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation>其他</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others-After-Sales</masterLabel>
+            <translation>其他售后</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others-Sales</masterLabel>
+            <translation>其他售前</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation>售前</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case Complainant --></label>
+        <name>Case_Complainant__c</name>
+        <relationshipLabel><!-- Cases (Case Complainant) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>经销商名称</label>
+        <name>Case_Dealer__c</name>
+        <relationshipLabel><!-- Cases (Dealer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case FieldManager --></label>
+        <name>Case_FieldManager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Follow Up --></label>
+        <name>Case_Follow_Up__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Involvement(MPC) --></label>
+        <name>Case_Involvement_MPC__c</name>
+        <picklistValues>
+            <masterLabel>Authority (AQSIQ/CCA etc)</masterLabel>
+            <translation><!-- Authority (AQSIQ/CCA etc) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daimler Visit</masterLabel>
+            <translation><!-- Daimler Visit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Litigation</masterLabel>
+            <translation><!-- Litigation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media/Potential Media</masterLabel>
+            <translation><!-- Media/Potential Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PL/WL</masterLabel>
+            <translation><!-- PL/WL --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case Nature(MPC) --></label>
+        <name>Case_Nature_MPC__c</name>
+        <picklistValues>
+            <masterLabel>0=Quality</masterLabel>
+            <translation><!-- 0=Quality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1=Service</masterLabel>
+            <translation><!-- 1=Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2=Others</masterLabel>
+            <translation><!-- 2=Others --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case RepeatCause --></label>
+        <name>Case_RepeatCause__c</name>
+        <picklistValues>
+            <masterLabel>0=No contact with customer</masterLabel>
+            <translation><!-- 0=No contact with customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1=Not satisfied with reply</masterLabel>
+            <translation><!-- 1=Not satisfied with reply --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2=Others</masterLabel>
+            <translation><!-- 2=Others --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>子类型</label>
+        <name>Case_SubType__c</name>
+        <picklistValues>
+            <masterLabel>AD Sale</masterLabel>
+            <translation><!-- AD Sale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>After-Sales Complaint</masterLabel>
+            <translation><!-- After-Sales Complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Service</masterLabel>
+            <translation><!-- Agent Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAC or smart Finance Complaints</masterLabel>
+            <translation><!-- CAC or smart Finance Complaints --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consult Chrysler</masterLabel>
+            <translation><!-- Consult Chrysler --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consult Sebring</masterLabel>
+            <translation><!-- Consult Sebring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate-Sales</masterLabel>
+            <translation><!-- Corporate-Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crisis Management</masterLabel>
+            <translation><!-- Crisis Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer - Environment And Facility of Rest Area/Workshop</masterLabel>
+            <translation><!-- Dealer - Environment And Facility of Rest Area/Workshop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer - Professionalism of  Sales Consultant</masterLabel>
+            <translation><!-- Dealer - Professionalism of  Sales Consultant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer-after sales service attitude</masterLabel>
+            <translation><!-- Dealer-after sales service attitude --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer-change component quality</masterLabel>
+            <translation><!-- Dealer-change component quality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer-component delivery data</masterLabel>
+            <translation><!-- Dealer-component delivery data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer-delivered date</masterLabel>
+            <translation><!-- Dealer-delivered date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer-integrity</masterLabel>
+            <translation><!-- Dealer-integrity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer-maintenance latency time</masterLabel>
+            <translation><!-- Dealer-maintenance latency time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer-maintenance speciality and skills</masterLabel>
+            <translation><!-- Dealer-maintenance speciality and skills --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer-other after sales complaint</masterLabel>
+            <translation><!-- Dealer-other after sales complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer-other sales complaint</masterLabel>
+            <translation><!-- Dealer-other sales complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer-pre-sales service attitude</masterLabel>
+            <translation>经销商-售前服务态度</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer-problem feedback processing time</masterLabel>
+            <translation><!-- Dealer-problem feedback processing time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer-repaire/maintenance/fitting price</masterLabel>
+            <translation><!-- Dealer-repaire/maintenance/fitting price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer-sales price</masterLabel>
+            <translation><!-- Dealer-sales price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealership Contacts</masterLabel>
+            <translation><!-- Dealership Contacts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery Enquiry</masterLabel>
+            <translation><!-- Delivery Enquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diplomatic-Sales</masterLabel>
+            <translation><!-- Diplomatic-Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-C-Class (CKD) Complaint</masterLabel>
+            <translation><!-- E-C-Class (CKD) Complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Events Enquiry</masterLabel>
+            <translation><!-- Events Enquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Events Registration</masterLabel>
+            <translation><!-- Events Registration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feedback</masterLabel>
+            <translation><!-- Feedback --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feedback by Customer</masterLabel>
+            <translation><!-- Feedback by Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance &amp; Insurance</masterLabel>
+            <translation><!-- Finance &amp; Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Consultant Service</masterLabel>
+            <translation><!-- Financial Consultant Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fire or Gasbag Case</masterLabel>
+            <translation><!-- Fire or Gasbag Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Function / Technical / Accessory Specification</masterLabel>
+            <translation><!-- Function / Technical / Accessory Specification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HR</masterLabel>
+            <translation><!-- HR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interested in MB Accessories &amp; Collection</masterLabel>
+            <translation><!-- Interested in MB Accessories &amp; Collection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MB Trucks</masterLabel>
+            <translation><!-- MB Trucks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MB Vans</masterLabel>
+            <translation><!-- MB Vans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maintenance Appointment Arrangement</masterLabel>
+            <translation><!-- Maintenance Appointment Arrangement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Opportunities</masterLabel>
+            <translation><!-- Marketing Opportunities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maybach</masterLabel>
+            <translation><!-- Maybach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network Development</masterLabel>
+            <translation><!-- Network Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opt-Out for Contact / DM / EDM</masterLabel>
+            <translation><!-- Opt-Out for Contact / DM / EDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other after sales complaint</masterLabel>
+            <translation><!-- Other after sales complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other operation department</masterLabel>
+            <translation><!-- Other operation department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other sales complaint</masterLabel>
+            <translation><!-- Other sales complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owner Club</masterLabel>
+            <translation><!-- Owner Club --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR</masterLabel>
+            <translation><!-- PR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Profile Change</masterLabel>
+            <translation><!-- Personal Profile Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Owned / Trade-In</masterLabel>
+            <translation><!-- Pre-Owned / Trade-In --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Sales Complaint</masterLabel>
+            <translation><!-- Pre-Sales Complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricing &amp; Benchmarking</masterLabel>
+            <translation><!-- Pricing &amp; Benchmarking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Recall</masterLabel>
+            <translation><!-- Product Recall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product-others</masterLabel>
+            <translation><!-- Product-others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product-quality</masterLabel>
+            <translation><!-- Product-quality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional Level Of Agent</masterLabel>
+            <translation><!-- Professional Level Of Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchase process</masterLabel>
+            <translation><!-- Purchase process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queries for C-Class</masterLabel>
+            <translation><!-- Queries for C-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queries for E-Class</masterLabel>
+            <translation><!-- Queries for E-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RSA - Professionalism of Rescue Worker</masterLabel>
+            <translation><!-- RSA - Professionalism of Rescue Worker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RSA - Waiting Time of Assistance</masterLabel>
+            <translation><!-- RSA - Waiting Time of Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RSA Emergency Requests</masterLabel>
+            <translation><!-- RSA Emergency Requests --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RSA Queries</masterLabel>
+            <translation><!-- RSA Queries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RSA-RSA service attitude</masterLabel>
+            <translation><!-- RSA-RSA service attitude --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refused</masterLabel>
+            <translation><!-- Refused --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request for Brochure / Catalog</masterLabel>
+            <translation><!-- Request for Brochure / Catalog --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request for MB Magazine</masterLabel>
+            <translation><!-- Request for MB Magazine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request for Product Information</masterLabel>
+            <translation><!-- Request for Product Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request for Product Range Card</masterLabel>
+            <translation><!-- Request for Product Range Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request for Test Drive</masterLabel>
+            <translation><!-- Request for Test Drive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request handbook</masterLabel>
+            <translation><!-- Request handbook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request test drive</masterLabel>
+            <translation><!-- Request test drive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shanghai autoshow</masterLabel>
+            <translation><!-- Shanghai autoshow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical / Parts / Car Maintenance Enquiry</masterLabel>
+            <translation><!-- Technical / Parts / Car Maintenance Enquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The Call Could Not Be Get Through</masterLabel>
+            <translation><!-- The Call Could Not Be Get Through --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unreasonable Criteria</masterLabel>
+            <translation><!-- Unreasonable Criteria --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting Time Of Finance Service</masterLabel>
+            <translation><!-- Waiting Time Of Finance Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warranty Enquiry</masterLabel>
+            <translation><!-- Warranty Enquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>smart</masterLabel>
+            <translation><!-- smart --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>smart RSA</masterLabel>
+            <translation><!-- smart RSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>smart after sale</masterLabel>
+            <translation><!-- smart after sale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>smart complaint pre-sale</masterLabel>
+            <translation><!-- smart complaint pre-sale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>smart deposit refund</masterLabel>
+            <translation><!-- smart deposit refund --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case Type --></label>
+        <name>Case_Type__c</name>
+        <picklistValues>
+            <masterLabel>After-Sales</masterLabel>
+            <translation><!-- After-Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Center</masterLabel>
+            <translation><!-- Call Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Campaign</masterLabel>
+            <translation><!-- Campaign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club</masterLabel>
+            <translation><!-- Club --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complain &amp; feedback</masterLabel>
+            <translation><!-- Complain &amp; feedback --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant MBCL truck</masterLabel>
+            <translation><!-- Consultant MBCL truck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultanting MBCL microbus</masterLabel>
+            <translation><!-- Consultanting MBCL microbus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer contact method</masterLabel>
+            <translation><!-- Dealer contact method --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance &amp; Insurance</masterLabel>
+            <translation><!-- Finance &amp; Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance service</masterLabel>
+            <translation><!-- Finance service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guarantee repair &amp; maintenance</masterLabel>
+            <translation><!-- Guarantee repair &amp; maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual information change</masterLabel>
+            <translation><!-- Individual information change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MBCL gift</masterLabel>
+            <translation><!-- MBCL gift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing chance</masterLabel>
+            <translation><!-- Marketing chance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing crisis</masterLabel>
+            <translation><!-- Marketing crisis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maybach</masterLabel>
+            <translation><!-- Maybach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network development department</masterLabel>
+            <translation><!-- Network development department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Sales</masterLabel>
+            <translation><!-- Pre-Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product information</masterLabel>
+            <translation><!-- Product information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public connection</masterLabel>
+            <translation><!-- Public connection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchase &amp; deliver</masterLabel>
+            <translation><!-- Purchase &amp; deliver --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RSA</masterLabel>
+            <translation><!-- RSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recruit campaign</masterLabel>
+            <translation><!-- Recruit campaign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second car exchange</masterLabel>
+            <translation><!-- Second car exchange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Smart</masterLabel>
+            <translation><!-- Smart --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Temporary hotline</masterLabel>
+            <translation><!-- Temporary hotline --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Complaint Date --></label>
+        <name>Complaint_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Complaint Prioritization &amp; Categorizatio --></label>
+        <name>Complaint_Prioritization_Categorizatio__c</name>
+        <picklistValues>
+            <masterLabel>Product Liability Case</masterLabel>
+            <translation><!-- Product Liability Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warranty Liability Case</masterLabel>
+            <translation><!-- Warranty Liability Case --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Issue --></label>
+        <name>Customer_Issue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Requests Transport --></label>
+        <name>Customer_Requests_Transport__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Statement --></label>
+        <name>Customer_Statement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer Provides Transport --></label>
+        <name>Dealer_Provides_Transport__c</name>
+    </fields>
+    <fields>
+        <label><!-- Defective Item --></label>
+        <name>Defective_Item__c</name>
+        <picklistValues>
+            <masterLabel>0=Overall Vehicle</masterLabel>
+            <translation><!-- 0=Overall Vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1=Engine</masterLabel>
+            <translation><!-- 1=Engine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2=Chassis</masterLabel>
+            <translation><!-- 2=Chassis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3=Body</masterLabel>
+            <translation><!-- 3=Body --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4=Other</masterLabel>
+            <translation><!-- 4=Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Defective SubItem --></label>
+        <name>Defective_SubItem__c</name>
+        <picklistValues>
+            <masterLabel>Adjusting Device, Speed Regulating System</masterLabel>
+            <translation><!-- Adjusting Device, Speed Regulating System --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>After Perinatal and Rear of the 65 Roof</masterLabel>
+            <translation><!-- After Perinatal and Rear of the 65 Roof --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Air Compressor, Belt Drive</masterLabel>
+            <translation><!-- Air Compressor, Belt Drive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Air Conditioner</masterLabel>
+            <translation><!-- Air Conditioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Air Intake, Booster</masterLabel>
+            <translation><!-- Air Intake, Booster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All Doors</masterLabel>
+            <translation><!-- All Doors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto Transmission</masterLabel>
+            <translation><!-- Auto Transmission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auxiliary Drive, Hydraulic System and Hinge System</masterLabel>
+            <translation><!-- Auxiliary Drive, Hydraulic System and Hinge System --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Body Noise, Noise Pieces</masterLabel>
+            <translation><!-- Body Noise, Noise Pieces --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Body Outline</masterLabel>
+            <translation><!-- Body Outline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Body Seals, Anti-corrosion Parts</masterLabel>
+            <translation><!-- Body Seals, Anti-corrosion Parts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brake - pneumatic System and Auxiliary Brake</masterLabel>
+            <translation><!-- Brake - pneumatic System and Auxiliary Brake --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brake Hydraulic Mechanism and a Mechanical Mechanism</masterLabel>
+            <translation><!-- Brake Hydraulic Mechanism and a Mechanical Mechanism --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central Locking, Convenient Manipulation, Driving System</masterLabel>
+            <translation><!-- Central Locking, Convenient Manipulation, Driving System --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central Lubrication</masterLabel>
+            <translation><!-- Central Lubrication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clutch</masterLabel>
+            <translation><!-- Clutch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Driving Mechanism</masterLabel>
+            <translation><!-- Driving Mechanism --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electric Device of Engine</masterLabel>
+            <translation><!-- Electric Device of Engine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electric Driver</masterLabel>
+            <translation><!-- Electric Driver --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electrical Device, Structure</masterLabel>
+            <translation><!-- Electrical Device, Structure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emergency Device, Disabled only equipment, Sanitary Arrangement, Kitchen</masterLabel>
+            <translation><!-- Emergency Device, Disabled only equipment, Sanitary Arrangement, Kitchen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engine Control</masterLabel>
+            <translation><!-- Engine Control --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engine Cooling</masterLabel>
+            <translation><!-- Engine Cooling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engine Lubrication, Engine Oil Cooling</masterLabel>
+            <translation><!-- Engine Lubrication, Engine Oil Cooling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engine Suspension Device</masterLabel>
+            <translation><!-- Engine Suspension Device --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engine, Crankcase ventilation, Cylinder Head, Crankcase</masterLabel>
+            <translation><!-- Engine, Crankcase ventilation, Cylinder Head, Crankcase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exhaust Manifold, Exhaust Brake, Waste Gas Purification Apparatus</masterLabel>
+            <translation><!-- Exhaust Manifold, Exhaust Brake, Waste Gas Purification Apparatus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exhaust Unit</masterLabel>
+            <translation><!-- Exhaust Unit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frame, Belt Driving Trailer</masterLabel>
+            <translation><!-- Frame, Belt Driving Trailer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Front Axle</masterLabel>
+            <translation><!-- Front Axle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Front Body and the Front</masterLabel>
+            <translation><!-- Front Body and the Front --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuel Cell System</masterLabel>
+            <translation><!-- Fuel Cell System --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuel Oil System</masterLabel>
+            <translation><!-- Fuel Oil System --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Installation of Parts, External Cover Plate</masterLabel>
+            <translation><!-- Installation of Parts, External Cover Plate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interior Equipment</masterLabel>
+            <translation><!-- Interior Equipment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manual Transmission</masterLabel>
+            <translation><!-- Manual Transmission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mixer Preparation</masterLabel>
+            <translation><!-- Mixer Preparation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other reasons</masterLabel>
+            <translation><!-- Other reasons --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overall Vehicle</masterLabel>
+            <translation><!-- Overall Vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paint</masterLabel>
+            <translation><!-- Paint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pedal System</masterLabel>
+            <translation><!-- Pedal System --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Print Other Reasons</masterLabel>
+            <translation><!-- Print Other Reasons --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rear Axle</masterLabel>
+            <translation><!-- Rear Axle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roof</masterLabel>
+            <translation><!-- Roof --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seat, Sleeper, Occupant Protection System</masterLabel>
+            <translation><!-- Seat, Sleeper, Occupant Protection System --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Side Coaming</masterLabel>
+            <translation><!-- Side Coaming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sliding Sunroof, Folding Roof, Roof</masterLabel>
+            <translation><!-- Sliding Sunroof, Folding Roof, Roof --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special Mount</masterLabel>
+            <translation><!-- Special Mount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Steering Device</masterLabel>
+            <translation><!-- Steering Device --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspension</masterLabel>
+            <translation><!-- Suspension --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The Lower Part of the Body</masterLabel>
+            <translation><!-- The Lower Part of the Body --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tool</masterLabel>
+            <translation><!-- Tool --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer Case</masterLabel>
+            <translation><!-- Transfer Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transmission Shaft</masterLabel>
+            <translation><!-- Transmission Shaft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wheel, Measuring A Chassis</masterLabel>
+            <translation><!-- Wheel, Measuring A Chassis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Window Glass and A Window</masterLabel>
+            <translation><!-- Window Glass and A Window --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wiring, Device and instrument</masterLabel>
+            <translation><!-- Wiring, Device and instrument --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Department Lead --></label>
+        <name>Department_Lead__c</name>
+    </fields>
+    <fields>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+        <picklistValues>
+            <masterLabel>CG After-sales department</masterLabel>
+            <translation><!-- CG After-sales department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CG Other department</masterLabel>
+            <translation><!-- CG Other department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CG Sales department</masterLabel>
+            <translation><!-- CG Sales department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CG Technical department</masterLabel>
+            <translation><!-- CG Technical department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CG fittings department</masterLabel>
+            <translation><!-- CG fittings department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mercedes After-sales department</masterLabel>
+            <translation><!-- Mercedes After-sales department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mercedes Other department</masterLabel>
+            <translation><!-- Mercedes Other department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mercedes Sales department</masterLabel>
+            <translation><!-- Mercedes Sales department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mercedes Technical department</masterLabel>
+            <translation><!-- Mercedes Technical department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mercedes fittings department</masterLabel>
+            <translation><!-- Mercedes fittings department --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Email Group --></label>
+        <name>Email_Group__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Email Status --></label>
+        <name>Email_Status__c</name>
+        <picklistValues>
+            <masterLabel>0=Sent</masterLabel>
+            <translation><!-- 0=Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1=Returned Undeliverable</masterLabel>
+            <translation><!-- 1=Returned Undeliverable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2=Unknown</masterLabel>
+            <translation><!-- 2=Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3=Not required to send</masterLabel>
+            <translation><!-- 3=Not required to send --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4=Not Sent</masterLabel>
+            <translation><!-- 4=Not Sent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Engineer --></label>
+        <name>Engineer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Escalate Date to CO --></label>
+        <name>Escalate_Date_to_CO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Escalate Date to RO --></label>
+        <name>Escalate_Date_to_RO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Escalation --></label>
+        <name>Escalation__c</name>
+        <picklistValues>
+            <masterLabel>0=Dealer</masterLabel>
+            <translation><!-- 0=Dealer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1=Regional Office</masterLabel>
+            <translation><!-- 1=Regional Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2=Central Office</masterLabel>
+            <translation><!-- 2=Central Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3=None</masterLabel>
+            <translation><!-- 3=None --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- FFPositionDate --></label>
+        <name>FFPositionDate__c</name>
+    </fields>
+    <fields>
+        <label>反馈日期</label>
+        <name>Feedback_Date__c</name>
+    </fields>
+    <fields>
+        <label>是否需要反馈</label>
+        <name>Feedback_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final --></label>
+        <name>Final__c</name>
+    </fields>
+    <fields>
+        <label><!-- First OB By --></label>
+        <name>First_OB_By__c</name>
+        <picklistValues>
+            <masterLabel>0=Dealer</masterLabel>
+            <translation><!-- 0=Dealer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1=Regional Office</masterLabel>
+            <translation><!-- 1=Regional Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2=Central Office</masterLabel>
+            <translation><!-- 2=Central Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3=None</masterLabel>
+            <translation><!-- 3=None --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- First OB Date --></label>
+        <name>First_OB_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fourth OB By --></label>
+        <name>Fourth_OB_By__c</name>
+        <picklistValues>
+            <masterLabel>0=Dealer</masterLabel>
+            <translation><!-- 0=Dealer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1=Regional Office</masterLabel>
+            <translation><!-- 1=Regional Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2=Central Office</masterLabel>
+            <translation><!-- 2=Central Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3=None</masterLabel>
+            <translation><!-- 3=None --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fourth OB Date --></label>
+        <name>Fourth_OB_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goodwill Category --></label>
+        <name>Goodwill_Category__c</name>
+        <picklistValues>
+            <masterLabel>Free Service</masterLabel>
+            <translation><!-- Free Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Own Goodwill</masterLabel>
+            <translation><!-- Own Goodwill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical Market Goodwill</masterLabel>
+            <translation><!-- Technical Market Goodwill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade-in</masterLabel>
+            <translation><!-- Trade-in --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warranty Extension</masterLabel>
+            <translation><!-- Warranty Extension --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Goodwill Cost --></label>
+        <name>Goodwill_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goodwill Details --></label>
+        <name>Goodwill_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Info Source --></label>
+        <name>Info_Source__c</name>
+        <picklistValues>
+            <masterLabel>Dealer Exhibition Hall</masterLabel>
+            <translation><!-- Dealer Exhibition Hall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event</masterLabel>
+            <translation><!-- Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mail</masterLabel>
+            <translation><!-- Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Message</masterLabel>
+            <translation><!-- Message --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newspaper/Magazine</masterLabel>
+            <translation><!-- Newspaper/Magazine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outdoor Advertising</masterLabel>
+            <translation><!-- Outdoor Advertising --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partners</masterLabel>
+            <translation><!-- Partners --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radio</masterLabel>
+            <translation><!-- Radio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TV Advertising</masterLabel>
+            <translation><!-- TV Advertising --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telephone Contact</masterLabel>
+            <translation><!-- Telephone Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web/Mobile Phone</masterLabel>
+            <translation><!-- Web/Mobile Phone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Info Subsource --></label>
+        <name>Info_Subsource__c</name>
+        <picklistValues>
+            <masterLabel>AMG Website</masterLabel>
+            <translation><!-- AMG Website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advertising</masterLabel>
+            <translation><!-- Advertising --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Air China</masterLabel>
+            <translation><!-- Air China --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Artron</masterLabel>
+            <translation><!-- Artron --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto Show</masterLabel>
+            <translation><!-- Auto Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B web special</masterLabel>
+            <translation><!-- B web special --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brochure &amp; Price List</masterLabel>
+            <translation><!-- Brochure &amp; Price List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>China Telecom/189 email</masterLabel>
+            <translation><!-- China Telecom/189 email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese radio network</masterLabel>
+            <translation><!-- Chinese radio network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer Show Room</masterLabel>
+            <translation><!-- Dealer Show Room --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer Website</masterLabel>
+            <translation><!-- Dealer Website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer message contact</masterLabel>
+            <translation><!-- Dealer message contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer telephone contact</masterLabel>
+            <translation><!-- Dealer telephone contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Friend Recommendation</masterLabel>
+            <translation><!-- Friend Recommendation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MB official website</masterLabel>
+            <translation><!-- MB official website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ML web special</masterLabel>
+            <translation><!-- ML web special --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mercedes-Benz E-brochure and price list</masterLabel>
+            <translation><!-- Mercedes-Benz E-brochure and price list --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mercedes-Benz E-newsletter</masterLabel>
+            <translation><!-- Mercedes-Benz E-newsletter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mercedes-Benz Message Contact</masterLabel>
+            <translation><!-- Mercedes-Benz Message Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mercedes-Benz Telephone Contact</masterLabel>
+            <translation><!-- Mercedes-Benz Telephone Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile Phone Web</masterLabel>
+            <translation><!-- Mobile Phone Web --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Event</masterLabel>
+            <translation><!-- Other Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Mail</masterLabel>
+            <translation><!-- Other Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Web, Community, Blog</masterLabel>
+            <translation><!-- Other Web, Community, Blog --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other websites, community, blog</masterLabel>
+            <translation><!-- Other websites, community, blog --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Products range cards</masterLabel>
+            <translation><!-- Products range cards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sina Blog</masterLabel>
+            <translation><!-- Sina Blog --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sina Microblog</masterLabel>
+            <translation><!-- Sina Microblog --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Smart Official Website (incl. smart community)</masterLabel>
+            <translation><!-- Smart Official Website (incl. smart community) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telephone Query Service</masterLabel>
+            <translation><!-- Telephone Query Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Party (Partner) Mail _Bank of Communication</masterLabel>
+            <translation><!-- Third Party (Partner) Mail _Bank of Communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Party (Partner) Mail_Minsheng Bank</masterLabel>
+            <translation><!-- Third Party (Partner) Mail_Minsheng Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Party Message Contact</masterLabel>
+            <translation><!-- Third Party Message Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Party Telephone Contact</masterLabel>
+            <translation><!-- Third Party Telephone Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Guide</masterLabel>
+            <translation><!-- User Guide --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>smart community</masterLabel>
+            <translation><!-- smart community --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>smart official website</masterLabel>
+            <translation><!-- smart official website --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Inquiry Comments --></label>
+        <name>Inquiry_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- MPC Internal Notes --></label>
+        <name>MPC_Internal_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mileage --></label>
+        <name>Mileage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Contact Date --></label>
+        <name>Next_Contact_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- OB to Customer --></label>
+        <name>OB_to_Customer__c</name>
+    </fields>
+    <fields>
+        <name>Origin</name>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>电子邮件</masterLabel>
+            <translation><!-- 电子邮件 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>电话</masterLabel>
+            <translation><!-- 电话 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Other Type Comments --></label>
+        <name>Other_Type_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- PR Comment(MBCL Internal) --></label>
+        <name>PR_Comment_MBCL_Internal__c</name>
+    </fields>
+    <fields>
+        <label><!-- PR Comment for Dealer --></label>
+        <name>PR_Comment_for_Dealer__c</name>
+    </fields>
+    <fields>
+        <name>Priority</name>
+        <picklistValues>
+            <masterLabel>Green-less than twice</masterLabel>
+            <translation>绿色-2次以下</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red-more than 4 times</masterLabel>
+            <translation>红色-4次以上</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yellow-3 times</masterLabel>
+            <translation>黄色-3次</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Problem1 --></label>
+        <name>Problem1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Problem2 --></label>
+        <name>Problem2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Problem3 --></label>
+        <name>Problem3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Problem4 --></label>
+        <name>Problem4__c</name>
+    </fields>
+    <fields>
+        <name>Reason</name>
+        <picklistValues>
+            <masterLabel>复杂功能</masterLabel>
+            <translation><!-- 复杂功能 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>新问题</masterLabel>
+            <translation><!-- 新问题 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>现有问题</masterLabel>
+            <translation><!-- 现有问题 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>用户未参加培训</masterLabel>
+            <translation><!-- 用户未参加培训 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>说明不清楚</masterLabel>
+            <translation><!-- 说明不清楚 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ref No. Central --></label>
+        <name>Ref_No_Central__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ref No Regional --></label>
+        <name>Ref_No_Regional__c</name>
+    </fields>
+    <fields>
+        <label>是否拒绝经销商联系</label>
+        <name>Refused_Dealer_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship --></label>
+        <name>Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Release Date --></label>
+        <name>Release_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repeat Complaint Times --></label>
+        <name>Repeat_Complaint_Times__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repeat of Original Complaint --></label>
+        <name>Repeat_of_Original_Complaint__c</name>
+        <relationshipLabel><!-- Cases(Repeat of Original Complain) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Requires Dealer Contact --></label>
+        <name>Requires_Dealer_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolution --></label>
+        <name>Resolution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolved Date --></label>
+        <name>Resolved_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Result --></label>
+        <name>Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- Results Response --></label>
+        <name>Results_Response__c</name>
+    </fields>
+    <fields>
+        <label><!-- SFPositionDate --></label>
+        <name>SFPositionDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Second OB By --></label>
+        <name>Second_OB_By__c</name>
+        <picklistValues>
+            <masterLabel>0=Dealer</masterLabel>
+            <translation><!-- 0=Dealer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1=Regional Office</masterLabel>
+            <translation><!-- 1=Regional Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2=Central Office</masterLabel>
+            <translation><!-- 2=Central Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3=None</masterLabel>
+            <translation><!-- 3=None --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Second OB Date --></label>
+        <name>Second_OB_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Email To --></label>
+        <name>Send_Email_To__c</name>
+    </fields>
+    <fields>
+        <label><!-- Setup Date --></label>
+        <name>Setup_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Goodwill --></label>
+        <name>Special_Goodwill__c</name>
+    </fields>
+    <fields>
+        <name>Status</name>
+        <picklistValues>
+            <masterLabel>1=Investigating</masterLabel>
+            <translation><!-- 1=Investigating --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2=Suspended</masterLabel>
+            <translation><!-- 2=Suspended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3=Final Position Released</masterLabel>
+            <translation><!-- 3=Final Position Released --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4=2nd Final Position Released</masterLabel>
+            <translation><!-- 4=2nd Final Position Released --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed (Final)</masterLabel>
+            <translation><!-- Closed (Final) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finished</masterLabel>
+            <translation><!-- Finished --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Have tracked</masterLabel>
+            <translation><!-- Have tracked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insufficient Document</masterLabel>
+            <translation><!-- Insufficient Document --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Need track</masterLabel>
+            <translation><!-- Need track --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reopened</masterLabel>
+            <translation><!-- Reopened --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requires Manager Review</masterLabel>
+            <translation><!-- Requires Manager Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting Process</masterLabel>
+            <translation><!-- Waiting Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Reply</masterLabel>
+            <translation><!-- Waiting for Reply --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>呼叫等待</masterLabel>
+            <translation><!-- 呼叫等待 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>已升级</masterLabel>
+            <translation><!-- 已升级 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>已结束</masterLabel>
+            <translation><!-- 已结束 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>新建</masterLabel>
+            <translation><!-- 新建 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Suspended Date --></label>
+        <name>Suspended_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suspended Reason --></label>
+        <name>Suspended_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- TIPS --></label>
+        <name>TIPS__c</name>
+    </fields>
+    <fields>
+        <label>TL审核</label>
+        <name>TL_Reviewed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technical Comments --></label>
+        <name>Technical_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Third OB By --></label>
+        <name>Third_OB_By__c</name>
+        <picklistValues>
+            <masterLabel>0=Dealer</masterLabel>
+            <translation><!-- 0=Dealer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1=Regional Office</masterLabel>
+            <translation><!-- 1=Regional Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2=Central Office</masterLabel>
+            <translation><!-- 2=Central Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3=None</masterLabel>
+            <translation><!-- 3=None --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Third OB Date --></label>
+        <name>Third_OB_Date__c</name>
+    </fields>
+    <fields>
+        <name>Type</name>
+        <picklistValues>
+            <masterLabel>功能请求</masterLabel>
+            <translation><!-- 功能请求 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>疑问</masterLabel>
+            <translation><!-- 疑问 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>问题</masterLabel>
+            <translation><!-- 问题 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Vehicle Brand --></label>
+        <name>Vehicle_Brand__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle Class --></label>
+        <name>Vehicle_Class__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle Model --></label>
+        <name>Vehicle_Model__c</name>
+    </fields>
+    <fields>
+        <label>车辆</label>
+        <name>Vehicle__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Complaint Pagelayout</layout>
+        <sections>
+            <label><!-- Outbound Information --></label>
+            <section>Outbound Information</section>
+        </sections>
+        <sections>
+            <label><!-- Problem Information --></label>
+            <section>Problem Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Dealer Complaint</layout>
+        <sections>
+            <label><!-- Outbound Information --></label>
+            <section>Outbound Information</section>
+        </sections>
+        <sections>
+            <label><!-- Problem Information --></label>
+            <section>Problem Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Inquiry (IB/OB)</layout>
+        <sections>
+            <label>其他信息</label>
+            <section>Other Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Inquiry (Other)</layout>
+        <sections>
+            <label><!-- Other Information --></label>
+            <section>Other Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Dealer Complaint --></label>
+        <name>Dealer_Complaint</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Inquiry --></label>
+        <name>Inquiry</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- DM --></label>
+        <name>DM</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SMS --></label>
+        <name>SMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- eDM --></label>
+        <name>eDM</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Contact Portfolio: To Record Customer Warranty Info.</description>
+    <enableActivities>true</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Warranty 
+Function: Person involved in the warranty contract
+Used in: Pagelayouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Person involved in the warranty contract</inlineHelpText>
+        <label>Contact</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Warranty</relationshipLabel>
+        <relationshipName>Warranty</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Dealer__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Warranty 
+Function: The dealer involved in the warranty contract
+Used in: Pagelayouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The dealer involved in the warranty contract</inlineHelpText>
+        <label>Dealer</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Warranty (Dealer)</relationshipLabel>
+        <relationshipName>Warranty1</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Vehicle__c</fullName>
+        <description>/*
+Created by:  Chris.Huang
+Used by:  Chris.Huang
+Function:
+Used in: Page Layouts, Reports 
+
+Modify History
+Modify By: 
+Modify Reason: 
+*/</description>
+        <externalId>false</externalId>
+        <label>Vehicle</label>
+        <referenceTo>Vehicle__c</referenceTo>
+        <relationshipLabel>Warranty</relationshipLabel>
+        <relationshipName>Warranty</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Warranty_End_Date__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Warranty 
+Function: The manufacturer warranty end date
+Used in: Pagelayouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The manufacturer warranty end date</inlineHelpText>
+        <label>Warranty End Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Warranty_Extended_Period__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Warranty 
+Function: The period of the extended warranty in months
+Used in: Pagelayouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The period of the extended warranty in months</inlineHelpText>
+        <label>Warranty Extended Period</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Warranty_Extended_Start_Date__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Warranty 
+Function: The start date for the extended warranty
+Used in: Pagelayouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The start date for the extended warranty</inlineHelpText>
+        <label>Warranty Extended Start Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Warranty_ID__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Warranty  
+Function: ID of warranty in CRM
+Used in: Pagelayouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/</description>
+        <displayFormat>{0000}</displayFormat>
+        <externalId>false</externalId>
+        <inlineHelpText>ID of warranty in CRM</inlineHelpText>
+        <label>Warranty ID</label>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Warranty_Max_Mileage__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Warranty 
+Function: The maximum mileage for the warranty
+Used in: Pagelayouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The maximum mileage for the warranty</inlineHelpText>
+        <label>Warranty Max Mileage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Warranty_Name__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Warranty 
+Function: Name of the warranty
+Used in: Pagelayouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/</description>
+        <externalId>false</externalId>
+        <label>Warranty Name</label>
+        <picklist>
+            <picklistValues>
+                <fullName>0=Extended Warranty</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1=Manufacturer Warranty</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Warranty_No__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Warranty 
+Function: Warranty Number from DMS
+Used in: Pagelayouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Warranty Number from DMS</inlineHelpText>
+        <label>Warranty No</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Warranty_Status__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Warranty 
+Function: The current status of the manufacturer&apos;s warranty
+Used in: Pagelayouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The current status of the manufacturer&apos;s warranty</inlineHelpText>
+        <label>Warranty Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>0=No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1=Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2=Unknown</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Warranty_Type__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Warranty 
+Function: Type, e.g. if contractname is &quot;Extended warranty&quot;, then the contract type is &quot;EX&quot;
+Used in: Pagelayouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/</description>
+        <externalId>false</externalId>
+        <label>Warranty Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>0=EX</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1=MW</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <label>Warranty</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Warranty_No__c</columns>
+        <columns>NAME</columns>
+        <columns>Contact__c</columns>
+        <columns>Dealer__c</columns>
+        <columns>Vehicle__c</columns>
+        <columns>Warranty_Type__c</columns>
+        <columns>Warranty_Status__c</columns>
+        <columns>Warranty_Name__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Warranty Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Warranty</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Contact__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Dealer__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Vehicle__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Warranty_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Warranty_Status__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Contact__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Dealer__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Vehicle__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Warranty_Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Warranty_Status__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Contact__c</searchFilterFields>
+        <searchFilterFields>Dealer__c</searchFilterFields>
+        <searchFilterFields>Vehicle__c</searchFilterFields>
+        <searchFilterFields>Warranty_Type__c</searchFilterFields>
+        <searchFilterFields>Warranty_Status__c</searchFilterFields>
+        <searchResultsAdditionalFields>Contact__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Dealer__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Vehicle__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Warranty_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Warranty_Status__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+</CustomObject>

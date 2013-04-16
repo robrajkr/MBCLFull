@@ -1,0 +1,17 @@
+Dear All, 
+
+The status of this Requirement {{!Requirement_UserStory__c.Name}} is changed to { {!Requirement_UserStory__c.Status__c} }. Please kindly be noticed.
+
+Requirement Detailed Info. 
+
+Requirement ID: {!Requirement_UserStory__c.Name}
+Category: {!Requirement_UserStory__c.Category__c}
+Module / Object: {!Requirement_UserStory__c.Module_Object__c}
+Status: {!Requirement_UserStory__c.Status__c}
+Biz Priority: {!Requirement_UserStory__c.Critical__c}
+Function Owner: {!Requirement_UserStory__c.Business_Owner__c}
+Requirement Description: {!Requirement_UserStory__c.Requirement_Description__c}
+
+Best Regards,
+
+MBCL SFDC Project Team

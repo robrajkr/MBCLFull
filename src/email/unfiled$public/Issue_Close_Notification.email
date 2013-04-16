@@ -1,0 +1,13 @@
+Issue Description:
+
+{!Issue__c.Issue_Description__c}
+
+Comments:
+
+{!Issue__c.Comments__c}
+
+Due Date: {!Issue__c.Due_Date__c}
+
+Last Modified by: {!Issue__c.LastModifiedBy}
+
+View detail in SFDC at: {!Issue__c.Link}

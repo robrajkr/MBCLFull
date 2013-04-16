@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>将登录名和密码通知新自助用户</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>支持：自助新用户登录信息（示例）</name>
+    <style>none</style>
+    <subject>{!Organization.Name}自助用户名和密码</subject>
+    <type>text</type>
+</EmailTemplate>

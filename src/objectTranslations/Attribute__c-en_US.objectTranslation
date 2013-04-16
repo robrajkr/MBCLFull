@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Car Attribute</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Car Attribute</value>
+    </caseValues>
+    <fields>
+        <label><!-- Attribute Category --></label>
+        <name>Attribute_Category__c</name>
+        <picklistValues>
+            <masterLabel>基本参数</masterLabel>
+            <translation><!-- 基本参数 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>扩展参数</masterLabel>
+            <translation><!-- 扩展参数 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Attribute Type --></label>
+        <name>Attribute_Type__c</name>
+        <picklistValues>
+            <masterLabel>价格</masterLabel>
+            <translation><!-- 价格 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>发动机和性能</masterLabel>
+            <translation><!-- 发动机和性能 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>地盘和车轮</masterLabel>
+            <translation><!-- 地盘和车轮 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>尺寸和重量</masterLabel>
+            <translation><!-- 尺寸和重量 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>燃油消耗</masterLabel>
+            <translation><!-- 燃油消耗 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

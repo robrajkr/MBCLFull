@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Dealer Offering</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Dealer Offerings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Campaign Offering --></label>
+        <name>Campaign_Offering__c</name>
+        <relationshipLabel><!-- Dealer Offerings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer --></label>
+        <name>Dealer__c</name>
+        <relationshipLabel><!-- Dealer Offerings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Package Item --></label>
+        <name>Package_Item__c</name>
+        <relationshipLabel><!-- Dealer Offerings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Session End Date --></label>
+        <name>Session_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session Start Date --></label>
+        <name>Session_Start_Date__c</name>
+    </fields>
+    <layouts>
+        <layout>Dealer Offering Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

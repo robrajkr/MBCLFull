@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>PMO: Connect requirement and user story</description>
+    <enableActivities>true</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Requirement_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Requirement Description</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Requirement__c</fullName>
+        <description>lookup requirement</description>
+        <externalId>false</externalId>
+        <label>Requirement</label>
+        <referenceTo>Requirement_UserStory__c</referenceTo>
+        <relationshipLabel>Requirement - User Story</relationshipLabel>
+        <relationshipName>Requirement_User_Story_Requirement</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>User_Story_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>User Story Detail</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>User_Story__c</fullName>
+        <externalId>false</externalId>
+        <label>User Story</label>
+        <referenceTo>Requirement_UserStory__c</referenceTo>
+        <relationshipLabel>Requirement - User Story</relationshipLabel>
+        <relationshipName>Requirement_User_Story_User_Story</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <label>Requirement - User Story</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Requirement__c</columns>
+        <columns>User_Story__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>R&amp;U-{000000}</displayFormat>
+        <label>R&amp;U Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Requirement - User Story</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Requirement__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>User_Story__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Requirement__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>User_Story__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Requirement__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>User_Story__c</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Requirement__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>User_Story__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

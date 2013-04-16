@@ -1,0 +1,54 @@
+<apex:page standardController="Account" extensions="AccountMergeController"
+    showHeader="false" sidebar="false" readOnly="true">
+    <style>
+        a {
+            color: #015BA7;
+            text-decoration: none;
+        }
+        
+        body a:hover {
+           text-decoration: underline;
+           color: #015BA7;
+        }
+        
+        .compare_table tr:first-child {
+            background-color: #DFE8F6;
+        }
+        
+        /* If showHeader is false, we need this to display section header */
+        .pageTitleIcon {
+            background-image: url(/img/icon/perAccounts32.png);
+            background-position: 0 0;
+            width: 32px;
+            height: 32px;
+        }
+    </style>
+    
+    <apex:sectionHeader title="Master Account" subtitle="{!master.Name}"/>
+    <apex:form id="theForm">
+        <apex:pageBlock title="Suspected Duplicates" id="resultBlock">
+            <apex:pageBlockButtons id="pb_btn" rendered="{!NOT(hasSuspectAccounts)}">
+                <apex:actionRegion >
+                    <apex:commandButton value="Cancel" action="{!Cancel}" id="cancel_btn" />
+                </apex:actionRegion>
+            </apex:pageBlockButtons>
+            
+            <apex:pageMessages />
+            
+            <apex:pageblockTable value="{!slaves}" var="slave" rendered="{!hasSuspectAccounts}" styleclass="compare_table">
+                <apex:column headerValue="Merge Action">
+                    <apex:outputPanel rendered="{!NOT(slave.Master_Record__c)}">
+                        <a href="/apex/AccountMerge?Id={!master.Id}&slaveId={!slave.Id}&retURL=/apex/SelectSlaveAccount?Id={!master.Id}">
+                            Merge</a>
+                    </apex:outputPanel>
+                </apex:column>
+                
+                <apex:repeat value="{!$ObjectType.Account.FieldSets.SuspectAccountFields}" var="column">
+                    <apex:column value="{!slave[column]}" />
+                </apex:repeat>
+            </apex:pageblockTable>
+            
+        </apex:pageBlock>
+
+    </apex:form>
+</apex:page>

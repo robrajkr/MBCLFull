@@ -1,0 +1,158 @@
+<apex:page standardController="SMS__c" extensions="SMSControllerExtension" id="page"> 
+    <apex:includeScript value="/support/console/27.0/integration.js"/>
+    <apex:includeScript value="/soap/ajax/27.0/apex.js"/>
+    <script type="text/javascript">
+        function setMobileCheckbox(id)
+        {
+            if(document.getElementById(id).checked)
+            {
+                if("{!customer.PersonMobilePhone}" == '' || "{!customer.PersonMobilePhone}" == null)
+                {
+                    alert('Mobile is null, you couldn\'t choose it');
+                    document.getElementById(id).checked = false;
+                }
+                else
+                {
+                    document.getElementById(id.replace('1', '2').replace('1', '2')).checked = false;
+                }
+            }
+            else
+            {
+                if("{!customer.Second_Mobile__c}" == '' || "{!customer.Second_Mobile__c}" == null)
+                {
+                    alert('Secondary mobile is null, you couldn\'t choose it');
+                    document.getElementById(id.replace('1', '2').replace('1', '2')).checked = false;
+                }
+                else
+                {
+                    document.getElementById(id.replace('1', '2').replace('1', '2')).checked = true;
+                }
+            }
+        }
+        function setMobileCheckbox2(id)
+        {
+            if(document.getElementById(id).checked)
+            {
+                if("{!customer.Second_Mobile__c}" == '' || "{!customer.Second_Mobile__c}" == null)
+                {
+                    alert('Secondary mobile is null, you couldn\'t choose it.');
+                    document.getElementById(id).checked = false;
+                }
+                else
+                {
+                    document.getElementById(id.replace('2', '1').replace('2', '1')).checked = false;
+                }
+            }
+            else
+            {
+                if("{!customer.PersonMobilePhone}" == '' || "{!customer.PersonMobilePhone}" == null)
+                {
+                    alert('Mobile is null, you couldn\'t choose it');
+                    document.getElementById(id).checked = false;
+                }
+                else
+                {
+                    document.getElementById(id.replace('2', '1').replace('2', '1')).checked = true;
+                }   
+            }
+        }
+
+        function CloseTab() {
+            sforce.console.getEnclosingTabId(closeSubtab);
+            sforce.console.refreshPrimaryTabById("{!$Request.tabId}", true, refreshSuccess );
+        }
+        var closeSubtab = function closeSubtab(result) {
+            var tabId = result.id;
+            sforce.console.closeTab(tabId);
+        };
+        
+        var refreshSuccess = function refreshSuccess(result) { };
+
+        function SendAndClose()
+        {
+            if (sforce.console.isInConsole()) {
+                var message = document.getElementById('page:theForm:smsBlock:smsPreview:message').value;
+                if(message != null && message != '') {
+                    sendSMS();
+                    setTimeout('CloseTab()', '500');
+                }
+                else {
+                    alert('You need to select one template.');
+                }
+            }
+            else {
+                sendSMS();
+            }
+        }
+        
+    </script>
+    <apex:sectionHeader title="SMS" />
+    <apex:form id="theForm">
+        <apex:actionFunction action="{!send}" name="sendSMS"/>
+        <apex:pageMessages />
+        <apex:pageBlock mode="edit" title="SMS Send" id="smsBlock" >
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Send" onClick="SendAndClose();"/>
+                <apex:commandButton value="Cancel" immediate="true" onclick="CloseTab();"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Information" columns="2" id="smsBlockSection">
+                <apex:outputField value="{!sms.CustomerName__c}"/>
+                
+                <apex:pageBlockSectionItem labelstyle="label" datastyle="inputText" id="smsBlockSectionItem1">
+                    <apex:outputPanel >
+                        <b><apex:outputLabel value="Mobile"/></b>
+                    </apex:outputPanel>       
+                    <apex:outputPanel id="smsBlockSectionItemPanel1">
+                        <apex:inputField value="{!sms.Mobile__c}" id="smsBlockSectionItemPanel1Mobile" onchange="setMobileCheckbox(this.id);"/> 
+                        <apex:outputField value="{!customer.PersonMobilePhone}"/>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                
+                <apex:inputField value="{!sms.Dealer__c}"/>
+                
+                <apex:pageBlockSectionItem labelstyle="label" datastyle="inputText" id="smsBlockSectionItem2">
+                    <apex:outputPanel >
+                        <b><apex:outputLabel value="Secondary Mobile"/></b>
+                    </apex:outputPanel>       
+                    <apex:outputPanel id="smsBlockSectionItemPanel2">
+                        <apex:inputField value="{!sms.Secondary_Mobile__c}" id="smsBlockSectionItemPanel2Mobile" onchange="setMobileCheckbox2(this.id);"/> 
+                        <apex:outputField value="{!customer.Second_Mobile__c}"/>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem> 
+                
+                <apex:pageBlockSectionItem labelstyle="label" datastyle="inputText">
+                    <apex:outputPanel >
+                        <b><apex:outputLabel style="align:right;" for="templateList" value="SMS Templates"/></b>
+                    </apex:outputPanel>       
+                    <apex:outputPanel layout="block" styleClass="requiredInput">
+                        <apex:outputPanel layout="block" styleClass="requiredBlock" rendered="true"></apex:outputPanel>
+                        <apex:outputPanel >
+                            <apex:selectList id="templateList" value="{!templateId}" size="1" styleClass="requiredInput"> 
+                                <apex:selectOptions value="{!Templates}"/>
+                                <apex:actionSupport event="onchange" action="{!parseTemplateMessage}" rerender="theForm" status="status"/>
+                            </apex:selectList>   
+                            <apex:actionStatus id="status" Style="">  
+                                <apex:facet name="start">
+                                   <img src="/img/loading.gif" />&nbsp;<span style="color:red;">Loading...</span>
+                                </apex:facet>
+                            </apex:actionStatus>
+                        </apex:outputPanel>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>                
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="SMS Preview" columns="1" id="smsPreview">
+                <apex:outputPanel >
+                    <table width="100%">
+                        <tr>
+                            <td width="16%" align="right"><b><apex:outputLabel value="SMS Preview"/></b></td>
+                            <td width="2%" align="center"></td>
+                            <td width="80%" align="left">
+                                <apex:inputTextarea id="message" value="{!templateMessage}" Style="width:500px" rows="5"/>
+                            </td>
+                        </tr>
+                    </table>
+                </apex:outputPanel>
+            </apex:pageBlockSection>
+        </apex:pageBlock>      
+    </apex:form>
+</apex:page>

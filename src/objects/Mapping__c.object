@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Data Dictionary Tool:  Field level mapping for the &quot;system to system&quot; integrations</description>
+    <enableActivities>false</enableActivities>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <fields>
+        <fullName>Description__c</fullName>
+        <description>Can be used to describe more complex mapping logic.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Can be used to describe more complex mapping logic.</inlineHelpText>
+        <label>Description</label>
+        <length>32768</length>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Interface__c</fullName>
+        <description>Interface for this field level mapping</description>
+        <externalId>false</externalId>
+        <label>Interface</label>
+        <referenceTo>Interface__c</referenceTo>
+        <relationshipLabel>Mappings</relationshipLabel>
+        <relationshipName>Mappings</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Source_Field__c</fullName>
+        <description>Source system field for the integration mapping</description>
+        <externalId>false</externalId>
+        <label>Source Field</label>
+        <referenceTo>ObjectField__c</referenceTo>
+        <relationshipLabel>Mappings</relationshipLabel>
+        <relationshipName>Mappings</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Source__c</fullName>
+        <externalId>false</externalId>
+        <formula>Source_Field__r.UniqueID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Source</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Target_Field__c</fullName>
+        <description>Target system field for the integration mapping... If the mapping is complex then add the logic under the description..</description>
+        <externalId>false</externalId>
+        <label>Target Field</label>
+        <referenceTo>ObjectField__c</referenceTo>
+        <relationshipLabel>Mappings (Target Field)</relationshipLabel>
+        <relationshipName>Mappings1</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Target__c</fullName>
+        <externalId>false</externalId>
+        <formula>Target_Field__r.UniqueID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Target</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transformation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Mapping requires some data transformation by the integration layer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Mapping requires some data transformation by the integration layer</inlineHelpText>
+        <label>Transformation</label>
+        <type>Checkbox</type>
+    </fields>
+    <label>Mapping</label>
+    <nameField>
+        <displayFormat>MAP-{00000}</displayFormat>
+        <label>MapID</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Mappings</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

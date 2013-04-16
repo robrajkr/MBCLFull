@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Requirement_UserStory__c.assign_to_BA_user__c</field>
+    </columns>
+    <columns>
+        <field>Requirement_UserStory__c.Ref_BQ__c</field>
+    </columns>
+    <columns>
+        <field>Requirement_UserStory__c.Ref_Process_UC__c</field>
+    </columns>
+    <columns>
+        <field>Requirement_UserStory__c.Module_Object__c</field>
+    </columns>
+    <columns>
+        <field>Requirement_UserStory__c.Requirement_Description__c</field>
+    </columns>
+    <columns>
+        <field>Requirement_UserStory__c.High_Level_Solution__c</field>
+    </columns>
+    <columns>
+        <field>Requirement_UserStory__c.Remark_Question_by_BA__c</field>
+    </columns>
+    <columns>
+        <field>Requirement_UserStory__c.Status__c</field>
+    </columns>
+    <description>Account and Account related information requirement</description>
+    <filter>
+        <criteriaItems>
+            <column>Requirement_UserStory__c.assign_to_BA_user__c</column>
+            <operator>contains</operator>
+            <value>Huang</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>HXQ - Account requirement</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Requirement_UserStory__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Requirement_UserStory__c.Ref_BQ__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Requirement_UserStory__c.Dev_Completed__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

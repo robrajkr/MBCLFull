@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Status Report</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Status Reports</value>
+    </caseValues>
+    <fields>
+        <help><!-- Describes tasks completed during the past week --></help>
+        <label><!-- Accomplishments this Period --></label>
+        <name>Accomplishments_this_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget Status --></label>
+        <name>Budget_Status__c</name>
+        <picklistValues>
+            <masterLabel>At Risk</masterLabel>
+            <translation><!-- At Risk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Schedule</masterLabel>
+            <translation><!-- On Schedule --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Potential Risk</masterLabel>
+            <translation><!-- Potential Risk --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Budget --></label>
+        <name>Budget__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Distribution List --></label>
+        <name>Client_Distribution_List__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cust Sat --></label>
+        <name>Cust_Sat__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Name --></label>
+        <name>Customer_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rate the level of Customer Satisfaction as perceived by the Project Executive Sponsor --></help>
+        <label><!-- Customer Satisfaction --></label>
+        <name>Customer_Satisfaction__c</name>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yellow</masterLabel>
+            <translation><!-- Yellow --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Detail Due Date --></label>
+        <name>Detail_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Iteration --></label>
+        <name>Iteration__c</name>
+        <relationshipLabel><!-- Status Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Overall Status --></label>
+        <name>Overall_Status__c</name>
+        <picklistValues>
+            <masterLabel>At Risk</masterLabel>
+            <translation><!-- At Risk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Schedule</masterLabel>
+            <translation><!-- On Schedule --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Potential Risk</masterLabel>
+            <translation><!-- Potential Risk --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Overall --></label>
+        <name>Overall__c</name>
+    </fields>
+    <fields>
+        <label><!-- PHC Name --></label>
+        <name>PHC_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Describes tasks not completed but were planned to be done --></help>
+        <label><!-- Planned, but Not Accomplished --></label>
+        <name>Planned_but_Not_Accomplished__c</name>
+    </fields>
+    <fields>
+        <help><!-- Describes tasks that are planned to be undertaken next week --></help>
+        <label><!-- Planned for Next Period --></label>
+        <name>Planned_for_Next_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Id --></label>
+        <name>Project_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Overview --></label>
+        <name>Project_Overview__c</name>
+        <relationshipLabel><!-- Status Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- PM: How are we progressing vs. the agreed upon project timeline? --></help>
+        <label><!-- Project Schedule --></label>
+        <name>Project_Schedule__c</name>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yellow</masterLabel>
+            <translation><!-- Yellow --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- PM: How close are we to the latest approved scope (i.e. original SOW + latest CO&apos;s) --></help>
+        <label><!-- Project Scope --></label>
+        <name>Project_Scope__c</name>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yellow</masterLabel>
+            <translation><!-- Yellow --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Report Date --></label>
+        <name>Report_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Status --></label>
+        <name>Resource_Status__c</name>
+        <picklistValues>
+            <masterLabel>At Risk</masterLabel>
+            <translation><!-- At Risk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Schedule</masterLabel>
+            <translation><!-- On Schedule --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Potential Risk</masterLabel>
+            <translation><!-- Potential Risk --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>Resource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesforce.com Distribution List --></label>
+        <name>Salesforce_com_Distribution_List__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sched --></label>
+        <name>Sched__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scope --></label>
+        <name>Scope__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-Process</masterLabel>
+            <translation><!-- In-Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request Update from Track Owners</masterLabel>
+            <translation><!-- Request Update from Track Owners --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <label><!-- Centralized --></label>
+        <name>Centralized</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Distributed --></label>
+        <name>Distributed</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

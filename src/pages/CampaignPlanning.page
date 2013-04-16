@@ -1,0 +1,189 @@
+<apex:page controller="CampaignPlanningController" showHeader="true" sidebar="false" tabStyle="Campaign">
+    <script>
+       function checkAll(cb, index){
+            var inputElem = document.getElementsByTagName("input");
+            for(var i=0; i < inputElem.length; i++){
+                if(inputElem[i].id.indexOf("checkedone" + index)!=-1)
+                inputElem[i].checked = cb.checked;
+            }
+        }
+        
+       function CloseWindow() {
+           var cpId = "{!$CurrentPage.parameters.id}";
+           if(window.opener != null) {
+               window.opener.location.href = '/' + cpId;
+               if (window.opener.progressWindow)
+               {
+                    window.opener.progressWindow.close();
+               }
+               window.close(); 
+           } else {
+            window.location.href = '/' + cpId;
+           }          
+       }
+       
+       function cancelBtn() {
+        var cpId = "{!$CurrentPage.parameters.id}";
+        if(window.opener != null) {
+            if (window.opener.progressWindow)
+               {
+                    window.opener.progressWindow.close();
+               }
+           window.close();
+        } else {
+            window.location.href = '/' + cpId;  
+        }
+       }
+       
+        var disableBtn = function(val) {
+            var objs = document.getElementsByTagName("input");
+            for(var i = 0; i < objs.length; i++){
+                if(objs[i].type=="submit" || objs[i].type=="button"){
+                    if(objs[i].value==val){
+                        objs[i].disabled=true;
+                        objs[i].className="btnDisabled"; 
+                    }
+                }
+            }
+        }
+        
+       var enableBtn = function(val) {
+            var objs = document.getElementsByTagName("input");
+            for(var i = 0; i < objs.length; i++){
+                if(objs[i].type=="submit" || objs[i].type=="button"){
+                    if(objs[i].value==val){
+                        objs[i].disabled=false;
+                        objs[i].className="btn"; 
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .margin {
+            margin: 10px;
+        }
+        
+        label.margin {
+            font-weight: bold;
+        }
+        
+        a {
+            color: #015BA7;
+            text-decoration: none;
+            
+        }
+        
+        body a:hover {
+           text-decoration: underline;
+           color: #015BA7;
+        }
+        
+        .textNoData {
+            font-size: 14px;
+            margin-left: 8px;
+        }
+        
+        .listbox {
+            margin:auto;
+        }
+        
+        .listbox td {
+            vertical-align:top;
+        }
+        
+        .cbtn {
+            margin-left:20px;
+        }
+    </style>
+    <apex:sectionHeader title="{!$Label.Campaing_Planning_Page_Title}" subtitle="{!$Label.Campaign_Planning_Page_Subtitle}"/>
+    <apex:form style="width:50%, 50%">
+        <apex:pageMessages />
+        <apex:panelGrid styleClass="listbox" width="100%">
+        <apex:panelGrid columns="2" id="theGrid" styleClass="listbox" width="100%">
+        <apex:panelGrid styleClass="listbox" width="100%"> 
+            <apex:pageBlock title="{!$Label.Campaign_Planning_Page_Select_Region}">
+                <apex:inputField id="region" value="{!myCampaign.Participating_Region_Province__c}" styleClass="margin" />
+                <apex:commandButton style="width:120px;" action="{!selectRegion}" value="{!$Label.Campaign_Planning_Page_Query_Button}" rerender="region,cityListPanel, queryDealers, dealerListPanel" status="queryStatus" />
+            </apex:pageBlock>
+            <apex:pageBlock id="cityListPanel" title="{!$Label.Campaign_Planning_Page_Select_Cities}">
+                <apex:pageBlockTable value="{!DealerCityList}" var="city" id="cityList">
+                    <apex:column headerValue="Select" width="25px">
+                        <apex:facet name="header">
+                            <apex:inputCheckbox >
+                                <apex:actionsupport event="onclick" onsubmit="checkAll(this, 1)" rerender="salesforce"/>
+                            </apex:inputCheckbox>
+                        </apex:facet>
+                        <apex:inputCheckbox value="{!city.isChecked}" id="checkedone1"> 
+                            <apex:actionsupport event="onclick" rerender="salesforce" />
+                        </apex:inputCheckbox>    
+                    </apex:column>   
+                    <apex:column >
+                        <apex:facet name="header">{!$Label.Campaign_Planning_Page_Region_Header}</apex:facet>{!city.dealerCity.Region__c}
+                    </apex:column>     
+                    <apex:column >
+                        <apex:facet name="header">{!$Label.Campaign_Planning_Page_Province_Header}</apex:facet>{!city.dealerCity.Province__c}
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">{!$Label.Campaign_Planning_Page_City_Header}</apex:facet>{!city.dealerCity.name}
+                    </apex:column>                                  
+                </apex:pageBlockTable>
+                <apex:actionStatus id="queryStatus">
+                 <apex:facet name="start">
+                     <div style="margin-left:auto; margin-right:auto;">
+                         <img src="/img/loading24.gif" style="vertical-align:middle;"/>
+                         <span style="margin-left: 10px; font-size: 12px; font-weight: bold; color: #000000;">
+                             {!$Label.Campaign_Planning_Page_Status}</span>
+                     </div>
+                 </apex:facet>      
+                </apex:actionStatus>
+                <apex:outputText styleClass="textNoData" value="{!$Label.l_NoDataFound}" rendered="{!DealerCityList.size == 0}"/><br />
+                <apex:commandButton style="width:120px;" value="{!$Label.Campaign_Planning_Page_Select_Dealer_Button}" id="queryDealers" action="{!queryDealers}" rerender="dealerListPanel" status="querydealerStatus" disabled="{!DealerCityList.size == 0}"/>             
+                </apex:pageBlock>                
+            </apex:panelGrid>
+            <apex:panelGrid styleClass="listbox" width="100%">
+                <apex:pageBlock id="dealerListPanel" title="{!$Label.Campaign_Planning_Page_Select_Dealers}">
+                <apex:pageBlockTable value="{!partiDealerList}" var="parti" id="partiList">
+                    <apex:column headerValue="Select" width="25px">
+                        <apex:facet name="header">
+                            <apex:inputCheckbox >
+                                <apex:actionsupport event="onclick" onsubmit="checkAll(this, 2)" rerender="salesforce"/>
+                            </apex:inputCheckbox>
+                        </apex:facet>
+                        <apex:inputCheckbox value="{!parti.isChecked}" id="checkedone2"> 
+                            <apex:actionsupport event="onclick" rerender="salesforce" />
+                        </apex:inputCheckbox>    
+                    </apex:column>                                    
+                    <apex:column >
+                        <apex:facet name="header">{!$Label.Campaign_Planning_Page_Region_Header}</apex:facet>{!parti.dealer.Dealer_Region__c}
+                    </apex:column>            
+                    <apex:column >
+                        <apex:facet name="header">{!$Label.Campaign_Planning_Page_Province_Header}</apex:facet>{!parti.dealer.Province__c}
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">{!$Label.Campaign_Planning_Page_City_Header}</apex:facet>{!parti.dealer.Dealer_City_EN__c}
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">{!$Label.Campaign_Planning_Page_Name_Header}</apex:facet><a target="_blank" href="/{!parti.dealer.Id}">{!parti.dealer.Name}</a>
+                    </apex:column>      
+                </apex:pageBlockTable>
+                <apex:actionStatus id="querydealerStatus">
+                 <apex:facet name="start">
+                     <div style="margin-left:auto; margin-right:auto;">
+                         <img src="/img/loading24.gif" style="vertical-align:middle;"/>
+                         <span style="margin-left: 10px; font-size: 12px; font-weight: bold; color: #000000;">
+                             {!$Label.Campaign_Planning_Page_Status}</span>
+                     </div>
+                 </apex:facet>      
+                </apex:actionStatus>
+                <apex:outputText styleClass="textNoData" value="{!$Label.l_NoDataFound}" rendered="{!partiDealerList.size == 0}"/><br />                        
+            </apex:pageBlock>
+        </apex:panelGrid>
+        </apex:panelGrid>
+        </apex:panelGrid>
+        <center>
+        <apex:commandButton style="margin-left:20px; width:120px;" value="{!$Label.Campaign_Planning_Page_Save_Button}" onclick="disableBtn(this.value)" action="{!Save}" oncomplete="CloseWindow()" />
+        <apex:commandButton style="margin-left:20px; width:120px;" value="{!$Label.Campaign_Planning_Page_Cancel_Button}" action="{!cancel}" oncomplete="cancelBtn()" />                       
+    	</center>
+    </apex:form>
+</apex:page>

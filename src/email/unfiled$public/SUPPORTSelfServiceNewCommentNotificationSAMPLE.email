@@ -1,0 +1,1 @@
+个案编号 {!Case.CaseNumber}：{!Case.Subject}已更新。请单击以下链接以查看自助入口网站上的此个案。<在此处插入您的自助入口网站登录页链接>  {!Organization.Name}客户支持

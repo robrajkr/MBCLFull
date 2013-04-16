@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>向自助客户发送以通知他们已将公共注释添加到其个案的示例电子邮件模板。</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>支持：自助新注释通知（示例）</name>
+    <style>none</style>
+    <subject>个案 {!Case.CaseNumber} 已更新</subject>
+    <type>text</type>
+</EmailTemplate>

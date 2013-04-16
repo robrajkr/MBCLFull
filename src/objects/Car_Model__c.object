@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Knowledge: This object is to store Car Model info to be used in DM and Car Model comparison.</description>
+    <enableActivities>false</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <fields>
+        <fullName>Brand__c</fullName>
+        <externalId>false</externalId>
+        <label>Brand</label>
+        <picklist>
+            <picklistValues>
+                <fullName>MB</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Model__c</fullName>
+        <externalId>false</externalId>
+        <label>Model</label>
+        <picklist>
+            <picklistValues>
+                <fullName>A160</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>A180</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B180 BlueEFFICIENCY</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B200</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B200 BlueEFFICIENCY</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B200 Sports Model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B200 fashion model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B200 luxury model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B200 豪华型 夜行独享版</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C180K 经典型 (CKD)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C180K 经典型</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C200 CGI优雅型</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C200 CGI时尚型</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C200 Entry Elegance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C200 优雅型</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C200 旅行轿车</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C200 fashion model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C200 时尚型旅行轿车</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C200 luxury model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C200K</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C200K grace model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C200K fashion model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C200K sports car (not current series)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C230</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C230 grace model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C230 fashion model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C230 sports car (not current series)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C240 (not current series)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C240A fashion model (not current series)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C240E  grace model (not current series)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C260</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C260 CGI fashion model(CKD)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C260 CGI sports(CKD)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C260 时尚型</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C280</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C280 Avantgarde</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C280 fashion model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C300</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C300 fashion model(CKD)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C300 sports(CKD)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C300 时尚型</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CL600</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLK200K</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLK200K (not current series)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLK200K coupe roadster</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLK200K coupe roadster (not current series)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLK200K sports car</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLK200K sports car (not current series)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLK240 (not current series)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLK240 coupe roadster (not current series)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLK240 sports car (not current series)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLK280</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLK280 coupe roadster</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLK280 sports car</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLK350</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLK350 coupe roadster</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLK350 sports car</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLK500 (not current series)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLK500 coupe roadster (not current series)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLK500 sports car (not current series)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLS300</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLS350</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLS500</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E200</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E200 CGI grace model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E200 Coupe</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E200K</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E200K (not current series)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E200K grace model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E200L CGI elegant type</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E230</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E230 grace model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E230 fashion model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E240 (not current series)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E240 grace model (not current series)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E240 fashion model (not current series)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E260</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E260 CGI Cabriolet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E260 CGI fashion model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E260 L CGI elegant type(CKD)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E260 L CGI fashion model(CKD)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E260 coupe sports model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E260 sports model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E280</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E280 (not current series)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E280 personality sports model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E280 grace model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E280 fashion model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E300</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E300L fashion type honourable edition(CKD)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E300L fashion model(CKD)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E300 grace model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E300 elegant luxury model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E300 fashion model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E300 fashion luxury model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E300L elegant type</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E320 (not current series)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E320 grace model (not current series)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E320 fashion model (not current series)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E350</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E350 grace model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E350 coupe sports model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E350 Cabriolet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E350 fashion model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E350 sports grace model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E350 sports fashion model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E500 (not current series)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E500 grace model (not current series)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E500 fashion model (not current series)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Series__c</fullName>
+        <externalId>false</externalId>
+        <label>Series</label>
+        <picklist>
+            <picklistValues>
+                <fullName>A-Class</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B-Class</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C-Class</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CL-Class</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLK-Class</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLS-Class</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E-Class</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>G-Class</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GL-Class</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GLK-Class</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ML-Class</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>R-Class</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>S-Class</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <label>Car Model</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Brand__c</columns>
+        <columns>Model__c</columns>
+        <columns>Series__c</columns>
+        <columns>Description__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Car Model Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Car Model</pluralLabel>
+    <searchLayouts>
+        <lookupPhoneDialogsAdditionalFields>Model__c</lookupPhoneDialogsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+</CustomObject>

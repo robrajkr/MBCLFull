@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Aftersales</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Aftersales</value>
+    </caseValues>
+    <fields>
+        <help><!-- The branch of the dealer --></help>
+        <label><!-- Service Branch --></label>
+        <name>Service_Branch__c</name>
+    </fields>
+    <fields>
+        <help><!-- Job code for the service type --></help>
+        <label><!-- Service Code --></label>
+        <name>Service_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- The service consultant involved in the service --></help>
+        <label><!-- Service Consultant --></label>
+        <name>Service_Consultant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service_Contact --></label>
+        <name>Service_Contact__c</name>
+        <relationshipLabel><!-- Aftersales (Service_Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The service content for this aftersale, e.g. repair, paint --></help>
+        <label><!-- Service Content --></label>
+        <name>Service_Content__c</name>
+        <picklistValues>
+            <masterLabel>Body &amp; paint repair</masterLabel>
+            <translation><!-- Body &amp; paint repair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repair</masterLabel>
+            <translation><!-- Repair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Routine Service</masterLabel>
+            <translation><!-- Routine Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Routine Service incl. repair</masterLabel>
+            <translation><!-- Routine Service incl. repair --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The date when the vehicle comes in for service --></help>
+        <label><!-- Service Date In --></label>
+        <name>Service_Date_In__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date when complete the service and send vehicle back to customer --></help>
+        <label><!-- Service Date Out --></label>
+        <name>Service_Date_Out__c</name>
+    </fields>
+    <fields>
+        <help><!-- Service/Invoice date --></help>
+        <label><!-- Service Date --></label>
+        <name>Service_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Code of the dealer that deliver the service --></help>
+        <label><!-- Service Dealer --></label>
+        <name>Service_Dealer__c</name>
+        <relationshipLabel><!-- Aftersales (Service Dealer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Detailed description of service --></help>
+        <label><!-- Service Details --></label>
+        <name>Service_Details__c</name>
+    </fields>
+    <fields>
+        <help><!-- Value Currency for Invoice --></help>
+        <label><!-- Service Invoice Currency --></label>
+        <name>Service_Invoice_Currency__c</name>
+        <picklistValues>
+            <masterLabel>EUR</masterLabel>
+            <translation><!-- EUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HKD</masterLabel>
+            <translation><!-- HKD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JPY</masterLabel>
+            <translation><!-- JPY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RMB</masterLabel>
+            <translation><!-- RMB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USD</masterLabel>
+            <translation><!-- USD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Invoice number for the service --></help>
+        <label><!-- Service Invoice Number --></label>
+        <name>Service_Invoice_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Invoice amount for the service --></help>
+        <label><!-- Service Invoice Value --></label>
+        <name>Service_Invoice_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Mileage at service time --></help>
+        <label><!-- Service Mileage --></label>
+        <name>Service_Mileage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service PaymentStatus Reason --></label>
+        <name>Service_PaymentStatus_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Goodwill</masterLabel>
+            <translation><!-- Goodwill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warranty</masterLabel>
+            <translation><!-- Warranty --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Whether the service was paid in full, in part of not at all --></help>
+        <label><!-- Service Payment Status --></label>
+        <name>Service_Payment_Status__c</name>
+        <picklistValues>
+            <masterLabel>Full</masterLabel>
+            <translation><!-- Full --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partially</masterLabel>
+            <translation><!-- Partially --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Position number (for several items in the service) --></help>
+        <label><!-- Service Position --></label>
+        <name>Service_Position__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Vehicle --></label>
+        <name>Service_Vehicle__c</name>
+        <relationshipLabel><!-- Aftersales --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Validity --></label>
+        <name>Valid__c</name>
+    </fields>
+    <layouts>
+        <layout>CAC Aftersales</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Invoice Infomation --></label>
+            <section>Invoice Infomation</section>
+        </sections>
+        <sections>
+            <label><!-- Payment Information --></label>
+            <section>Payment Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Service No.</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Dealer_Default_Flag__c</field>
+    </columns>
+    <columns>
+        <field>Account.Dealer_DMS_AS_Code__c</field>
+    </columns>
+    <columns>
+        <field>Account.Dealer_DMS_AS_Code_2__c</field>
+    </columns>
+    <columns>
+        <field>Account.Dealer_DMS_CRM_Code__c</field>
+    </columns>
+    <columns>
+        <field>Account.Dealer_DMS_CRM_Code_2__c</field>
+    </columns>
+    <columns>
+        <field>Account.Dealer_DMS_SR_Code__c</field>
+    </columns>
+    <columns>
+        <field>Account.Dealer_DMS_SR_Code_2__c</field>
+    </columns>
+    <description>Report for dealers, which do not have a province or a city CN. The report should be available to the dealer management team.</description>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Account.Dealer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Province__c</column>
+            <operator>equals</operator>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.City_CN__c</column>
+            <operator>equals</operator>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Dealer Without Province Or City CN</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2013-03-27</startDate>
+    </timeFrameFilter>
+</Report>

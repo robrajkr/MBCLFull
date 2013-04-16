@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Car Enquiry</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Car Enquiry</value>
+    </caseValues>
+    <fields>
+        <label><!-- Car Brand --></label>
+        <name>Car_Brand__c</name>
+    </fields>
+    <fields>
+        <label><!-- Car Model --></label>
+        <name>Car_Model__c</name>
+        <relationshipLabel><!-- Car Enquiry --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Car Series --></label>
+        <name>Car_Series__c</name>
+        <picklistValues>
+            <masterLabel>A-Class</masterLabel>
+            <translation><!-- A-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMG</masterLabel>
+            <translation><!-- AMG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B-Class</masterLabel>
+            <translation><!-- B-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C-Class</masterLabel>
+            <translation><!-- C-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CL-Class</masterLabel>
+            <translation><!-- CL-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLK-Class</masterLabel>
+            <translation><!-- CLK-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLS-Class</masterLabel>
+            <translation><!-- CLS-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-Class</masterLabel>
+            <translation><!-- E-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G-Class</masterLabel>
+            <translation><!-- G-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GL-Class</masterLabel>
+            <translation><!-- GL-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GLK-Class</masterLabel>
+            <translation><!-- GLK-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ML-Class</masterLabel>
+            <translation><!-- ML-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R-Class</masterLabel>
+            <translation><!-- R-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S-Class</masterLabel>
+            <translation><!-- S-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SL-Class</masterLabel>
+            <translation><!-- SL-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SLK-Class</masterLabel>
+            <translation><!-- SLK-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Smart</masterLabel>
+            <translation><!-- Smart --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case Number --></label>
+        <name>Case_Number__c</name>
+        <relationshipLabel><!-- Car Enquiry --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Car Enquiry Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

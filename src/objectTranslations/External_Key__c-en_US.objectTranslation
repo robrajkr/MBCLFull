@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>External Key</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>External Key</value>
+    </caseValues>
+    <fields>
+        <help><!-- The integration layer (EP) needs this field for defect handling and debugging: --></help>
+        <label><!-- CreatedByEpTransaction --></label>
+        <name>CreatedByEpTransaction__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

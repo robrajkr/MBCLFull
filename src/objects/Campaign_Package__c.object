@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Campaign: Combination of campaign offerings</description>
+    <enableActivities>false</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Campaign__c</fullName>
+        <externalId>false</externalId>
+        <label>Campaign</label>
+        <referenceTo>Campaign</referenceTo>
+        <relationshipLabel>Campaign Packages</relationshipLabel>
+        <relationshipName>Campaign_Packages_del</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Package_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Package Description</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Package_Items__c</fullName>
+        <externalId>false</externalId>
+        <label>Package Items</label>
+        <summaryForeignKey>Package_Item__c.Package_Name__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <label>Campaign Package</label>
+    <nameField>
+        <label>Package Name</label>
+        <type>Text</type>
+    </nameField>
+    <namedFilters>
+        <fullName>nf_01IN0000000CrmwMAC_00NN0000000Ukj6MAC</fullName>
+        <active>false</active>
+        <errorMessage>The campaign package does not belong to the participanting dealer&apos;s campaign.</errorMessage>
+        <field>Participating_Dealer__c.Campaign_Package__c</field>
+        <filterItems>
+            <field>Campaign_Package__c.Campaign__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Campaign__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+        <name>Participating Dealer_Campaign Package</name>
+        <sourceObject>Participating_Dealer__c</sourceObject>
+    </namedFilters>
+    <pluralLabel>Campaign Packages</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

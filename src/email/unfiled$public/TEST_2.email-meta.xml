@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>TEST only - for demo purposes</description>
+    <encodingKey>GB2312</encodingKey>
+    <letterhead>test_letterhead</letterhead>
+    <name>TEST 2</name>
+    <style>newsletter</style>
+    <subject>Thank you for your request for information..</subject>
+    <textOnly>Dear {!Contact.LastName}
+This is the follow up For more info
+Mailing Address:
+{!Contact.MailingAddress}</textOnly>
+    <type>html</type>
+</EmailTemplate>

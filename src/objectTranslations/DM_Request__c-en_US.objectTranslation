@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>DM Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>DM Request</value>
+    </caseValues>
+    <fields>
+        <label><!-- Actual DM Material1 --></label>
+        <name>Actual_DM_Material1__c</name>
+        <relationshipLabel><!-- DM Request (Actual DM Material1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Actual DM Material2 --></label>
+        <name>Actual_DM_Material2__c</name>
+        <relationshipLabel><!-- DM Request (Actual DM Material2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Actual DM Material3 --></label>
+        <name>Actual_DM_Material3__c</name>
+        <relationshipLabel><!-- DM Request (Actual DM Material3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign --></label>
+        <name>Campaign__c</name>
+        <relationshipLabel><!-- DM Request --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Car Model --></label>
+        <name>Car_Model__c</name>
+        <relationshipLabel><!-- DM Request --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case Number --></label>
+        <name>Case_Number__c</name>
+        <relationshipLabel><!-- DM Request --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comment --></label>
+        <name>Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- DM Request --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer Name --></label>
+        <name>Customer_Name__c</name>
+        <relationshipLabel><!-- DM Request --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DM Request External Id --></label>
+        <name>DM_Request_External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected DM Material1 --></label>
+        <name>Expected_DM_Material1__c</name>
+        <relationshipLabel><!-- DM Request (Expected DM Material1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Expected DM Material2 --></label>
+        <name>Expected_DM_Material2__c</name>
+        <relationshipLabel><!-- DM Request (Expected DM Material2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Expected DM Material3 --></label>
+        <name>Expected_DM_Material3__c</name>
+        <relationshipLabel><!-- DM Request (Expected DM Material3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Home Phone --></label>
+        <name>Home_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>Lead__c</name>
+        <relationshipLabel><!-- DM Request --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile --></label>
+        <name>Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Office Phone --></label>
+        <name>Office_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Address --></label>
+        <name>Primary_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Province --></label>
+        <name>Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Second Mobile --></label>
+        <name>Second_Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- SentName --></label>
+        <name>SentName__c</name>
+        <relationshipLabel><!-- DM Request (SentName) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sent Date --></label>
+        <name>Sent_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Returned</masterLabel>
+            <translation><!-- Returned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SuggestedName --></label>
+        <name>SuggestedName__c</name>
+        <relationshipLabel><!-- DM Request (SuggestedName) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Zip Code --></label>
+        <name>Zip_Code__c</name>
+    </fields>
+    <layouts>
+        <layout>Create DM Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>DM Fulfill Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description Information --></label>
+            <section>Description Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

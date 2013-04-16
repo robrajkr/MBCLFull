@@ -1,0 +1,62 @@
+<apex:page standardController="DM_Request__c" extensions="DMControllerExtension"> 
+    <apex:includeScript value="/support/console/27.0/integration.js"/>
+    <apex:includeScript value="/soap/ajax/27.0/apex.js"/>
+    <script type="text/javascript">
+        function CloseTab() {
+            sforce.console.getEnclosingTabId(closeSubtab);
+            sforce.console.refreshPrimaryTabById("{!$Request.tabId}", true, refreshSuccess );
+        }
+        var closeSubtab = function closeSubtab(result) {
+            var tabId = result.id;
+            sforce.console.closeTab(tabId);
+        };
+        
+        var refreshSuccess = function refreshSuccess(result) {
+            if (result.success == true) {
+                //alert('Primary tab refreshed successfully');
+            } else {
+                //alert('Primary did not refresh');
+            }
+        };
+        
+        function SendAndClose(){
+            if (sforce.console.isInConsole()) {
+                //sendDM();
+                CloseTab();//setTimeout('CloseTab()', '500');
+            }
+            else{
+                //sendDM();
+                window.close();
+            }
+        }
+        
+        function DoCancel(){
+            if (sforce.console.isInConsole()) {
+                sforce.console.getEnclosingTabId(closeSubtab);
+            }
+            else{
+                window.close();
+            }
+        }
+        
+    </script>
+  
+    <apex:sectionHeader title="DM" />
+    
+    <apex:form id="theForm"> 
+        <apex:pageBlock mode="edit" title="DM Send" id="DMBlock" >
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Send" action="{!send}" oncomplete="SendAndClose();" />                
+                <apex:commandButton value="Cancel" onclick="DoCancel();" />
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Information" columns="2">
+                <apex:outputField value="{!dm.Customer_Name__c}" />          
+                <apex:inputField value="{!dm.Expected_DM_Material1__c}" required="true"/>        
+                <apex:outputField value="{!dm.Case_Number__c}" />                                  
+                <apex:inputField value="{!dm.Expected_DM_Material2__c}" />  
+                <apex:pageBlockSectionItem ></apex:pageBlockSectionItem>             
+                <apex:inputField value="{!dm.Expected_DM_Material3__c}" />         
+            </apex:pageBlockSection>
+         </apex:pageBlock>      
+    </apex:form>
+</apex:page>

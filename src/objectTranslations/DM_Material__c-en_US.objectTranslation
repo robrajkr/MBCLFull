@@ -1,0 +1,1661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>DM Material</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>DM Material</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand --></label>
+        <name>Brand_del__c</name>
+        <picklistValues>
+            <masterLabel>AMG</masterLabel>
+            <translation><!-- AMG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MB</masterLabel>
+            <translation><!-- MB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Smart</masterLabel>
+            <translation><!-- Smart --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Car Model --></label>
+        <name>Car_Model__c</name>
+        <relationshipLabel><!-- DM Material --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DM Material External Id --></label>
+        <name>DM_Material_External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- DecreaseStockAmount --></label>
+        <name>DecreaseStockAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- English Name --></label>
+        <name>English_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- IncreaseStockAmount --></label>
+        <name>IncreaseStockAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remark --></label>
+        <name>Remark__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sent Total --></label>
+        <name>SentTotal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Series --></label>
+        <name>Series__c</name>
+        <picklistValues>
+            <masterLabel>1 Series</masterLabel>
+            <translation><!-- 1 Series --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 Series</masterLabel>
+            <translation><!-- 3 Series --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>300C</masterLabel>
+            <translation><!-- 300C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>350Z</masterLabel>
+            <translation><!-- 350Z --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 Series</masterLabel>
+            <translation><!-- 5 Series --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 Series</masterLabel>
+            <translation><!-- 6 Series --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 Series</masterLabel>
+            <translation><!-- 7 Series --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 Series</masterLabel>
+            <translation><!-- 8 Series --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>911</masterLabel>
+            <translation><!-- 911 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A-Class</masterLabel>
+            <translation><!-- A-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A4</masterLabel>
+            <translation><!-- A4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A6</masterLabel>
+            <translation><!-- A6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A8</masterLabel>
+            <translation><!-- A8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A8L</masterLabel>
+            <translation><!-- A8L --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMG</masterLabel>
+            <translation><!-- AMG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ActiveHybrid</masterLabel>
+            <translation><!-- ActiveHybrid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Allroad</masterLabel>
+            <translation><!-- Allroad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B-Class</masterLabel>
+            <translation><!-- B-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Boxter</masterLabel>
+            <translation><!-- Boxter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C-Class</masterLabel>
+            <translation><!-- C-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C2</masterLabel>
+            <translation><!-- C2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C3</masterLabel>
+            <translation><!-- C3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C5</masterLabel>
+            <translation><!-- C5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C8</masterLabel>
+            <translation><!-- C8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CC</masterLabel>
+            <translation><!-- CC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CL-Class</masterLabel>
+            <translation><!-- CL-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLK-Class</masterLabel>
+            <translation><!-- CLK-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLS-Class</masterLabel>
+            <translation><!-- CLS-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CRV</masterLabel>
+            <translation><!-- CRV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cabrio</masterLabel>
+            <translation><!-- Cabrio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caliber</masterLabel>
+            <translation><!-- Caliber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cayenne</masterLabel>
+            <translation><!-- Cayenne --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cayman</masterLabel>
+            <translation><!-- Cayman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clubman</masterLabel>
+            <translation><!-- Clubman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cooper</masterLabel>
+            <translation><!-- Cooper --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-Class</masterLabel>
+            <translation><!-- E-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ES</masterLabel>
+            <translation><!-- ES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G-Class</masterLabel>
+            <translation><!-- G-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GL</masterLabel>
+            <translation><!-- GL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GL-Class</masterLabel>
+            <translation><!-- GL-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GLK-Class</masterLabel>
+            <translation><!-- GLK-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GOOD WOOD</masterLabel>
+            <translation><!-- GOOD WOOD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GS</masterLabel>
+            <translation><!-- GS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GT</masterLabel>
+            <translation><!-- GT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GX</masterLabel>
+            <translation><!-- GX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Generic Model</masterLabel>
+            <translation><!-- Generic Model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILX</masterLabel>
+            <translation><!-- ILX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS</masterLabel>
+            <translation><!-- IS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jeep</masterLabel>
+            <translation><!-- Jeep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Journey</masterLabel>
+            <translation><!-- Journey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LS</masterLabel>
+            <translation><!-- LS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LX</masterLabel>
+            <translation><!-- LX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M3</masterLabel>
+            <translation><!-- M3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M5</masterLabel>
+            <translation><!-- M5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M6</masterLabel>
+            <translation><!-- M6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MDX</masterLabel>
+            <translation><!-- MDX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ML-Class</masterLabel>
+            <translation><!-- ML-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One</masterLabel>
+            <translation><!-- One --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P298548</masterLabel>
+            <translation><!-- P298548 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PT漫步者</masterLabel>
+            <translation><!-- PT漫步者 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panamera</masterLabel>
+            <translation><!-- Panamera --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Polo</masterLabel>
+            <translation><!-- Polo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q7</masterLabel>
+            <translation><!-- Q7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R-Class</masterLabel>
+            <translation><!-- R-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAV4</masterLabel>
+            <translation><!-- RAV4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RDX</masterLabel>
+            <translation><!-- RDX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RX</masterLabel>
+            <translation><!-- RX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rio千里马</masterLabel>
+            <translation><!-- Rio千里马 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S-Class</masterLabel>
+            <translation><!-- S-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S-Ma</masterLabel>
+            <translation><!-- S-Ma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S40</masterLabel>
+            <translation><!-- S40 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S60</masterLabel>
+            <translation><!-- S60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S8</masterLabel>
+            <translation><!-- S8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S80</masterLabel>
+            <translation><!-- S80 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC00003</masterLabel>
+            <translation><!-- SC00003 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SL-Class</masterLabel>
+            <translation><!-- SL-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SLK-Class</masterLabel>
+            <translation><!-- SLK-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMAX</masterLabel>
+            <translation><!-- SMAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Smart</masterLabel>
+            <translation><!-- Smart --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spark</masterLabel>
+            <translation><!-- Spark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TL</masterLabel>
+            <translation><!-- TL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TSX</masterLabel>
+            <translation><!-- TSX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TT Cooupe</masterLabel>
+            <translation><!-- TT Cooupe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X1</masterLabel>
+            <translation><!-- X1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X3</masterLabel>
+            <translation><!-- X3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X5</masterLabel>
+            <translation><!-- X5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X6</masterLabel>
+            <translation><!-- X6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>XC70</masterLabel>
+            <translation><!-- XC70 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>XC90</masterLabel>
+            <translation><!-- XC90 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Z3</masterLabel>
+            <translation><!-- Z3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Z4</masterLabel>
+            <translation><!-- Z4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZDX</masterLabel>
+            <translation><!-- ZDX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>i</masterLabel>
+            <translation><!-- i --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>万程</masterLabel>
+            <translation><!-- 万程 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>三菱</masterLabel>
+            <translation><!-- 三菱 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>世纪</masterLabel>
+            <translation><!-- 世纪 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>世纪旗舰</masterLabel>
+            <translation><!-- 世纪旗舰 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>中华</masterLabel>
+            <translation><!-- 中华 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>丰田</masterLabel>
+            <translation><!-- 丰田 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>丽欧</masterLabel>
+            <translation><!-- 丽欧 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>乐风</masterLabel>
+            <translation><!-- 乐风 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>乐骋</masterLabel>
+            <translation><!-- 乐骋 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>云雀</masterLabel>
+            <translation><!-- 云雀 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>亚力士</masterLabel>
+            <translation><!-- 亚力士 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>亚托</masterLabel>
+            <translation><!-- 亚托 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>亚洲龙</masterLabel>
+            <translation><!-- 亚洲龙 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>交叉火力</masterLabel>
+            <translation><!-- 交叉火力 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>伊兰特</masterLabel>
+            <translation><!-- 伊兰特 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>伊兰特两厢</masterLabel>
+            <translation><!-- 伊兰特两厢 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>佳乐</masterLabel>
+            <translation><!-- 佳乐 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>佳乐宝</masterLabel>
+            <translation><!-- 佳乐宝 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>佳奔</masterLabel>
+            <translation><!-- 佳奔 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>元素</masterLabel>
+            <translation><!-- 元素 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>光冈</masterLabel>
+            <translation><!-- 光冈 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>克罗玛</masterLabel>
+            <translation><!-- 克罗玛 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>克莱斯勒</masterLabel>
+            <translation><!-- 克莱斯勒 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>公爵</masterLabel>
+            <translation><!-- 公爵 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>其它</masterLabel>
+            <translation><!-- 其它 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>凯旋</masterLabel>
+            <translation><!-- 凯旋 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>凯美瑞</masterLabel>
+            <translation><!-- 凯美瑞 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>凯越</masterLabel>
+            <translation><!-- 凯越 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>凯迪拉克</masterLabel>
+            <translation><!-- 凯迪拉克 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>切诺基</masterLabel>
+            <translation><!-- 切诺基 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>利亚纳</masterLabel>
+            <translation><!-- 利亚纳 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>前卫</masterLabel>
+            <translation><!-- 前卫 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>力驹</masterLabel>
+            <translation><!-- 力驹 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>北京吉普</masterLabel>
+            <translation><!-- 北京吉普 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>北斗星</masterLabel>
+            <translation><!-- 北斗星 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>千里马</masterLabel>
+            <translation><!-- 千里马 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>卡帝罗</masterLabel>
+            <translation><!-- 卡帝罗 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>卡罗拉/花冠</masterLabel>
+            <translation><!-- 卡罗拉/花冠 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>卡罗瓦雷</masterLabel>
+            <translation><!-- 卡罗瓦雷 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>卡车</masterLabel>
+            <translation><!-- 卡车 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>卫士</masterLabel>
+            <translation><!-- 卫士 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>发现</masterLabel>
+            <translation><!-- 发现 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>吉姆尼</masterLabel>
+            <translation><!-- 吉姆尼 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>吉普</masterLabel>
+            <translation><!-- 吉普 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>君威</masterLabel>
+            <translation><!-- 君威 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>君爵</masterLabel>
+            <translation><!-- 君爵 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>君王</masterLabel>
+            <translation><!-- 君王 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>君越</masterLabel>
+            <translation><!-- 君越 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>嘉华</masterLabel>
+            <translation><!-- 嘉华 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>嘉年华</masterLabel>
+            <translation><!-- 嘉年华 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>圣达菲</masterLabel>
+            <translation><!-- 圣达菲 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>埃斯卡拉迪</masterLabel>
+            <translation><!-- 埃斯卡拉迪 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>城乡</masterLabel>
+            <translation><!-- 城乡 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>塞拉图</masterLabel>
+            <translation><!-- 塞拉图 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>大切诺基</masterLabel>
+            <translation><!-- 大切诺基 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>大宇典雅</masterLabel>
+            <translation><!-- 大宇典雅 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>大宇赛手</masterLabel>
+            <translation><!-- 大宇赛手 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>大捷龙</masterLabel>
+            <translation><!-- 大捷龙 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>天籁</masterLabel>
+            <translation><!-- 天籁 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>天语两厢</masterLabel>
+            <translation><!-- 天语两厢 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>天霸</masterLabel>
+            <translation><!-- 天霸 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>太平洋</masterLabel>
+            <translation><!-- 太平洋 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>太空</masterLabel>
+            <translation><!-- 太空 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>太空车</masterLabel>
+            <translation><!-- 太空车 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>太阳舞</masterLabel>
+            <translation><!-- 太阳舞 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>奇骏</masterLabel>
+            <translation><!-- 奇骏 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>奔驰商务车</masterLabel>
+            <translation><!-- 奔驰商务车 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>奥德赛</masterLabel>
+            <translation><!-- 奥德赛 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>奥拓</masterLabel>
+            <translation><!-- 奥拓 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>奥蒂玛</masterLabel>
+            <translation><!-- 奥蒂玛 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>威赛帝</masterLabel>
+            <translation><!-- 威赛帝 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>威达</masterLabel>
+            <translation><!-- 威达 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>威驰</masterLabel>
+            <translation><!-- 威驰 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>安特斯</masterLabel>
+            <translation><!-- 安特斯 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>宝来</masterLabel>
+            <translation><!-- 宝来 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>宾利</masterLabel>
+            <translation><!-- 宾利 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>富康</masterLabel>
+            <translation><!-- 富康 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>尤诺</masterLabel>
+            <translation><!-- 尤诺 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>尼桑</masterLabel>
+            <translation><!-- 尼桑 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>帕拉丁</masterLabel>
+            <translation><!-- 帕拉丁 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>帕杰罗</masterLabel>
+            <translation><!-- 帕杰罗 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>帝威</masterLabel>
+            <translation><!-- 帝威 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>序曲</masterLabel>
+            <translation><!-- 序曲 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>开拓者</masterLabel>
+            <translation><!-- 开拓者 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>开迪</masterLabel>
+            <translation><!-- 开迪 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>弗利特伍德</masterLabel>
+            <translation><!-- 弗利特伍德 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>征服者</masterLabel>
+            <translation><!-- 征服者 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>御翔</masterLabel>
+            <translation><!-- 御翔 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>快速达</masterLabel>
+            <translation><!-- 快速达 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>思域</masterLabel>
+            <translation><!-- 思域 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>思威</masterLabel>
+            <translation><!-- 思威 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>思迪</masterLabel>
+            <translation><!-- 思迪 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>恩福</masterLabel>
+            <translation><!-- 恩福 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>悍马H2</masterLabel>
+            <translation><!-- 悍马H2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>拉古娜</masterLabel>
+            <translation><!-- 拉古娜 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>捷达</masterLabel>
+            <translation><!-- 捷达 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>探路者</masterLabel>
+            <translation><!-- 探路者 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>探针</masterLabel>
+            <translation><!-- 探针 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>探险家D</masterLabel>
+            <translation><!-- 探险家D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>斯柯达</masterLabel>
+            <translation><!-- 斯柯达 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>斯派克</masterLabel>
+            <translation><!-- 斯派克 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>斯达瑞克斯</masterLabel>
+            <translation><!-- 斯达瑞克斯 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>新A4</masterLabel>
+            <translation><!-- 新A4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>新A6L</masterLabel>
+            <translation><!-- 新A6L --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>新CR-V</masterLabel>
+            <translation><!-- 新CR-V --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>新宝来</masterLabel>
+            <translation><!-- 新宝来 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>新甲壳虫</masterLabel>
+            <translation><!-- 新甲壳虫 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>新赛欧</masterLabel>
+            <translation><!-- 新赛欧 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>旅行家</masterLabel>
+            <translation><!-- 旅行家 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>无限</masterLabel>
+            <translation><!-- 无限 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>日全食</masterLabel>
+            <translation><!-- 日全食 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>时韵</masterLabel>
+            <translation><!-- 时韵 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>明锐</masterLabel>
+            <translation><!-- 明锐 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>普利马</masterLabel>
+            <translation><!-- 普利马 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>普来特</masterLabel>
+            <translation><!-- 普来特 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>普瑞斯</masterLabel>
+            <translation><!-- 普瑞斯 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>普瑞玛</masterLabel>
+            <translation><!-- 普瑞玛 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>普瑞维亚</masterLabel>
+            <translation><!-- 普瑞维亚 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>普锐斯</masterLabel>
+            <translation><!-- 普锐斯 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>景程</masterLabel>
+            <translation><!-- 景程 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>朗特</masterLabel>
+            <translation><!-- 朗特 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>朗程</masterLabel>
+            <translation><!-- 朗程 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>未知</masterLabel>
+            <translation><!-- 未知 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>本特利</masterLabel>
+            <translation><!-- 本特利 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>林荫大道</masterLabel>
+            <translation><!-- 林荫大道 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>柯西嘉</masterLabel>
+            <translation><!-- 柯西嘉 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>标致</masterLabel>
+            <translation><!-- 标致 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>格兰特</masterLabel>
+            <translation><!-- 格兰特 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>格蓝迪</masterLabel>
+            <translation><!-- 格蓝迪 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>桑塔纳</masterLabel>
+            <translation><!-- 桑塔纳 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>梅佳娜</masterLabel>
+            <translation><!-- 梅佳娜 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>森特瑞</masterLabel>
+            <translation><!-- 森特瑞 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>欧捷利</masterLabel>
+            <translation><!-- 欧捷利 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>欧美佳</masterLabel>
+            <translation><!-- 欧美佳 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>欧菲莱斯</masterLabel>
+            <translation><!-- 欧菲莱斯 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>欧蓝德</masterLabel>
+            <translation><!-- 欧蓝德 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>欧迪玛</masterLabel>
+            <translation><!-- 欧迪玛 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>欧雅</masterLabel>
+            <translation><!-- 欧雅 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>毕加索</masterLabel>
+            <translation><!-- 毕加索 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>水星</masterLabel>
+            <translation><!-- 水星 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>法比亚</masterLabel>
+            <translation><!-- 法比亚 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>波罗</masterLabel>
+            <translation><!-- 波罗 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>派力奥</masterLabel>
+            <translation><!-- 派力奥 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>派力奥周末风</masterLabel>
+            <translation><!-- 派力奥周末风 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>派朗</masterLabel>
+            <translation><!-- 派朗 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>海拉克斯</masterLabel>
+            <translation><!-- 海拉克斯 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>海马3</masterLabel>
+            <translation><!-- 海马3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>漫游者</masterLabel>
+            <translation><!-- 漫游者 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>爱丽舍</masterLabel>
+            <translation><!-- 爱丽舍 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>爱仕</masterLabel>
+            <translation><!-- 爱仕 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>爱文奇思</masterLabel>
+            <translation><!-- 爱文奇思 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>爱斯皮罗</masterLabel>
+            <translation><!-- 爱斯皮罗 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>牧马人</masterLabel>
+            <translation><!-- 牧马人 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>特拉卡</masterLabel>
+            <translation><!-- 特拉卡 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>特杰</masterLabel>
+            <translation><!-- 特杰 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>特锐</masterLabel>
+            <translation><!-- 特锐 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>狮跑</masterLabel>
+            <translation><!-- 狮跑 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>王朝</masterLabel>
+            <translation><!-- 王朝 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>现代世纪</masterLabel>
+            <translation><!-- 现代世纪 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>皇冠</masterLabel>
+            <translation><!-- 皇冠 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>皮卡</masterLabel>
+            <translation><!-- 皮卡 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>碧莲</masterLabel>
+            <translation><!-- 碧莲 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>福克斯</masterLabel>
+            <translation><!-- 福克斯 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>福美来</masterLabel>
+            <translation><!-- 福美来 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>秀玛</masterLabel>
+            <translation><!-- 秀玛 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>科多巴</masterLabel>
+            <translation><!-- 科多巴 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>稳达</masterLabel>
+            <translation><!-- 稳达 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>突斯卡尼</masterLabel>
+            <translation><!-- 突斯卡尼 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>索兰托</masterLabel>
+            <translation><!-- 索兰托 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>索纳塔</masterLabel>
+            <translation><!-- 索纳塔 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>红杉</masterLabel>
+            <translation><!-- 红杉 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>维他</masterLabel>
+            <translation><!-- 维他 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>维多利亚皇冠</masterLabel>
+            <translation><!-- 维多利亚皇冠 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>维特拉</masterLabel>
+            <translation><!-- 维特拉 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>美人奴</masterLabel>
+            <translation><!-- 美人奴 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>美佳</masterLabel>
+            <translation><!-- 美佳 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>美洲狮</masterLabel>
+            <translation><!-- 美洲狮 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>美洲豹</masterLabel>
+            <translation><!-- 美洲豹 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>美男爵</masterLabel>
+            <translation><!-- 美男爵 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>羚羊</masterLabel>
+            <translation><!-- 羚羊 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>考斯特</masterLabel>
+            <translation><!-- 考斯特 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>胜达</masterLabel>
+            <translation><!-- 胜达 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>自由人</masterLabel>
+            <translation><!-- 自由人 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>航海家</masterLabel>
+            <translation><!-- 航海家 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>航船者</masterLabel>
+            <translation><!-- 航船者 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>艾温特</masterLabel>
+            <translation><!-- 艾温特 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>节日</masterLabel>
+            <translation><!-- 节日 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>荣御</masterLabel>
+            <translation><!-- 荣御 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>莎兰</masterLabel>
+            <translation><!-- 莎兰 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>菲亚特</masterLabel>
+            <translation><!-- 菲亚特 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>萨伯</masterLabel>
+            <translation><!-- 萨伯 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>萨伯曼</masterLabel>
+            <translation><!-- 萨伯曼 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>萨发利</masterLabel>
+            <translation><!-- 萨发利 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>蒙特罗</masterLabel>
+            <translation><!-- 蒙特罗 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>蒙迪欧</masterLabel>
+            <translation><!-- 蒙迪欧 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>蓝瑟</masterLabel>
+            <translation><!-- 蓝瑟 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>蓝鸟</masterLabel>
+            <translation><!-- 蓝鸟 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>蓝龙</masterLabel>
+            <translation><!-- 蓝龙 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>西玛</masterLabel>
+            <translation><!-- 西玛 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>西耶那</masterLabel>
+            <translation><!-- 西耶那 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>赛利卡</masterLabel>
+            <translation><!-- 赛利卡 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>赛威</masterLabel>
+            <translation><!-- 赛威 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>赛娜</masterLabel>
+            <translation><!-- 赛娜 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>赛百灵</masterLabel>
+            <translation><!-- 赛百灵 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>赛纳</masterLabel>
+            <translation><!-- 赛纳 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>赛罗</masterLabel>
+            <translation><!-- 赛罗 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>赛菲亚</masterLabel>
+            <translation><!-- 赛菲亚 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>赛飞利</masterLabel>
+            <translation><!-- 赛飞利 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>起亚</masterLabel>
+            <translation><!-- 起亚 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>超级沙龙</masterLabel>
+            <translation><!-- 超级沙龙 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>跑步者</masterLabel>
+            <translation><!-- 跑步者 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>轩逸</masterLabel>
+            <translation><!-- 轩逸 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>辉腾</masterLabel>
+            <translation><!-- 辉腾 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>迈巴赫</masterLabel>
+            <translation><!-- 迈巴赫 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>迈腾</masterLabel>
+            <translation><!-- 迈腾 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>运输者</masterLabel>
+            <translation><!-- 运输者 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>远舰</masterLabel>
+            <translation><!-- 远舰 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>迪来坡</masterLabel>
+            <translation><!-- 迪来坡 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>追踪者</masterLabel>
+            <translation><!-- 追踪者 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>途乐</masterLabel>
+            <translation><!-- 途乐 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>途安</masterLabel>
+            <translation><!-- 途安 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>途胜</masterLabel>
+            <translation><!-- 途胜 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>途锐</masterLabel>
+            <translation><!-- 途锐 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>速乐娜</masterLabel>
+            <translation><!-- 速乐娜 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>速派</masterLabel>
+            <translation><!-- 速派 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>速腾</masterLabel>
+            <translation><!-- 速腾 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>酷派</masterLabel>
+            <translation><!-- 酷派 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>里程</masterLabel>
+            <translation><!-- 里程 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>野马</masterLabel>
+            <translation><!-- 野马 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>金牛座</masterLabel>
+            <translation><!-- 金牛座 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>铃木</masterLabel>
+            <translation><!-- 铃木 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>锐志</masterLabel>
+            <translation><!-- 锐志 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>阳光</masterLabel>
+            <translation><!-- 阳光 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>阿卡迪亚</masterLabel>
+            <translation><!-- 阿卡迪亚 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>阿库拉</masterLabel>
+            <translation><!-- 阿库拉 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>阿托兹</masterLabel>
+            <translation><!-- 阿托兹 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>阿斯特罗</masterLabel>
+            <translation><!-- 阿斯特罗 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>阿美拉</masterLabel>
+            <translation><!-- 阿美拉 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>陆地巡洋舰</masterLabel>
+            <translation><!-- 陆地巡洋舰 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>陆虎揽胜</masterLabel>
+            <translation><!-- 陆虎揽胜 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>雅尊</masterLabel>
+            <translation><!-- 雅尊 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>雅特</masterLabel>
+            <translation><!-- 雅特 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>雅绅</masterLabel>
+            <translation><!-- 雅绅 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>雅绅特</masterLabel>
+            <translation><!-- 雅绅特 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>雅阁</masterLabel>
+            <translation><!-- 雅阁 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>雨燕</masterLabel>
+            <translation><!-- 雨燕 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>雪佛兰</masterLabel>
+            <translation><!-- 雪佛兰 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>雷鸟</masterLabel>
+            <translation><!-- 雷鸟 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>音赛特</masterLabel>
+            <translation><!-- 音赛特 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>领驭</masterLabel>
+            <translation><!-- 领驭 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>颐达/骐达</masterLabel>
+            <translation><!-- 颐达/骐达 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>风度</masterLabel>
+            <translation><!-- 风度 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>风景</masterLabel>
+            <translation><!-- 风景 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>风雅</masterLabel>
+            <translation><!-- 风雅 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>飞度</masterLabel>
+            <translation><!-- 飞度 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>马刀</masterLabel>
+            <translation><!-- 马刀 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>马力昂</masterLabel>
+            <translation><!-- 马力昂 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>马威利克</masterLabel>
+            <translation><!-- 马威利克 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>马自达</masterLabel>
+            <translation><!-- 马自达 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>马蒂兹</masterLabel>
+            <translation><!-- 马蒂兹 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>骏逸</masterLabel>
+            <translation><!-- 骏逸 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>高原人</masterLabel>
+            <translation><!-- 高原人 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>高尔</masterLabel>
+            <translation><!-- 高尔 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>高尔夫</masterLabel>
+            <translation><!-- 高尔夫 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>鹏托</masterLabel>
+            <translation><!-- 鹏托 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stock Alert --></label>
+        <name>Stock_Alert__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stock --></label>
+        <name>Stock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Threshold --></label>
+        <name>Threshold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>2010 E Promotion Pack</masterLabel>
+            <translation><!-- 2010 E Promotion Pack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2010 S-Class trade</masterLabel>
+            <translation><!-- 2010 S-Class trade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2011 Calendar</masterLabel>
+            <translation><!-- 2011 Calendar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A-Class presale flyer</masterLabel>
+            <translation><!-- A-Class presale flyer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMG White Book</masterLabel>
+            <translation><!-- AMG White Book --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMG White Book 2</masterLabel>
+            <translation><!-- AMG White Book 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Benz postcards</masterLabel>
+            <translation><!-- Benz postcards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C-Class flyer</masterLabel>
+            <translation><!-- C-Class flyer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLS pre-sales flyer</masterLabel>
+            <translation><!-- CLS pre-sales flyer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First flight Gift Set (P coupon)</masterLabel>
+            <translation><!-- First flight Gift Set (P coupon) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flyer</masterLabel>
+            <translation><!-- Flyer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G500 canvas bag</masterLabel>
+            <translation><!-- G500 canvas bag --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Golf magazine</masterLabel>
+            <translation><!-- Golf magazine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>History Book</masterLabel>
+            <translation><!-- History Book --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invitation package</masterLabel>
+            <translation><!-- Invitation package --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MB Magazine</masterLabel>
+            <translation><!-- MB Magazine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MB Puzzle</masterLabel>
+            <translation><!-- MB Puzzle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price List</masterLabel>
+            <translation><!-- Price List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Range Card</masterLabel>
+            <translation><!-- Product Range Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product brochure</masterLabel>
+            <translation><!-- Product brochure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Smart ways of city life</masterLabel>
+            <translation><!-- Smart ways of city life --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sustainability</masterLabel>
+            <translation><!-- Sustainability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The 14th Shanghai international automobile exhibition</masterLabel>
+            <translation><!-- The 14th Shanghai international automobile exhibition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>e-brochure</masterLabel>
+            <translation><!-- e-brochure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>newspaper</masterLabel>
+            <translation><!-- newspaper --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>smart 2nd anniversary presale flyer</masterLabel>
+            <translation><!-- smart 2nd anniversary presale flyer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>smart bible</masterLabel>
+            <translation><!-- smart bible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>smart brochure_12months</masterLabel>
+            <translation><!-- smart brochure_12months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>smart brochure_3months</masterLabel>
+            <translation><!-- smart brochure_3months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>smart brochure_6months</masterLabel>
+            <translation><!-- smart brochure_6months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>smart welcome pack (USB)</masterLabel>
+            <translation><!-- smart welcome pack (USB) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>smart welcome package</masterLabel>
+            <translation><!-- smart welcome package --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>DM Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>DM Name</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Must input conversion: Brand-Series-Type. --></errorMessage>
+        <name>Format_DM_Material_Name</name>
+    </validationRules>
+</CustomObjectTranslation>

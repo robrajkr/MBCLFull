@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>REQ: Requirement is Cancelled</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Requirement: Requirement is Cancelled</name>
+    <style>none</style>
+    <subject>This Requirement { {!Requirement_UserStory__c.Name} } is { {!Requirement_UserStory__c.Status__c} }</subject>
+    <type>text</type>
+</EmailTemplate>

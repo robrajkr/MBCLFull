@@ -1,0 +1,23 @@
+Dear recipient, 
+
+There is an Inquiry Case pending for your feedback:
+
+CaseNumber: {!Case.CaseNumber} , 
+Owner: {!Case.OwnerFullName} 
+ACCOUNT: {!Case.Account} , 
+Priority: {!Case.Priority} 
+Case Class: {!Case.Case_Class__c} 
+Case Type: {!Case.Case_Type__c} 
+Case Subtype: {!Case.Case_SubType__c} 
+Status: {!Case.Status} 
+Subject: {!Case.Subject} 
+Description: {!Case.Description} 
+Refused Dealer Contact: {!Case.Refused_Dealer_Contact__c} 
+Case Dealer: {!Case.Case_Dealer__c} 
+Vehicle: {!Case.Vehicle__c} 
+Feedback Required: {!Case.Feedback_Required__c} 
+TL Reviewed: {!Case.TL_Reviewed__c} 
+Created By: {!Case.CreatedBy} 
+Last Modified By: {!Case.LastModifiedBy}
+
+                                                                     CAC Team

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>EP Log Data Quality</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>EP Log Data Quality</value>
+    </caseValues>
+    <fields>
+        <label><!-- Dealer --></label>
+        <name>Dealer__c</name>
+    </fields>
+    <fields>
+        <label><!-- EpRunId --></label>
+        <name>EpRunId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interface --></label>
+        <name>Interface__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invalid --></label>
+        <name>Invalid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Matches --></label>
+        <name>Matches__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rule --></label>
+        <name>Rule__c</name>
+    </fields>
+    <fields>
+        <label><!-- RunDate --></label>
+        <name>RunDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Deduplication</masterLabel>
+            <translation><!-- Deduplication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validation</masterLabel>
+            <translation><!-- Validation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Valid --></label>
+        <name>Valid__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

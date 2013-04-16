@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- DM Stock Flow --></value>
+    </caseValues>
+    <fields>
+        <label>日期</label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label>资料名称</label>
+        <name>Material_Name__c</name>
+        <relationshipLabel>库存流水</relationshipLabel>
+    </fields>
+    <fields>
+        <label>数量</label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <label>类型</label>
+        <name>Stock_Type__c</name>
+        <picklistValues>
+            <masterLabel>Decrease Stock</masterLabel>
+            <translation>减少库存</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase Stock</masterLabel>
+            <translation>增加库存</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Valid --></label>
+        <name>Valid__c</name>
+    </fields>
+    <layouts>
+        <layout>DM Stock Flow 布局</layout>
+        <sections>
+            <label><!-- 自定义链接 --></label>
+            <section>自定义链接</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- DM Stock Flow Name --></nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <label>灰车</label>
+            <name>Huiche</name>
+        </dataCategory>
+        <dataCategory>
+            <label>其他</label>
+            <name>Other</name>
+        </dataCategory>
+        <dataCategory>
+            <label>星睿二手车置换业务</label>
+            <name>Category0</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>梅赛德斯-奔驰知识库</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

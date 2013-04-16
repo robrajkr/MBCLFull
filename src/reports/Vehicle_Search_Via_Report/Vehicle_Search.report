@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_PC_PHONE3</field>
+    </columns>
+    <columns>
+        <field>FK_$Account.Second_Mobile__c</field>
+    </columns>
+    <columns>
+        <field>FK_PC_PHONE4</field>
+    </columns>
+    <columns>
+        <field>FK_ACC_PHONE1</field>
+    </columns>
+    <columns>
+        <field>FK_$Account.Primary_Address__c</field>
+    </columns>
+    <columns>
+        <field>Vehicle_Relationship__c.Vehicle_ID__c</field>
+    </columns>
+    <columns>
+        <field>Vehicle_Relationship__c.Vehicle_Brand__c</field>
+    </columns>
+    <columns>
+        <field>Vehicle_Relationship__c.Vehicle_Class__c</field>
+    </columns>
+    <columns>
+        <field>Vehicle_Relationship__c.Vehicle_Model__c</field>
+    </columns>
+    <columns>
+        <field>Vehicle_Relationship__c.Purchase_Date__c</field>
+    </columns>
+    <columns>
+        <field>Vehicle_Relationship__c.Registration_Number__c</field>
+    </columns>
+    <description>Vehicle Search Via Report</description>
+    <format>Tabular</format>
+    <name>Vehicle Search</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Vehicle_Relationship__c@Vehicle_Relationship__c.Contact__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Vehicle_Relationship__c.End_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

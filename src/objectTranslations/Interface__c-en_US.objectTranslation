@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Interface</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Interface</value>
+    </caseValues>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Integration Pattern --></label>
+        <name>Integration_Pattern__c</name>
+        <picklistValues>
+            <masterLabel>EP Inbound WSDL</masterLabel>
+            <translation><!-- EP Inbound WSDL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EP Scheduled Batch</masterLabel>
+            <translation><!-- EP Scheduled Batch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDC Bulk API</masterLabel>
+            <translation><!-- SFDC Bulk API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDC Data Loader</masterLabel>
+            <translation><!-- SFDC Data Loader --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDC Inbound Apex WSDL service</masterLabel>
+            <translation><!-- SFDC Inbound Apex WSDL service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDC Inbound Enterprise WSDL</masterLabel>
+            <translation><!-- SFDC Inbound Enterprise WSDL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDC Outbound Message</masterLabel>
+            <translation><!-- SFDC Outbound Message --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDC Outbound WSDL callout</masterLabel>
+            <translation><!-- SFDC Outbound WSDL callout --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Properties --></label>
+        <name>Properties__c</name>
+        <picklistValues>
+            <masterLabel>Async - fire and forget</masterLabel>
+            <translation><!-- Async - fire and forget --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hybrid - Async with Async batch response</masterLabel>
+            <translation><!-- Hybrid - Async with Async batch response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real-time Request-Reply</masterLabel>
+            <translation><!-- Real-time Request-Reply --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Source System --></label>
+        <name>Source_System__c</name>
+        <picklistValues>
+            <masterLabel>AvayaCTI</masterLabel>
+            <translation><!-- AvayaCTI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DMS</masterLabel>
+            <translation><!-- DMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GSSN</masterLabel>
+            <translation><!-- GSSN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LMS</masterLabel>
+            <translation><!-- LMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mini-Site</masterLabel>
+            <translation><!-- Mini-Site --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDC</masterLabel>
+            <translation><!-- SFDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMS</masterLabel>
+            <translation><!-- SMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SocialHub</masterLabel>
+            <translation><!-- SocialHub --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iCRM</masterLabel>
+            <translation><!-- iCRM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Target System --></label>
+        <name>Target_System__c</name>
+        <picklistValues>
+            <masterLabel>AvayaCTI</masterLabel>
+            <translation><!-- AvayaCTI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DMS</masterLabel>
+            <translation><!-- DMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GSSN</masterLabel>
+            <translation><!-- GSSN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LMS</masterLabel>
+            <translation><!-- LMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mini-Site</masterLabel>
+            <translation><!-- Mini-Site --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDC</masterLabel>
+            <translation><!-- SFDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMS</masterLabel>
+            <translation><!-- SMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SocialHub</masterLabel>
+            <translation><!-- SocialHub --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iCRM</masterLabel>
+            <translation><!-- iCRM --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Interface Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

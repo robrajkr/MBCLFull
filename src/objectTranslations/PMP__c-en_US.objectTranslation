@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>PMP</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>PMP</value>
+    </caseValues>
+    <fields>
+        <label><!-- Actual Due Date --></label>
+        <name>Actual_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Start Date --></label>
+        <name>Actual_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Baseline Due Date --></label>
+        <name>Baseline_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Baseline Start Date --></label>
+        <name>Baseline_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Complete% --></label>
+        <name>Complete__c</name>
+        <picklistValues>
+            <masterLabel>0%</masterLabel>
+            <translation><!-- 0% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10%</masterLabel>
+            <translation><!-- 10% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100%</masterLabel>
+            <translation><!-- 100% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15%</masterLabel>
+            <translation><!-- 15% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20%</masterLabel>
+            <translation><!-- 20% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25%</masterLabel>
+            <translation><!-- 25% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30%</masterLabel>
+            <translation><!-- 30% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35%</masterLabel>
+            <translation><!-- 35% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40%</masterLabel>
+            <translation><!-- 40% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45%</masterLabel>
+            <translation><!-- 45% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5%</masterLabel>
+            <translation><!-- 5% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50%</masterLabel>
+            <translation><!-- 50% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>55%</masterLabel>
+            <translation><!-- 55% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60%</masterLabel>
+            <translation><!-- 60% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>65%</masterLabel>
+            <translation><!-- 65% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>70%</masterLabel>
+            <translation><!-- 70% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75%</masterLabel>
+            <translation><!-- 75% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>80%</masterLabel>
+            <translation><!-- 80% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>85%</masterLabel>
+            <translation><!-- 85% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90%</masterLabel>
+            <translation><!-- 90% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>95%</masterLabel>
+            <translation><!-- 95% --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Deliverables --></label>
+        <name>Deliverables__c</name>
+        <picklistValues>
+            <masterLabel>Admin Training</masterLabel>
+            <translation><!-- Admin Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agreed Migration Concept</masterLabel>
+            <translation><!-- Agreed Migration Concept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Detailed Field Mapping,Updated Configuration Wrkbook</masterLabel>
+            <translation><!-- Detailed Field Mapping,Updated Configuration Wrkbook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feedback to Data Quality Improvement Measures</masterLabel>
+            <translation><!-- Feedback to Data Quality Improvement Measures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Migrated System</masterLabel>
+            <translation><!-- Migrated System --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Migration Mapping updated in SFDC Data Dic</masterLabel>
+            <translation><!-- Migration Mapping updated in SFDC Data Dic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open Issue List</masterLabel>
+            <translation><!-- Open Issue List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reqs Workbook,Config Workbook</masterLabel>
+            <translation><!-- Reqs Workbook,Config Workbook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDC Data Model</masterLabel>
+            <translation><!-- SFDC Data Model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test Plan,Test Strategy</masterLabel>
+            <translation><!-- Test Plan,Test Strategy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Handout</masterLabel>
+            <translation><!-- User Handout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Manual</masterLabel>
+            <translation><!-- User Manual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workshop Protocols</masterLabel>
+            <translation><!-- Workshop Protocols --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Note --></label>
+        <name>Note__c</name>
+    </fields>
+    <fields>
+        <label><!-- PMP Hierarchical --></label>
+        <name>PMP_hierarchical__c</name>
+        <relationshipLabel><!-- PMP --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pre-condition --></label>
+        <name>Pre_condition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Responsible Ressource --></label>
+        <name>Responsible_Ressource__c</name>
+        <picklistValues>
+            <masterLabel>Bob</masterLabel>
+            <translation><!-- Bob --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Christian Eißner</masterLabel>
+            <translation><!-- Christian Eißner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Falk Lehmann</masterLabel>
+            <translation><!-- Falk Lehmann --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gloria Wang</masterLabel>
+            <translation><!-- Gloria Wang --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greg Zhang</masterLabel>
+            <translation><!-- Greg Zhang --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Harold Liu</masterLabel>
+            <translation><!-- Harold Liu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jack Liu</masterLabel>
+            <translation><!-- Jack Liu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>James Luo</masterLabel>
+            <translation><!-- James Luo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jochen</masterLabel>
+            <translation><!-- Jochen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jojo Shi</masterLabel>
+            <translation><!-- Jojo Shi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jorry Chen</masterLabel>
+            <translation><!-- Jorry Chen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mabel Wong</masterLabel>
+            <translation><!-- Mabel Wong --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Odin</masterLabel>
+            <translation><!-- Odin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oliver Koeth</masterLabel>
+            <translation><!-- Oliver Koeth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rainer</masterLabel>
+            <translation><!-- Rainer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ray Chen</masterLabel>
+            <translation><!-- Ray Chen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Richard Yan</masterLabel>
+            <translation><!-- Richard Yan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Robert Smith</masterLabel>
+            <translation><!-- Robert Smith --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sabine Jonientz</masterLabel>
+            <translation><!-- Sabine Jonientz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sam Wang</masterLabel>
+            <translation><!-- Sam Wang --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Samuel Liu</masterLabel>
+            <translation><!-- Samuel Liu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sean</masterLabel>
+            <translation><!-- Sean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stella Han</masterLabel>
+            <translation><!-- Stella Han --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tobias</masterLabel>
+            <translation><!-- Tobias --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tony Li</masterLabel>
+            <translation><!-- Tony Li --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tulipe Lee</masterLabel>
+            <translation><!-- Tulipe Lee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vivian Lee</masterLabel>
+            <translation><!-- Vivian Lee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wayne</masterLabel>
+            <translation><!-- Wayne --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wei Song</masterLabel>
+            <translation><!-- Wei Song --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zibin Wang</masterLabel>
+            <translation><!-- Zibin Wang --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>tbd</masterLabel>
+            <translation><!-- tbd --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hold</masterLabel>
+            <translation><!-- Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Team --></label>
+        <name>Team__c</name>
+        <picklistValues>
+            <masterLabel>CRM Factory</masterLabel>
+            <translation><!-- CRM Factory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daimler</masterLabel>
+            <translation><!-- Daimler --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Management</masterLabel>
+            <translation><!-- Project Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Management Office</masterLabel>
+            <translation><!-- Project Management Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WP1 Business Rqs</masterLabel>
+            <translation><!-- WP1 Business Rqs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WP2 Functional Design</masterLabel>
+            <translation><!-- WP2 Functional Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WP3 Technology Application</masterLabel>
+            <translation><!-- WP3 Technology Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WP4 Testing</masterLabel>
+            <translation><!-- WP4 Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WP5 Rollout/Migration</masterLabel>
+            <translation><!-- WP5 Rollout/Migration --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>PMP Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

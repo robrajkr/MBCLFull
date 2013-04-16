@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Test Cases1</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Test Cases1</value>
+    </caseValues>
+    <fields>
+        <label><!-- Case No. --></label>
+        <name>Case_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case description --></label>
+        <name>Case_description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Catagory --></label>
+        <name>Categary__c</name>
+        <picklistValues>
+            <masterLabel>Catagory1</masterLabel>
+            <translation><!-- Catagory1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Catagory2</masterLabel>
+            <translation><!-- Catagory2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Catagory3</masterLabel>
+            <translation><!-- Catagory3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Catagory4</masterLabel>
+            <translation><!-- Catagory4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- *Count Failed Step --></label>
+        <name>Count_Failed_Step__c</name>
+    </fields>
+    <fields>
+        <label><!-- *Count Passed Step --></label>
+        <name>Count_Passed_Step__c</name>
+    </fields>
+    <fields>
+        <label><!-- *Count Steps --></label>
+        <name>Count_Steps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feature --></label>
+        <name>Feature__c</name>
+        <picklistValues>
+            <masterLabel>Feature1</masterLabel>
+            <translation><!-- Feature1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feature2</masterLabel>
+            <translation><!-- Feature2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feature3</masterLabel>
+            <translation><!-- Feature3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feature4</masterLabel>
+            <translation><!-- Feature4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Function --></label>
+        <name>Finction__c</name>
+        <picklistValues>
+            <masterLabel>Function1</masterLabel>
+            <translation><!-- Function1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Function2</masterLabel>
+            <translation><!-- Function2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Function3</masterLabel>
+            <translation><!-- Function3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Function4</masterLabel>
+            <translation><!-- Function4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pre Requisite --></label>
+        <name>Pre_Requisite__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference No. --></label>
+        <name>Reference_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Completed</masterLabel>
+            <translation><!-- Not Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Start</masterLabel>
+            <translation><!-- Not Start --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Passed</masterLabel>
+            <translation><!-- Passed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Executor --></label>
+        <name>executor__c</name>
+        <relationshipLabel><!-- Test Cases1 --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Test Cases1 Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Test Status --></label>
+            <section>Test Status</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

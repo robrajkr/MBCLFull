@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>PMO: Manage Open issues.</description>
+    <enableActivities>true</enableActivities>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Actual_Due_Date__c</fullName>
+        <description>实际完成时间</description>
+        <externalId>false</externalId>
+        <label>Actual Due Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Actual_Start_Date__c</fullName>
+        <description>实际开始时间</description>
+        <externalId>false</externalId>
+        <label>Actual Start Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Baseline_Due_Date__c</fullName>
+        <description>比较基准完成时间</description>
+        <externalId>false</externalId>
+        <label>Baseline Due Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Baseline_Start_Date__c</fullName>
+        <description>比较基准开始时间</description>
+        <externalId>false</externalId>
+        <label>Baseline Start Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Complete__c</fullName>
+        <externalId>false</externalId>
+        <label>Complete%</label>
+        <picklist>
+            <picklistValues>
+                <fullName>0%</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5%</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>10%</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>15%</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>20%</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>25%</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>30%</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>35%</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>40%</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>45%</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>50%</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>55%</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>60%</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>65%</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>70%</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>75%</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>80%</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>85%</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>90%</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>95%</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>100%</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Deliverables__c</fullName>
+        <externalId>false</externalId>
+        <label>Deliverables</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Admin Training</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Agreed Migration Concept</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Detailed Field Mapping,Updated Configuration Wrkbook</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Feedback to Data Quality Improvement Measures</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Migrated System</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Migration Mapping updated in SFDC Data Dic</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Open Issue List</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reqs Workbook,Config Workbook</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SFDC Data Model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Test Plan,Test Strategy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>User Handout</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>User Manual</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Workshop Protocols</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Note__c</fullName>
+        <externalId>false</externalId>
+        <label>Note</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>PMP_hierarchical__c</fullName>
+        <description>Increase PMP hierarchical relationship(increase lookup field, lookup PMP object)</description>
+        <externalId>false</externalId>
+        <label>PMP Hierarchical</label>
+        <referenceTo>PMP__c</referenceTo>
+        <relationshipLabel>PMP</relationshipLabel>
+        <relationshipName>PMP</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Pre_condition__c</fullName>
+        <externalId>false</externalId>
+        <label>Pre-condition</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Responsible_Ressource__c</fullName>
+        <externalId>false</externalId>
+        <label>Responsible Ressource</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Bob</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Christian Eißner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Falk Lehmann</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Greg Zhang</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Harold Liu</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jack Liu</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>James Luo</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jochen</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jojo Shi</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jorry Chen</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mabel Wong</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Oliver Koeth</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rainer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ray Chen</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Robert Smith</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sabine Jonientz</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sam Wang</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>tbd</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tony Li</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tulipe Lee</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Vivian Lee</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wei Song</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Zibin Wang</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gloria Wang</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Richard Yan</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Samuel Liu</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Stella Han</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Odin</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sean</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tobias</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wayne</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>MultiselectPicklist</type>
+        <visibleLines>7</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hold</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Open</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Team__c</fullName>
+        <externalId>false</externalId>
+        <label>Team</label>
+        <picklist>
+            <picklistValues>
+                <fullName>CRM Factory</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Daimler</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Project Management</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Project Management Office</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>WP1 Business Rqs</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>WP2 Functional Design</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>WP3 Technology Application</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>WP4 Testing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>WP5 Rollout/Migration</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>MultiselectPicklist</type>
+        <visibleLines>7</visibleLines>
+    </fields>
+    <label>PMP</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Status__c</columns>
+        <columns>NAME</columns>
+        <columns>PMP_hierarchical__c</columns>
+        <columns>Baseline_Start_Date__c</columns>
+        <columns>Baseline_Due_Date__c</columns>
+        <columns>Actual_Start_Date__c</columns>
+        <columns>Actual_Due_Date__c</columns>
+        <columns>Responsible_Ressource__c</columns>
+        <columns>Team__c</columns>
+        <columns>Pre_condition__c</columns>
+        <columns>Deliverables__c</columns>
+        <columns>Complete__c</columns>
+        <columns>Note__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Task Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>PMP</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>PMP_hierarchical__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Baseline_Start_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Baseline_Due_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Actual_Start_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Actual_Due_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Pre_condition__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Deliverables__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Complete__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchResultsAdditionalFields>Deliverables__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Complete__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

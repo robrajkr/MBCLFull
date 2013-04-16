@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>当分配个案时向个案所有人发送内部通知。</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>支持：新分配通知（示例）</name>
+    <style>none</style>
+    <subject>个案编号 {!Case.CaseNumber}：{!Case.Subject}已分配给您。</subject>
+    <type>text</type>
+</EmailTemplate>

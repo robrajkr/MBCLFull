@@ -1,0 +1,76 @@
+<apex:page StandardController="Account" extensions="DealerSearchController" showHeader="false" sidebar="false">
+    <style>        
+        a {
+            color: #015BA7;
+            text-decoration: none;
+        }
+        
+        body a:hover {
+            text-decoration: underline;
+            color: #015BA7;
+        }
+        
+        .pageTitleIcon {
+            background-image: url(/img/sprites/master.png);
+            background-position: 0 -950px;
+            width: 32px;
+            height: 32px;
+        }
+    </style>
+    
+    <apex:sectionHeader title="Find a Dealer"/>
+    <apex:form >
+        <apex:pageBlock >         
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value="Search Dealers" action="{!query}" status="status" 
+                    rerender="query, message"/>
+                <!-- If customer wants this, we just show it
+                <apex:commandButton value="Clear Filter" action="{!clear}" status="status" 
+                    rerender="filter,query,message"/>
+                -->
+            </apex:pageBlockButtons>
+            
+            <apex:outputpanel Id="filter">
+                <apex:actionStatus id="status">
+                    <apex:facet name="start">
+                        <div style="width: 500px;">
+                            <img src="/img/loading24.gif" style="vertical-align:middle;"/>
+                            <span style="margin-left: 10px; font-size: 12px; font-weight: bold; color: #000000;">
+                                {!$Label.CP_Please_Wait}...</span>
+                        </div>
+                    </apex:facet>      
+                </apex:actionStatus>
+                
+                <apex:pageBlockSection >
+                    <!-- There has problem on Person Account Name InputField, so replace inputField
+                         with inputText 
+                    -->
+                    <apex:pageblockSectionItem >
+                        <apex:outputLabel value="{!$ObjectType.Account.fields.Name.Label}" />
+                        <apex:inputText value="{!name}" title="Input Dealer Name" />
+                    </apex:pageblockSectionItem>
+                    
+                    <apex:inputfield value="{!dealer.Dealer_Region__c}" />
+                    <apex:inputfield value="{!dealer.Province__c}" />
+                    <apex:inputfield value="{!dealer.City_CN__c}" />
+                    <apex:inputfield value="{!dealer.Dealer_Sales_Type__c}" />
+                    <apex:inputfield value="{!dealer.Dealer_Service_Codes__c}" />
+                </apex:pageBlockSection>
+            </apex:outputpanel>
+            
+            <apex:outputPanel Id="query">
+                <apex:pageBlockTable value="{!dealers}" var="dea" rendered="{!hasQueryResult}">
+                    <apex:column headerValue="{!$ObjectType.Account.fields.Name.Label}">
+                        <a href="/{!dea.Id}?isdtp=vw" target="_blank">{!dea.Name}</a>
+                    </apex:column>
+                    
+                    <apex:repeat value="{!$ObjectType.Account.FieldSets.DealerSearchColumns}" var="column">
+                        <apex:column value="{!dea[column]}" rendered="{!NOT(column == 'Name')}"/>
+                    </apex:repeat>
+                </apex:pageBlockTable>
+            </apex:outputPanel>
+            
+            <apex:pageMessages Id="message"/>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

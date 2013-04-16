@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>eDM</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>eDM</value>
+    </caseValues>
+    <fields>
+        <label><!-- Customer Name --></label>
+        <name>Customer_Name__c</name>
+        <relationshipLabel><!-- eDM --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Email Address --></label>
+        <name>Email_Address_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- eDM Template --></label>
+        <name>eDM_Template__c</name>
+        <relationshipLabel><!-- eDM --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>eDM Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- New_eDM --></label>
+        <name>New_eDM</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send --></label>
+        <name>Send</name>
+    </webLinks>
+</CustomObjectTranslation>

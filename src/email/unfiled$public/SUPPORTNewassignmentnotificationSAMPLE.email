@@ -1,0 +1,1 @@
+*** 新个案分配通知 ***   已将以下个案分配给您。公司：{!Account.Name}  联系人姓名：{!Contact.Name}  个案编号：{!Case.CaseNumber}  主题：{!Case.Subject}  备注：{!Case.Description}   单击此链接以访问该个案：  {!Case.Link}

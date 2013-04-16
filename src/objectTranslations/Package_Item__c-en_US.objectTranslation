@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Package Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Package Items</value>
+    </caseValues>
+    <fields>
+        <label><!-- Offering --></label>
+        <name>Offering__c</name>
+        <relationshipLabel><!-- Package Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Package Name --></label>
+        <name>Package_Name__c</name>
+        <relationshipLabel><!-- Package Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related Campaign ID --></label>
+        <name>Related_Campaign_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique ID --></label>
+        <name>Unique_ID__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The offering should belong to the same campaign as the package. --></errorMessage>
+        <name>Check_campaign_offering_and_package</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Template</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Templates</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Car Series --></label>
+        <name>Car_Series__c</name>
+        <picklistValues>
+            <masterLabel>A-Class</masterLabel>
+            <translation><!-- A-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMG</masterLabel>
+            <translation><!-- AMG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B-Class</masterLabel>
+            <translation><!-- B-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C-Class</masterLabel>
+            <translation><!-- C-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CL-Class</masterLabel>
+            <translation><!-- CL-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLK-Class</masterLabel>
+            <translation><!-- CLK-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLS-Class</masterLabel>
+            <translation><!-- CLS-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-Class</masterLabel>
+            <translation><!-- E-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G-Class</masterLabel>
+            <translation><!-- G-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GL-Class</masterLabel>
+            <translation><!-- GL-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GLK-Class</masterLabel>
+            <translation><!-- GLK-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ML-Class</masterLabel>
+            <translation><!-- ML-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R-Class</masterLabel>
+            <translation><!-- R-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S-Class</masterLabel>
+            <translation><!-- S-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SL-Class</masterLabel>
+            <translation><!-- SL-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SLK-Class</masterLabel>
+            <translation><!-- SLK-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Smart</masterLabel>
+            <translation><!-- Smart --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Message Detail --></label>
+        <name>Message_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Price List</masterLabel>
+            <translation><!-- Price List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>e-Brochure</masterLabel>
+            <translation><!-- e-Brochure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>e-Brochure plus Price List</masterLabel>
+            <translation><!-- e-Brochure plus Price List --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Callscript</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SMS</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Detail Information --></label>
+            <section>Detail Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Template Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>eDM Template</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Callscript --></label>
+        <name>Callscript</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SMS --></label>
+        <name>SMS</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- eDM --></label>
+        <name>eDM</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

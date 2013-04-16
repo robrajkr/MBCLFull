@@ -1,0 +1,1971 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>PMO: Requirements Management. Input requirement details and track Requirement status</description>
+    <enableActivities>true</enableActivities>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Acceptance_Criteria__c</fullName>
+        <externalId>false</externalId>
+        <label>Acceptance Criteria</label>
+        <length>32000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Action_Item__c</fullName>
+        <externalId>false</externalId>
+        <label>Action Item</label>
+        <length>32768</length>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Assign_To_SBA_BA__c</fullName>
+        <externalId>false</externalId>
+        <label>Assign To SBA / BA</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Zibin Wang</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tulipe Lee</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Allen Zhang</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Assign_To_TA_Developer__c</fullName>
+        <externalId>false</externalId>
+        <label>Assign To TA / Developer</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Allen Zhang</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lu Bin</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mouse Liu</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sam Wang</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tony Liu</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tulipe Lee</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ying Jun</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Assign_to_TA_TC_user__c</fullName>
+        <externalId>false</externalId>
+        <label>Assign to TA/TC (user)</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Requirements4</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Assumptions__c</fullName>
+        <externalId>false</externalId>
+        <label>Assumptions</label>
+        <length>15000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>BA_Hours__c</fullName>
+        <externalId>false</externalId>
+        <label>BA Hours</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Build_Remarks__c</fullName>
+        <externalId>false</externalId>
+        <label>Build Remarks</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Business_Owner__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Function user who raises or is responsible to validate this requirement</inlineHelpText>
+        <label>Business Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Requirements</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Category</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Configuration</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Analytics</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Security (Profile/Roles/Layouts)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trigger</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Training</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Integration</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Visualforce</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flow</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Console</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Critical__c</fullName>
+        <externalId>false</externalId>
+        <label>Biz Priority</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Critical</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Deployment_By__c</fullName>
+        <externalId>false</externalId>
+        <label>Deployment By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Requirements2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Deployment_Remarks__c</fullName>
+        <externalId>false</externalId>
+        <label>Deployment Remarks</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Dev_Completed__c</fullName>
+        <externalId>false</externalId>
+        <label>Dev Completed</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Develop_Task__c</fullName>
+        <externalId>false</externalId>
+        <label>Develop Task</label>
+        <referenceTo>Develop_Task__c</referenceTo>
+        <relationshipName>Requirements</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Developer_Hours__c</fullName>
+        <externalId>false</externalId>
+        <label>Developer Hours</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Funcational_Owner_Remarks__c</fullName>
+        <description>For functional owners</description>
+        <externalId>false</externalId>
+        <label>Function Owner Remark</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Html</type>
+        <visibleLines>20</visibleLines>
+    </fields>
+    <fields>
+        <fullName>High_Level_Solution__c</fullName>
+        <externalId>false</externalId>
+        <label>High Level Solution</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_Test_Lead_Remark__c</fullName>
+        <description>For TCS team</description>
+        <externalId>false</externalId>
+        <label>IT Test Lead Remark</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Html</type>
+        <visibleLines>20</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Iteration__c</fullName>
+        <externalId>false</externalId>
+        <label>Iteration</label>
+        <referenceTo>Iteration__c</referenceTo>
+        <relationshipName>Requirements</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Module_Object__c</fullName>
+        <externalId>false</externalId>
+        <label>Module / Object</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Account</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Address</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aftersales Record</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Campaign</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Case</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chatter</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Contact</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Contact / Contact</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email Address</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>External Key</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Integration</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Knowledge</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lead</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Literature</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Literature Order</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Opportunity</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Preferences</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Report/Dashboard</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sales Record</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Security</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Service Console</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Vehicle / Asset</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Vehicle Relationship</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Warranty Record</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Pre_User_Story__c</fullName>
+        <externalId>false</externalId>
+        <label>Pre User Story</label>
+        <referenceTo>Requirement_UserStory__c</referenceTo>
+        <relationshipLabel>Requirement / User Story (Pre User Story)</relationshipLabel>
+        <relationshipName>Pre_User_Story</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Proposed_Approach__c</fullName>
+        <externalId>false</externalId>
+        <label>Proposed Approach</label>
+        <length>32000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Ref_BQ__c</fullName>
+        <externalId>false</externalId>
+        <label>Ref BQ#</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ref_Process_UC__c</fullName>
+        <externalId>false</externalId>
+        <label>Ref Process#/UC#</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Related_Requirement__c</fullName>
+        <description>Related Requirement - for duplicates or joint requirements or parent/child</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Related Requirement - for duplicates or joint requirements or parent/child</inlineHelpText>
+        <label>Related Requirement</label>
+        <referenceTo>Requirement_UserStory__c</referenceTo>
+        <relationshipName>Related_Requirements</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Release__c</fullName>
+        <externalId>false</externalId>
+        <label>Release / Phase</label>
+        <referenceTo>Release__c</referenceTo>
+        <relationshipName>Requirements</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Remark_Question__c</fullName>
+        <externalId>false</externalId>
+        <label>Remark / Question</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Remark_Question_by_BA__c</fullName>
+        <externalId>false</externalId>
+        <label>Remark/Question by BA</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Req_Unique_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>hidden field, copy of Requirement Id and make sure it&apos;s unique</description>
+        <externalId>true</externalId>
+        <label>*Req Unique Id</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Requirement_Adjustment__c</fullName>
+        <externalId>false</externalId>
+        <label>Requirement Adjustment</label>
+        <length>32768</length>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Requirement_Description__c</fullName>
+        <description>Description of business requirement</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Description of business requirement</inlineHelpText>
+        <label>Requirement Description</label>
+        <length>32000</length>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Resource__c</fullName>
+        <externalId>false</externalId>
+        <label>Resource</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Requirements1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Reviewed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Reviewed by SA/TA</inlineHelpText>
+        <label>Reviewed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBA_BA_Man_Days__c</fullName>
+        <externalId>false</externalId>
+        <label>SBA/BA Man-Days</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBA_Hours__c</fullName>
+        <externalId>false</externalId>
+        <label>SBA Hours</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Screenshot__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Screenshot?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Solution_Architecture__c</fullName>
+        <externalId>false</externalId>
+        <label>Solution Architecture</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Solution_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Solution Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Configuration</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Custom Development</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Integration</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Migration</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Coding</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Connect for Excel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Out of Box</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Source_of_Requirement__c</fullName>
+        <externalId>false</externalId>
+        <label>Source of Requirement</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Original / BPR</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Alpha Review</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Beta Review</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>UAT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Workshop</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The stage of requirement. Each status will send emails to related team automatically.</inlineHelpText>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Initialized</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Clarify with Business</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gap Identified - Scope</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gap Identified - Solution</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Understand</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Design Confirmed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dev In Progress</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ready for Testing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Return to Dev</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IT Tested</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Function Validated</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Return to Testing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pending on Function</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Accepted</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Future Release</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Training / Process</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Complete Data Required</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pending on Environment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Out Of Scope</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subject__c</fullName>
+        <externalId>false</externalId>
+        <label>Subject</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TA_Developer_Man_Days__c</fullName>
+        <externalId>false</externalId>
+        <label>TA/Developer Man-Days</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TA_Hours__c</fullName>
+        <externalId>false</externalId>
+        <label>TA Hours</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Test_Script_Ready__c</fullName>
+        <externalId>false</externalId>
+        <label>Test Script Ready</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Tested_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Tested Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>User_Story_Detail__c</fullName>
+        <description>Description of User Story</description>
+        <externalId>false</externalId>
+        <label>User Story Detail</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>User__c</fullName>
+        <externalId>false</externalId>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Requirements5</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Validated_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Validated Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>assign_to_BA_user__c</fullName>
+        <externalId>false</externalId>
+        <label>Assigned To BA/SBA (user)</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Requirements3</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <label>Requirement / User Story</label>
+    <listViews>
+        <fullName>All_Requirements</fullName>
+        <columns>NAME</columns>
+        <columns>Module_Object__c</columns>
+        <columns>Category__c</columns>
+        <columns>Status__c</columns>
+        <columns>assign_to_BA_user__c</columns>
+        <columns>Critical__c</columns>
+        <columns>Assign_to_TA_TC_user__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Test_Script_Ready__c</columns>
+        <columns>Dev_Completed__c</columns>
+        <columns>Tested_Date__c</columns>
+        <columns>Validated_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Requirement_UserStory__c.Requirement</value>
+        </filters>
+        <label>All Requirements</label>
+    </listViews>
+    <listViews>
+        <fullName>All_User_Stories</fullName>
+        <columns>NAME</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>assign_to_BA_user__c</columns>
+        <columns>Module_Object__c</columns>
+        <columns>Status__c</columns>
+        <columns>Subject__c</columns>
+        <columns>User_Story_Detail__c</columns>
+        <columns>Acceptance_Criteria__c</columns>
+        <columns>Pre_User_Story__c</columns>
+        <columns>High_Level_Solution__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Requirement_UserStory__c.User_Story</value>
+        </filters>
+        <label>All User Stories</label>
+    </listViews>
+    <listViews>
+        <fullName>Case_User_Stories</fullName>
+        <columns>NAME</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>assign_to_BA_user__c</columns>
+        <columns>Module_Object__c</columns>
+        <columns>Status__c</columns>
+        <columns>Subject__c</columns>
+        <columns>User_Story_Detail__c</columns>
+        <columns>Acceptance_Criteria__c</columns>
+        <columns>Pre_User_Story__c</columns>
+        <columns>High_Level_Solution__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Requirement_UserStory__c.User_Story</value>
+        </filters>
+        <filters>
+            <field>Module_Object__c</field>
+            <operation>includes</operation>
+            <value>Case</value>
+        </filters>
+        <label>Case User Stories</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Function_Validated</fullName>
+        <columns>NAME</columns>
+        <columns>Iteration__c</columns>
+        <columns>Module_Object__c</columns>
+        <columns>Requirement_Description__c</columns>
+        <columns>Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Function Validated</value>
+        </filters>
+        <label>Function Validated</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>IT_Tested</fullName>
+        <columns>NAME</columns>
+        <columns>Business_Owner__c</columns>
+        <columns>Iteration__c</columns>
+        <columns>Module_Object__c</columns>
+        <columns>Requirement_Description__c</columns>
+        <columns>Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>IT Tested</value>
+        </filters>
+        <label>IT Tested</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Integration</fullName>
+        <columns>NAME</columns>
+        <columns>Module_Object__c</columns>
+        <columns>Status__c</columns>
+        <columns>assign_to_BA_user__c</columns>
+        <columns>Critical__c</columns>
+        <columns>Assign_to_TA_TC_user__c</columns>
+        <columns>Category__c</columns>
+        <columns>Test_Script_Ready__c</columns>
+        <columns>Dev_Completed__c</columns>
+        <columns>Tested_Date__c</columns>
+        <columns>Validated_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Category__c</field>
+            <operation>includes</operation>
+            <value>Integration</value>
+        </filters>
+        <label>Integration</label>
+    </listViews>
+    <listViews>
+        <fullName>Not_Completed_List</fullName>
+        <columns>NAME</columns>
+        <columns>Business_Owner__c</columns>
+        <columns>Iteration__c</columns>
+        <columns>Requirement_Description__c</columns>
+        <columns>Status__c</columns>
+        <columns>Release__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>notEqual</operation>
+            <value>Function Validated</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>notEqual</operation>
+            <value>Cancelled</value>
+        </filters>
+        <filters>
+            <field>Release__c</field>
+            <operation>notEqual</operation>
+            <value>Dev1.1</value>
+        </filters>
+        <label>Not Completed List</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Pending_on_Function</fullName>
+        <columns>NAME</columns>
+        <columns>Requirement_Description__c</columns>
+        <columns>Requirement_Adjustment__c</columns>
+        <columns>Acceptance_Criteria__c</columns>
+        <columns>IT_Test_Lead_Remark__c</columns>
+        <columns>Business_Owner__c</columns>
+        <columns>Funcational_Owner_Remarks__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Pending on Function</value>
+        </filters>
+        <label>Pending on Function</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Phase_1_In_Development</fullName>
+        <columns>NAME</columns>
+        <columns>Requirement_Description__c</columns>
+        <columns>Module_Object__c</columns>
+        <columns>Status__c</columns>
+        <columns>assign_to_BA_user__c</columns>
+        <columns>Critical__c</columns>
+        <columns>Category__c</columns>
+        <columns>Business_Owner__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>contains</operation>
+            <value>DEV</value>
+        </filters>
+        <label>Phase 1 - In Development</label>
+    </listViews>
+    <listViews>
+        <fullName>Ready_for_Testing</fullName>
+        <columns>NAME</columns>
+        <columns>Iteration__c</columns>
+        <columns>Module_Object__c</columns>
+        <columns>Requirement_Description__c</columns>
+        <columns>Status__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Ready for Testing</value>
+        </filters>
+        <label>Ready for Testing</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Report_Dashboard</fullName>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>Critical__c</columns>
+        <columns>assign_to_BA_user__c</columns>
+        <columns>Assign_to_TA_TC_user__c</columns>
+        <columns>Test_Script_Ready__c</columns>
+        <columns>Dev_Completed__c</columns>
+        <columns>Tested_Date__c</columns>
+        <columns>Validated_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Report/Dashboard</label>
+    </listViews>
+    <listViews>
+        <fullName>Return_to_Dev</fullName>
+        <columns>NAME</columns>
+        <columns>Requirement_Description__c</columns>
+        <columns>IT_Test_Lead_Remark__c</columns>
+        <columns>Funcational_Owner_Remarks__c</columns>
+        <columns>Assign_To_TA_Developer__c</columns>
+        <columns>Business_Owner__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Return to Dev</value>
+        </filters>
+        <label>Return to Dev</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Requirement ID</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <namedFilters>
+        <fullName>nf_01I900000014ReUEAU_00N90000004y8UxEAI</fullName>
+        <active>true</active>
+        <field>Requirement_UserStory__c.Pre_User_Story__c</field>
+        <filterItems>
+            <field>Requirement_UserStory__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>User Story</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+        <name>Requirement / User Story_Pre User Story</name>
+    </namedFilters>
+    <namedFilters>
+        <fullName>nf_01I900000014aDgEAI_00N90000004sAVDEA2</fullName>
+        <active>false</active>
+        <field>Requirement_User_Story__c.Requirement__c</field>
+        <filterItems>
+            <field>Requirement_UserStory__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Requirement</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+        <name>Requirement - User Story_Requirement</name>
+    </namedFilters>
+    <namedFilters>
+        <fullName>nf_01I900000014aDgEAI_00N90000004sAVIEA2</fullName>
+        <active>true</active>
+        <field>Requirement_User_Story__c.User_Story__c</field>
+        <filterItems>
+            <field>Requirement_UserStory__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>User Story</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+        <name>Requirement - User Story_User Story</name>
+    </namedFilters>
+    <pluralLabel>Requirement / User Story</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Requirement</fullName>
+        <active>true</active>
+        <label>Requirement</label>
+        <picklistValues>
+            <picklist>Assign_To_SBA_BA__c</picklist>
+            <values>
+                <fullName>Allen Zhang</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tulipe Lee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Zibin Wang</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Assign_To_TA_Developer__c</picklist>
+            <values>
+                <fullName>Allen Zhang</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lu Bin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mouse Liu</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sam Wang</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tony Liu</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tulipe Lee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ying Jun</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Category__c</picklist>
+            <values>
+                <fullName>Analytics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configuration</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Console</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Security %28Profile%2FRoles%2FLayouts%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trigger</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visualforce</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Critical__c</picklist>
+            <values>
+                <fullName>Critical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>High</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Module_Object__c</picklist>
+            <values>
+                <fullName>Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aftersales Record</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Case</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chatter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact %2F Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Key</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Knowledge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Literature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Literature Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opportunity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preferences</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report%2FDashboard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Record</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Security</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Console</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vehicle %2F Asset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vehicle Relationship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warranty Record</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Solution_Type__c</picklist>
+            <values>
+                <fullName>Coding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Connect for Excel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Custom Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Migration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out of Box</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Source_of_Requirement__c</picklist>
+            <values>
+                <fullName>Alpha Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beta Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Original %2F BPR</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UAT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Workshop</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Accepted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clarify with Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete Data Required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Design Confirmed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dev In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Function Validated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Future Release</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gap Identified - Scope</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gap Identified - Solution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT Tested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initialized</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Out Of Scope</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending on Environment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending on Function</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready for Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Return to Dev</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Return to Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training %2F Process</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Understand</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>User_Story</fullName>
+        <active>true</active>
+        <label>User Story</label>
+        <picklistValues>
+            <picklist>Assign_To_SBA_BA__c</picklist>
+            <values>
+                <fullName>Allen Zhang</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tulipe Lee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Zibin Wang</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Assign_To_TA_Developer__c</picklist>
+            <values>
+                <fullName>Allen Zhang</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lu Bin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mouse Liu</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sam Wang</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tony Liu</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tulipe Lee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ying Jun</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Category__c</picklist>
+            <values>
+                <fullName>Analytics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configuration</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Console</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Security %28Profile%2FRoles%2FLayouts%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trigger</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visualforce</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Critical__c</picklist>
+            <values>
+                <fullName>Critical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>High</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Module_Object__c</picklist>
+            <values>
+                <fullName>Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aftersales Record</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Case</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chatter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact %2F Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Key</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Knowledge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Literature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Literature Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opportunity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preferences</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report%2FDashboard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Record</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Security</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Console</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vehicle %2F Asset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vehicle Relationship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warranty Record</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Solution_Type__c</picklist>
+            <values>
+                <fullName>Coding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Connect for Excel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Custom Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Migration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out of Box</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Source_of_Requirement__c</picklist>
+            <values>
+                <fullName>Alpha Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beta Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Original %2F BPR</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UAT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Workshop</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Accepted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clarify with Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete Data Required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Design Confirmed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dev In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Function Validated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Future Release</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gap Identified - Scope</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gap Identified - Solution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT Tested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initialized</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Out Of Scope</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending on Environment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending on Function</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready for Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Return to Dev</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Return to Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training %2F Process</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Understand</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>RECORDTYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Iteration__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Subject__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Requirement_Description__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Acceptance_Criteria__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Assumptions__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>assign_to_BA_user__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Category__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Subject__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Requirement_Description__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>User_Story_Detail__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Iteration__c</searchFilterFields>
+        <searchFilterFields>Module_Object__c</searchFilterFields>
+        <searchFilterFields>Status__c</searchFilterFields>
+        <searchResultsAdditionalFields>Module_Object__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Requirement_Description__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Requirement_Adjustment__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Dev_Completed__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Iteration__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Solution_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

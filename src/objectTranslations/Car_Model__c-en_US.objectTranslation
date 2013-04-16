@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Car Model</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Car Model</value>
+    </caseValues>
+    <fields>
+        <label><!-- Brand --></label>
+        <name>Brand__c</name>
+        <picklistValues>
+            <masterLabel>MB</masterLabel>
+            <translation><!-- MB --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model --></label>
+        <name>Model__c</name>
+        <picklistValues>
+            <masterLabel>A160</masterLabel>
+            <translation><!-- A160 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A180</masterLabel>
+            <translation><!-- A180 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B180 BlueEFFICIENCY</masterLabel>
+            <translation><!-- B180 BlueEFFICIENCY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B200</masterLabel>
+            <translation><!-- B200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B200 BlueEFFICIENCY</masterLabel>
+            <translation><!-- B200 BlueEFFICIENCY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B200 Sports Model</masterLabel>
+            <translation><!-- B200 Sports Model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B200 fashion model</masterLabel>
+            <translation><!-- B200 fashion model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B200 luxury model</masterLabel>
+            <translation><!-- B200 luxury model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B200 豪华型 夜行独享版</masterLabel>
+            <translation><!-- B200 豪华型 夜行独享版 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C180K 经典型</masterLabel>
+            <translation><!-- C180K 经典型 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C180K 经典型 (CKD)</masterLabel>
+            <translation><!-- C180K 经典型 (CKD) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C200 CGI优雅型</masterLabel>
+            <translation><!-- C200 CGI优雅型 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C200 CGI时尚型</masterLabel>
+            <translation><!-- C200 CGI时尚型 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C200 Entry Elegance</masterLabel>
+            <translation><!-- C200 Entry Elegance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C200 fashion model</masterLabel>
+            <translation><!-- C200 fashion model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C200 luxury model</masterLabel>
+            <translation><!-- C200 luxury model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C200 优雅型</masterLabel>
+            <translation><!-- C200 优雅型 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C200 旅行轿车</masterLabel>
+            <translation><!-- C200 旅行轿车 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C200 时尚型旅行轿车</masterLabel>
+            <translation><!-- C200 时尚型旅行轿车 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C200K</masterLabel>
+            <translation><!-- C200K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C200K fashion model</masterLabel>
+            <translation><!-- C200K fashion model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C200K grace model</masterLabel>
+            <translation><!-- C200K grace model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C200K sports car (not current series)</masterLabel>
+            <translation><!-- C200K sports car (not current series) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C230</masterLabel>
+            <translation><!-- C230 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C230 fashion model</masterLabel>
+            <translation><!-- C230 fashion model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C230 grace model</masterLabel>
+            <translation><!-- C230 grace model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C230 sports car (not current series)</masterLabel>
+            <translation><!-- C230 sports car (not current series) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C240 (not current series)</masterLabel>
+            <translation><!-- C240 (not current series) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C240A fashion model (not current series)</masterLabel>
+            <translation><!-- C240A fashion model (not current series) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C240E  grace model (not current series)</masterLabel>
+            <translation><!-- C240E  grace model (not current series) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C260</masterLabel>
+            <translation><!-- C260 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C260 CGI fashion model(CKD)</masterLabel>
+            <translation><!-- C260 CGI fashion model(CKD) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C260 CGI sports(CKD)</masterLabel>
+            <translation><!-- C260 CGI sports(CKD) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C260 时尚型</masterLabel>
+            <translation><!-- C260 时尚型 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C280</masterLabel>
+            <translation><!-- C280 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C280 Avantgarde</masterLabel>
+            <translation><!-- C280 Avantgarde --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C280 fashion model</masterLabel>
+            <translation><!-- C280 fashion model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C300</masterLabel>
+            <translation><!-- C300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C300 fashion model(CKD)</masterLabel>
+            <translation><!-- C300 fashion model(CKD) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C300 sports(CKD)</masterLabel>
+            <translation><!-- C300 sports(CKD) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C300 时尚型</masterLabel>
+            <translation><!-- C300 时尚型 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CL600</masterLabel>
+            <translation><!-- CL600 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLK200K</masterLabel>
+            <translation><!-- CLK200K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLK200K (not current series)</masterLabel>
+            <translation><!-- CLK200K (not current series) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLK200K coupe roadster</masterLabel>
+            <translation><!-- CLK200K coupe roadster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLK200K coupe roadster (not current series)</masterLabel>
+            <translation><!-- CLK200K coupe roadster (not current series) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLK200K sports car</masterLabel>
+            <translation><!-- CLK200K sports car --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLK200K sports car (not current series)</masterLabel>
+            <translation><!-- CLK200K sports car (not current series) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLK240 (not current series)</masterLabel>
+            <translation><!-- CLK240 (not current series) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLK240 coupe roadster (not current series)</masterLabel>
+            <translation><!-- CLK240 coupe roadster (not current series) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLK240 sports car (not current series)</masterLabel>
+            <translation><!-- CLK240 sports car (not current series) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLK280</masterLabel>
+            <translation><!-- CLK280 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLK280 coupe roadster</masterLabel>
+            <translation><!-- CLK280 coupe roadster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLK280 sports car</masterLabel>
+            <translation><!-- CLK280 sports car --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLK350</masterLabel>
+            <translation><!-- CLK350 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLK350 coupe roadster</masterLabel>
+            <translation><!-- CLK350 coupe roadster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLK350 sports car</masterLabel>
+            <translation><!-- CLK350 sports car --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLK500 (not current series)</masterLabel>
+            <translation><!-- CLK500 (not current series) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLK500 coupe roadster (not current series)</masterLabel>
+            <translation><!-- CLK500 coupe roadster (not current series) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLK500 sports car (not current series)</masterLabel>
+            <translation><!-- CLK500 sports car (not current series) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLS300</masterLabel>
+            <translation><!-- CLS300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLS350</masterLabel>
+            <translation><!-- CLS350 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLS500</masterLabel>
+            <translation><!-- CLS500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E200</masterLabel>
+            <translation><!-- E200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E200 CGI grace model</masterLabel>
+            <translation><!-- E200 CGI grace model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E200 Coupe</masterLabel>
+            <translation><!-- E200 Coupe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E200K</masterLabel>
+            <translation><!-- E200K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E200K (not current series)</masterLabel>
+            <translation><!-- E200K (not current series) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E200K grace model</masterLabel>
+            <translation><!-- E200K grace model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E200L CGI elegant type</masterLabel>
+            <translation><!-- E200L CGI elegant type --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E230</masterLabel>
+            <translation><!-- E230 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E230 fashion model</masterLabel>
+            <translation><!-- E230 fashion model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E230 grace model</masterLabel>
+            <translation><!-- E230 grace model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E240 (not current series)</masterLabel>
+            <translation><!-- E240 (not current series) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E240 fashion model (not current series)</masterLabel>
+            <translation><!-- E240 fashion model (not current series) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E240 grace model (not current series)</masterLabel>
+            <translation><!-- E240 grace model (not current series) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E260</masterLabel>
+            <translation><!-- E260 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E260 CGI Cabriolet</masterLabel>
+            <translation><!-- E260 CGI Cabriolet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E260 CGI fashion model</masterLabel>
+            <translation><!-- E260 CGI fashion model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E260 L CGI elegant type(CKD)</masterLabel>
+            <translation><!-- E260 L CGI elegant type(CKD) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E260 L CGI fashion model(CKD)</masterLabel>
+            <translation><!-- E260 L CGI fashion model(CKD) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E260 coupe sports model</masterLabel>
+            <translation><!-- E260 coupe sports model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E260 sports model</masterLabel>
+            <translation><!-- E260 sports model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E280</masterLabel>
+            <translation><!-- E280 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E280 (not current series)</masterLabel>
+            <translation><!-- E280 (not current series) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E280 fashion model</masterLabel>
+            <translation><!-- E280 fashion model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E280 grace model</masterLabel>
+            <translation><!-- E280 grace model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E280 personality sports model</masterLabel>
+            <translation><!-- E280 personality sports model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E300</masterLabel>
+            <translation><!-- E300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E300 elegant luxury model</masterLabel>
+            <translation><!-- E300 elegant luxury model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E300 fashion luxury model</masterLabel>
+            <translation><!-- E300 fashion luxury model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E300 fashion model</masterLabel>
+            <translation><!-- E300 fashion model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E300 grace model</masterLabel>
+            <translation><!-- E300 grace model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E300L elegant type</masterLabel>
+            <translation><!-- E300L elegant type --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E300L fashion model(CKD)</masterLabel>
+            <translation><!-- E300L fashion model(CKD) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E300L fashion type honourable edition(CKD)</masterLabel>
+            <translation><!-- E300L fashion type honourable edition(CKD) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E320 (not current series)</masterLabel>
+            <translation><!-- E320 (not current series) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E320 fashion model (not current series)</masterLabel>
+            <translation><!-- E320 fashion model (not current series) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E320 grace model (not current series)</masterLabel>
+            <translation><!-- E320 grace model (not current series) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E350</masterLabel>
+            <translation><!-- E350 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E350 Cabriolet</masterLabel>
+            <translation><!-- E350 Cabriolet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E350 coupe sports model</masterLabel>
+            <translation><!-- E350 coupe sports model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E350 fashion model</masterLabel>
+            <translation><!-- E350 fashion model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E350 grace model</masterLabel>
+            <translation><!-- E350 grace model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E350 sports fashion model</masterLabel>
+            <translation><!-- E350 sports fashion model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E350 sports grace model</masterLabel>
+            <translation><!-- E350 sports grace model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E500 (not current series)</masterLabel>
+            <translation><!-- E500 (not current series) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E500 fashion model (not current series)</masterLabel>
+            <translation><!-- E500 fashion model (not current series) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E500 grace model (not current series)</masterLabel>
+            <translation><!-- E500 grace model (not current series) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Series --></label>
+        <name>Series__c</name>
+        <picklistValues>
+            <masterLabel>A-Class</masterLabel>
+            <translation><!-- A-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B-Class</masterLabel>
+            <translation><!-- B-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C-Class</masterLabel>
+            <translation><!-- C-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CL-Class</masterLabel>
+            <translation><!-- CL-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLK-Class</masterLabel>
+            <translation><!-- CLK-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLS-Class</masterLabel>
+            <translation><!-- CLS-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-Class</masterLabel>
+            <translation><!-- E-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G-Class</masterLabel>
+            <translation><!-- G-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GL-Class</masterLabel>
+            <translation><!-- GL-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GLK-Class</masterLabel>
+            <translation><!-- GLK-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ML-Class</masterLabel>
+            <translation><!-- ML-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R-Class</masterLabel>
+            <translation><!-- R-Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S-Class</masterLabel>
+            <translation><!-- S-Class --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Car Model Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

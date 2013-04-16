@@ -1,0 +1,1 @@
+*** 个案升级警告 ***   以下个案已升级：公司：{!Account.Name}  个案：{!Case.CaseNumber}：{!Case.Subject}  所有人：{!CaseOwner.FullName}    单击此链接以访问该个案：  {!Case.Link}

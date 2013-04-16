@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Contact Porfolio: To record Sales record linked to each customer</description>
+    <enableActivities>true</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>CreatedByEpTransaction__c</fullName>
+        <description>The integration layer (EP) needs this field for defect handling and debugging:</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The integration layer (EP) needs this field for defect handling and debugging:</inlineHelpText>
+        <label>CreatedByEpTransaction</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Salutation__c</fullName>
+        <description>Customer Title from the sales contract
+Attribute in Data Dictionary object Sales is &quot;Sales_CustomerTitle&quot;</description>
+        <externalId>false</externalId>
+        <label>Customer Salutation</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Company_Name__c</fullName>
+        <description>/*
+Created by: Amy Liang
+Used by: Sales 
+Function: Company Name from the sales contract
+Used in: Page Layouts,  Reports
+
+Modify History
+Modify By: 
+Modify Reason: 
+*/
+Attribute in Data Dictionary object Sales is &quot;Sales_CompanyName&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Company Name from the sales contract</inlineHelpText>
+        <label>Sales Company Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Contact__c</fullName>
+        <description>/* 
+Created by: Tony Li
+Used by: Tony Li 
+Function: Retail Contact linked to the sales record 
+Used in: Page Layouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/
+Attribute in Data Dictionary object Sales is &quot;Sales_Contact&quot;</description>
+        <externalId>false</externalId>
+        <label>Sales Contact</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Sales Record</relationshipLabel>
+        <relationshipName>Sales_Person_Account</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Contract_Date__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Sales 
+Function: The start date for the sales contract
+Used in: Page Layouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/
+Attribute in Data Dictionary object Sales is &quot;Sales_ContractDate&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The start date for the sales contract</inlineHelpText>
+        <label>Sales Contract Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Customer_Name__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Sales 
+Function: Customer Name from the sales contract
+Used in: Page Layouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/
+Attribute in Data Dictionary object Sales is &quot;Sales_CustomerName&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Customer Name from the sales contract</inlineHelpText>
+        <label>Sales Customer Name</label>
+        <length>152</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Dealer__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Sales 
+Function: Sales dealer code in CRM 
+Used in: Page Layouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/
+Attribute in Data Dictionary object Sales is &quot;Sales_Dealer&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sales dealer code in CRM</inlineHelpText>
+        <label>Sales Dealer</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Sales Record</relationshipLabel>
+        <relationshipName>Dealer_Sales</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Handover_Date__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Sales 
+Function: Date of the vehicle-handover to the customer
+Used in: Page Layouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/
+Attribute in Data Dictionary object Sales is &quot;Sales_HandoverDate&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date of the vehicle-handover to the customer</inlineHelpText>
+        <label>Sales Handover Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Home_Mobile_Phone__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Sales 
+Function: Private Phone Number from the sales contract
+Used in: Page Layouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/
+Attribute in Data Dictionary object Sales is &quot;Sales_HomeMobilePhone&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Private Phone Number from the sales contract</inlineHelpText>
+        <label>Sales Home Mobile Phone</label>
+        <length>15</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Invoice_Date__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Sales 
+Function: Date for invoice
+Used in: Page Layouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/
+Attribute in Data Dictionary object Sales is &quot;Sales_InvoiceDate&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date for invoice</inlineHelpText>
+        <label>Sales Invoice Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Office_Phone__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Sales 
+Function: Office Phone Number from the sales contract
+Used in: Page Layouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/
+Attribute in Data Dictionary object Sales is &quot;Sales_OfficePhone&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Office Phone Number from the sales contract</inlineHelpText>
+        <label>Sales Office Phone</label>
+        <length>15</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Person__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Sales 
+Function: The sales person involved in the contract
+Used in: Page Layouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/
+Attribute in Data Dictionary object Sales is &quot;Sales_Person&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The sales person involved in the contract</inlineHelpText>
+        <label>Sales Person</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Vehicle_CBU_CKD__c</fullName>
+        <description>Vehicle manufacture type according to sales contract
+Attribute in Data Dictionary object Sales is &quot;Sales_VehicleCBUCKD&quot;</description>
+        <externalId>false</externalId>
+        <label>Sales Vehicle CBU/CKD</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Vehicle_ID__c</fullName>
+        <description>/* 
+Created by: Tony Li 
+Used by: Tony Li 
+Function: Vehicle linked to the sale in the system 
+Used in: Page Layouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/
+Attribute in Data Dictionary object Sales is &quot;Sales_VehicleID&quot;</description>
+        <externalId>false</externalId>
+        <label>Sales Vehicle</label>
+        <referenceTo>Vehicle__c</referenceTo>
+        <relationshipLabel>Sales</relationshipLabel>
+        <relationshipName>Sales</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Vehicle_Model__c</fullName>
+        <description>Vehicle model according to sales contract
+Attribute in Data Dictionary object Sales is &quot;Sales_VehicleModel&quot;</description>
+        <externalId>false</externalId>
+        <label>Sales Vehicle Model</label>
+        <length>15</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Vehicle_USvin__c</fullName>
+        <description>Vehicle description according to sales contract
+Attribute in Data Dictionary object Sales is &quot;Sales_VehicleUSvin&quot;</description>
+        <externalId>false</externalId>
+        <label>Sales Vehicle USvin</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UpdatedByEpTransactions__c</fullName>
+        <description>The integration layer (EP) needs this field for defect handling and debugging:</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The integration layer (EP) needs this field for defect handling and debugging:</inlineHelpText>
+        <label>UpdatedByEpTransactions</label>
+        <length>300</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Valid__c</fullName>
+        <description>To flag whether the sales record is valid</description>
+        <externalId>false</externalId>
+        <label>Validity</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Unknown</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Vehicle_Description__c</fullName>
+        <description>From Data Dictionary
+Attribute in Data Dictionary object Sales is &quot;Sales_VehicleDesc&quot;</description>
+        <externalId>false</externalId>
+        <label>Vehicle Description</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Sales</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Sales Order No.</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Sales</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Sales_Dealer__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Sales_Contact__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Sales_Vehicle_ID__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Sales_Contract_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Sales_Handover_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Sales_Invoice_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Sales_Person__c</customTabListAdditionalFields>
+        <searchResultsAdditionalFields>Sales_Dealer__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Sales_Contact__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Sales_Vehicle_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Sales_Contract_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Sales_Invoice_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Sales_Handover_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Sales_Person__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+</CustomObject>

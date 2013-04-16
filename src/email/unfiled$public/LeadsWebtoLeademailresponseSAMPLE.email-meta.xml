@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>在线提交新潜在客户时自动回复。</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>潜在客户：在线潜在客户电子邮件回复（示例）</name>
+    <style>none</style>
+    <subject>{!Organization.Name}：  感谢您提交查询！</subject>
+    <type>text</type>
+</EmailTemplate>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ticket</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tickets</value>
+    </caseValues>
+    <fields>
+        <label><!-- Assigned To --></label>
+        <name>Assigned_To__c</name>
+        <relationshipLabel><!-- Tickets (Assigned To) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Capture Date --></label>
+        <name>Capture_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deployment By --></label>
+        <name>Deployment_By__c</name>
+        <relationshipLabel><!-- Tickets (Deployment By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Deployment Date --></label>
+        <name>Deployment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deployment Remarks --></label>
+        <name>Deployment_Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fix Category --></label>
+        <name>Fix_Category__c</name>
+        <picklistValues>
+            <masterLabel>Access Rights</masterLabel>
+            <translation><!-- Access Rights --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Configuration</masterLabel>
+            <translation><!-- Configuration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Dev</masterLabel>
+            <translation><!-- Custom Dev --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reporting</masterLabel>
+            <translation><!-- Reporting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAP Interface</masterLabel>
+            <translation><!-- SAP Interface --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAP Jump</masterLabel>
+            <translation><!-- SAP Jump --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Translation</masterLabel>
+            <translation><!-- Translation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Problem Description --></label>
+        <name>Problem_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Problem --></label>
+        <name>Problem__c</name>
+    </fields>
+    <fields>
+        <label><!-- Raised By --></label>
+        <name>Raised_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolution --></label>
+        <name>Resolution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Severity --></label>
+        <name>Severity__c</name>
+        <picklistValues>
+            <masterLabel>High 1</masterLabel>
+            <translation><!-- High 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low 3</masterLabel>
+            <translation><!-- Low 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium 2</masterLabel>
+            <translation><!-- Medium 2 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Analysis</masterLabel>
+            <translation><!-- Analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Duplicate</masterLabel>
+            <translation><!-- Closed - Duplicate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Fixed</masterLabel>
+            <translation><!-- Closed - Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Rejected</masterLabel>
+            <translation><!-- Closed - Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Requirement</masterLabel>
+            <translation><!-- Closed - Requirement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deferred</masterLabel>
+            <translation><!-- Deferred --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fix in Progress</masterLabel>
+            <translation><!-- Fix in Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical Limitation of SFDC</masterLabel>
+            <translation><!-- Technical Limitation of SFDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test</masterLabel>
+            <translation><!-- Test --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Test Result --></label>
+        <name>Test_Result__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Passed</masterLabel>
+            <translation><!-- Passed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tester --></label>
+        <name>Tester__c</name>
+        <relationshipLabel><!-- Tickets (Tester) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Testing Remarks --></label>
+        <name>Testing_Remarks__c</name>
+    </fields>
+    <layouts>
+        <layout>Ticket Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Deployment --></label>
+            <section>Deployment</section>
+        </sections>
+        <sections>
+            <label><!-- Solution --></label>
+            <section>Solution</section>
+        </sections>
+        <sections>
+            <label><!-- Testing --></label>
+            <section>Testing</section>
+        </sections>
+        <sections>
+            <label><!-- Testing Remarks --></label>
+            <section>Testing Remarks</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

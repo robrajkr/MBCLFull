@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>升级个案时的内部通知。</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>支持：个案升级通知（示例）</name>
+    <style>none</style>
+    <subject>个案编号 {!Case.CaseNumber}：{!Case.Subject}已升级。</subject>
+    <type>text</type>
+</EmailTemplate>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Defect</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Defect</value>
+    </caseValues>
+    <fields>
+        <label><!-- Assigned To --></label>
+        <name>Assigned_To__c</name>
+        <relationshipLabel><!-- Defect --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Defect Category --></label>
+        <name>Defect_Category__c</name>
+        <picklistValues>
+            <masterLabel>Not fulfill requirement</masterLabel>
+            <translation><!-- Not fulfill requirement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System Bug</masterLabel>
+            <translation><!-- System Bug --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Defect description --></label>
+        <name>Defect_description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Detected in Cycle --></label>
+        <name>Detected_in_Cycle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Detected in Release --></label>
+        <name>Detected_in_Release__c</name>
+    </fields>
+    <fields>
+        <label><!-- Detected in Version --></label>
+        <name>Detected_in_Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- Detected on Date --></label>
+        <name>Detected_on_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+        <picklistValues>
+            <masterLabel>1-Urgent</masterLabel>
+            <translation><!-- 1-Urgent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2-High</masterLabel>
+            <translation><!-- 2-High --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Test step1 --></label>
+        <name>Test_step1__c</name>
+        <relationshipLabel><!-- Defect --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Tickets1 Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

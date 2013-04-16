@@ -1,0 +1,38 @@
+<apex:page standardController="FAQ_Notice__c" title="Sample Position Layout Page" showHeader="false" sidebar="false" >
+
+  <!--apex:sectionHeader title="{!$ObjectType.FAQ_Notice__c.label}" subtitle="{!FAQ_Notice__c.name}"  /-->
+
+  <apex:form >
+      <apex:pageBlock title="FAQ Notice Detail">
+        <apex:pageBlockButtons >
+            <a href="/apex/FAQNoticeNewlyList?isdtp=vw">Back</a>
+        </apex:pageBlockButtons>
+        <apex:pageBlockSection title="Information" columns="2">
+            <apex:outputField value="{!FAQ_Notice__c.name}"/>
+            <apex:outputField value="{!FAQ_Notice__c.ownerid}"/>            
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="" showHeader="false" columns="1">
+            <apex:outputField value="{!FAQ_Notice__c.Message_Detail__c}"/>
+        </apex:pageBlockSection>    
+        <apex:pageBlockSection title="System Information" showHeader="false" columns="2">
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Created By"/>
+                <apex:outputText > 
+                    <apex:outputField value="{!FAQ_Notice__c.CreatedById}"/>
+                    ,&nbsp;   
+                    <apex:outputField value="{!FAQ_Notice__c.CreatedDate}"/>
+                </apex:outputText>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Last Modified By"/>
+                <apex:outputText > 
+                    <apex:outputField value="{!FAQ_Notice__c.LastModifiedById}"/>
+                    ,&nbsp;
+                    <apex:outputField value="{!FAQ_Notice__c.LastModifiedDate}"/>
+                </apex:outputText>
+            </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+     </apex:pageBlock>
+  </apex:form>
+
+</apex:page>

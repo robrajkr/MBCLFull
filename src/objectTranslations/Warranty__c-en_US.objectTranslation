@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Warranty</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Warranty</value>
+    </caseValues>
+    <fields>
+        <help><!-- Person involved in the warranty contract --></help>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Warranty --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The dealer involved in the warranty contract --></help>
+        <label><!-- Dealer --></label>
+        <name>Dealer__c</name>
+        <relationshipLabel><!-- Warranty (Dealer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Vehicle --></label>
+        <name>Vehicle__c</name>
+        <relationshipLabel><!-- Warranty --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The manufacturer warranty end date --></help>
+        <label><!-- Warranty End Date --></label>
+        <name>Warranty_End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The period of the extended warranty in months --></help>
+        <label><!-- Warranty Extended Period --></label>
+        <name>Warranty_Extended_Period__c</name>
+    </fields>
+    <fields>
+        <help><!-- The start date for the extended warranty --></help>
+        <label><!-- Warranty Extended Start Date --></label>
+        <name>Warranty_Extended_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- ID of warranty in CRM --></help>
+        <label><!-- Warranty ID --></label>
+        <name>Warranty_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- The maximum mileage for the warranty --></help>
+        <label><!-- Warranty Max Mileage --></label>
+        <name>Warranty_Max_Mileage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warranty Name --></label>
+        <name>Warranty_Name__c</name>
+        <picklistValues>
+            <masterLabel>0=Extended Warranty</masterLabel>
+            <translation><!-- 0=Extended Warranty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1=Manufacturer Warranty</masterLabel>
+            <translation><!-- 1=Manufacturer Warranty --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Warranty Number from DMS --></help>
+        <label><!-- Warranty No --></label>
+        <name>Warranty_No__c</name>
+    </fields>
+    <fields>
+        <help><!-- The current status of the manufacturer&apos;s warranty --></help>
+        <label><!-- Warranty Status --></label>
+        <name>Warranty_Status__c</name>
+        <picklistValues>
+            <masterLabel>0=No</masterLabel>
+            <translation><!-- 0=No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1=Yes</masterLabel>
+            <translation><!-- 1=Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2=Unknown</masterLabel>
+            <translation><!-- 2=Unknown --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Warranty Type --></label>
+        <name>Warranty_Type__c</name>
+        <picklistValues>
+            <masterLabel>0=EX</masterLabel>
+            <translation><!-- 0=EX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1=MW</masterLabel>
+            <translation><!-- 1=MW --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Warranty Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

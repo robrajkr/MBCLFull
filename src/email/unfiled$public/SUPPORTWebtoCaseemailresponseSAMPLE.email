@@ -1,0 +1,1 @@
+{!Case.SuppliedName}先生/小姐，您好！感谢您在线将您的疑问提交给我们！个案编号 {!Case.CaseNumber}："{!Case.Subject}"已经创建，{!Organization.Name}客户顾问不久就会答复您。十分感谢！    {!Organization.Name}客户顾问小组

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>当分配新潜在客户时向潜在客户所有人发送内部通知。</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>潜在客户：新分配通知（示例）</name>
+    <style>none</style>
+    <subject>分配给您的新潜在客户：{!Lead.Name} 从 {!Lead.Company}</subject>
+    <type>text</type>
+</EmailTemplate>

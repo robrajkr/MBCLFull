@@ -1,0 +1,136 @@
+<apex:page standardController="Account" extensions="AccountMergeController" sidebar="false" showHeader="false">
+    <style>
+        .rollup td {
+            padding: 5px;
+            height:15px;
+            text-align: left;
+            valign: middle;
+            border-bottom: 1px solid #BBB;
+        }
+        
+        .headerRow td {
+            padding-left:10px;
+            font-weight:bold;
+         }
+         
+        a {
+            color: #015BA7;
+            text-decoration: none;
+        }
+        
+        body a:hover {
+           text-decoration: underline;
+           color: #015BA7;
+        }
+    </style>
+    
+    <apex:includeScript value="{!$Resource.jQuery_JS}"/>
+    <script>
+        jquery = jQuery.noConflict();
+        jquery(document).ready(function() {
+            jquery(':radio').change(function() {
+                var name = jquery(this).attr('name');
+                jquery('input[name=' + name + ']').each(function() {
+                    jquery(this).next().val(jquery(this).attr('checked'));
+                });
+            });
+        });
+        
+        function setEntityValues (conid) {
+            for (var frm = 0; frm < document.forms.length; frm++) {
+                for (var fld = 0; fld < document.forms[frm].elements.length; fld++) {
+                    var elt = document.forms[frm].elements[fld];
+                    if (elt.type == "radio") {
+                        if (elt.value == conid) {
+                            elt.checked = true;
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <apex:sectionHeader title="Account Merge" subtitle="Master Account: {!master.Name}"/>
+    
+    <apex:form >
+        <apex:pageBlock >
+        
+            <apex:pageMessages Id="message"/>
+            
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Previous" action="{!previous}" immediate="true"/>
+                <apex:commandButton action="{!mergeAccount}" value="Merge" Id="save" rendered="{!NOT(hasMessage)}"
+                    onclick="if (confirm('{!$Label.CP_Merge_Account_Confirm}')) return true; return false;"/>
+            </apex:pageBlockButtons>
+            
+            <apex:outputpanel Id="detail" rendered="{!NOT(hasMessage)}">
+                <table cellspacing="0" cellpadding="0" width="80%" align="center" class="rollup" style="margin-left:20px">
+                    <tbody>
+                        <tr class="headerRow">
+                            <apex:actionFunction name="selectAll" action="{!selectAll}" reRender="detail,message">
+                                <apex:param assignTo="{!selectAllParam}" name="selectAllParam" value=""/>
+                            </apex:actionFunction>
+                            <td style="width:20%"></td>
+                            <td style="width:40%">
+                                <apex:outputLink target="_blank" value="/{!master.Id}">{!master.Name}
+                                </apex:outputLink> 
+                                <a href="javascript:setEntityValues('master'); selectAll('master');">[Select All]</a>
+                            </td>
+                            
+                            <td style="width:40%">
+                                <apex:outputLink target="_blank" value="/{!slave.Id}">{!slave.Name}
+                                </apex:outputLink>  
+                                <a href="javascript:setEntityValues('slave'); selectAll('slave');">[Select All]</a>
+                            </td>
+                        </tr>
+                        
+                        <apex:repeat var="wrap" value="{!wraps}">
+                            <tr onmouseover="if (window.hiOn){hiOn(this);}" onmouseout="if (window.hiOff){hiOff(this);}" 
+                                onfocus="if (window.hiOn){hiOn(this);}" onblur="if (window.hiOff){hiOff(this);}">
+                                
+                                <td style="text-align:right; width:20%; background-color: {!IF(wrap.isSame,  '#EEEEEE', '#C2E4FE')};">
+                                    <b>{!wrap.fieldLabel}</b>
+                                </td>
+                                
+                                <td style="width:40%">
+                                    <apex:outputField value="{!master[wrap.fieldAPI]}" rendered="{!wrap.isSame}"/>
+                                    <apex:outputPanel rendered="{!NOT(wrap.isMasterNull) && NOT(wrap.isSame)}">
+                                        <apex:outputpanel rendered="{!wrap.isMasterChecked}">
+                                            <input type="radio" name="{!wrap.fieldAPI}" checked="checked" value="master"/>
+                                            <apex:inputHidden value="{!wrap.isMasterChecked}" />
+                                        </apex:outputpanel>
+                                        
+                                        <apex:outputpanel rendered="{!NOT(wrap.isMasterChecked)}">
+                                            <input type="radio" name="{!wrap.fieldAPI}" value="master"/>
+                                            <apex:inputHidden value="{!wrap.isMasterChecked}" />
+                                        </apex:outputpanel>
+                                        
+                                        <apex:outputField value="{!master[wrap.fieldAPI]}" />
+                                    </apex:outputPanel>
+                                </td>
+                                
+                                <td style="width:40%">
+                                    <apex:outputField value="{!slave[wrap.fieldAPI]}" rendered="{!wrap.isSame}"/>
+                                    <apex:outputPanel rendered="{!NOT(wrap.isSlaveNull) && NOT(wrap.isSame)}">
+                                        <apex:outputpanel rendered="{!wrap.isSlaveChecked}">
+                                            <input type="radio" name="{!wrap.fieldAPI}" checked="checked" value="slave"/>
+                                            <apex:inputHidden value="{!wrap.isSlaveChecked}" />
+                                        </apex:outputpanel>
+                                        
+                                        <apex:outputpanel rendered="{!NOT(wrap.isSlaveChecked)}">
+                                            <input type="radio" name="{!wrap.fieldAPI}" value="slave"/>
+                                            <apex:inputHidden value="{!wrap.isSlaveChecked}" />
+                                        </apex:outputpanel>
+                                        
+                                        <apex:outputField value="{!slave[wrap.fieldAPI]}" />
+                                    </apex:outputPanel>
+                                </td>         
+                            </tr>
+                        </apex:repeat>
+                    </tbody>
+                </table>
+            </apex:outputpanel>
+
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,47 @@
+<apex:page standardController="FAQ_Notice__c" extensions="FAQNoticeControllerExtension">
+    <style>
+        #thePage{
+            margin:10px;
+        }
+    </style>
+ 
+    <div style="display:none;" id="noticeTitle">{!noticeTitle}</div>
+    <apex:pageBlock mode="view">
+        <apex:pageBlockSection title="Notices List" id="NoticesList" columns="1" showHeader="false">
+            <apex:pageBlockTable value="{!results}" var="notice" rendered="{!NOT(ISNULL(results))}">
+                <!--apex:column value="{!notice.Name}" onclick="window.open('{!URLFOR($Action.FAQ_Notice__c.View,notice.id)}')"  /-->
+                <apex:column headerValue="{!$ObjectType.FAQ_Notice__c.fields.Name.Label}">
+                    
+                    <a href="/apex/FAQNoticeDetial?id={!notice.id}&isdtp=vw">{!notice.Name}</a>
+                           
+                </apex:column>
+                <!--apex:column value="{!notice.Name}" 
+                    onclick="window.location.href = '{!URLFOR($Action.FAQ_Notice__c.View,notice.id,[retURL=URLFOR('/apex/notices')])}';"/-->
+                <!--apex:column value="{!notice.Name}" onclick="window.location.href = '/{!notice.id}';"/-->
+                <!--apex:column value="{!notice.Message_Detail__c}"/-->
+            </apex:pageBlockTable>
+        </apex:pageBlockSection>   
+    </apex:pageBlock>
+    <apex:includeScript value="/support/console/25.0/integration.js"/>
+
+    <script>
+
+        setInterval(function(){window.location.href = window.location.href;},60000);
+         
+        function getFeedItemBody() {
+            var title = document.getElementById('noticeTitle');
+            //alert(title); 
+            return title==null?'12':title.innerText;        
+        }        
+        
+        var feedItems = getFeedItemBody();  
+        //alert(feedItems );       
+        sforce.console.setCustomConsoleComponentButtonText(feedItems, scrollButtonText);
+        
+        function scrollButtonText() {                   
+             sforce.console.scrollCustomConsoleComponentButtonText(150, 5, true, function(result){});
+        }
+       
+    </script>
+
+</apex:page>

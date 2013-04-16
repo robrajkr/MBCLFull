@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sales</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sales</value>
+    </caseValues>
+    <fields>
+        <help><!-- The integration layer (EP) needs this field for defect handling and debugging: --></help>
+        <label><!-- CreatedByEpTransaction --></label>
+        <name>CreatedByEpTransaction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Salutation --></label>
+        <name>Customer_Salutation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Company Name from the sales contract --></help>
+        <label><!-- Sales Company Name --></label>
+        <name>Sales_Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Contact --></label>
+        <name>Sales_Contact__c</name>
+        <relationshipLabel><!-- Sales Record --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The start date for the sales contract --></help>
+        <label><!-- Sales Contract Date --></label>
+        <name>Sales_Contract_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Customer Name from the sales contract --></help>
+        <label><!-- Sales Customer Name --></label>
+        <name>Sales_Customer_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sales dealer code in CRM --></help>
+        <label><!-- Sales Dealer --></label>
+        <name>Sales_Dealer__c</name>
+        <relationshipLabel><!-- Sales Record --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Date of the vehicle-handover to the customer --></help>
+        <label><!-- Sales Handover Date --></label>
+        <name>Sales_Handover_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Private Phone Number from the sales contract --></help>
+        <label><!-- Sales Home Mobile Phone --></label>
+        <name>Sales_Home_Mobile_Phone__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date for invoice --></help>
+        <label><!-- Sales Invoice Date --></label>
+        <name>Sales_Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Office Phone Number from the sales contract --></help>
+        <label><!-- Sales Office Phone --></label>
+        <name>Sales_Office_Phone__c</name>
+    </fields>
+    <fields>
+        <help><!-- The sales person involved in the contract --></help>
+        <label><!-- Sales Person --></label>
+        <name>Sales_Person__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Vehicle CBU/CKD --></label>
+        <name>Sales_Vehicle_CBU_CKD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Vehicle --></label>
+        <name>Sales_Vehicle_ID__c</name>
+        <relationshipLabel><!-- Sales --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales Vehicle Model --></label>
+        <name>Sales_Vehicle_Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Vehicle USvin --></label>
+        <name>Sales_Vehicle_USvin__c</name>
+    </fields>
+    <fields>
+        <help><!-- The integration layer (EP) needs this field for defect handling and debugging: --></help>
+        <label><!-- UpdatedByEpTransactions --></label>
+        <name>UpdatedByEpTransactions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validity --></label>
+        <name>Valid__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Vehicle Description --></label>
+        <name>Vehicle_Description__c</name>
+    </fields>
+    <layouts>
+        <layout>CAC Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Vehicle Infomation --></label>
+            <section>Vehicle Infomation</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Sales Order No.</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

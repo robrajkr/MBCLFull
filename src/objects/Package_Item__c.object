@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Campaign: Conjunction object of Campaign Package and Campaign Offering</description>
+    <enableActivities>false</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Offering__c</fullName>
+        <externalId>false</externalId>
+        <label>Offering</label>
+        <referenceTo>Campaign_Offering__c</referenceTo>
+        <relationshipLabel>Package Items</relationshipLabel>
+        <relationshipName>Package_Items</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Package_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Package Name</label>
+        <referenceTo>Campaign_Package__c</referenceTo>
+        <relationshipLabel>Package Items</relationshipLabel>
+        <relationshipName>Package_Items</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Related_Campaign_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Offering__r.Campaign__c</formula>
+        <label>Related Campaign ID</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Unique_ID__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <externalId>false</externalId>
+        <label>Unique ID</label>
+        <length>40</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Package Item</label>
+    <nameField>
+        <displayFormat>CPI-{0000}</displayFormat>
+        <label>Ref No.</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Package Items</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Check_campaign_offering_and_package</fullName>
+        <active>true</active>
+        <errorConditionFormula>Related_Campaign_ID__c &lt;&gt;  Offering__r.Campaign__c</errorConditionFormula>
+        <errorMessage>The offering should belong to the same campaign as the package.</errorMessage>
+    </validationRules>
+</CustomObject>

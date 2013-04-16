@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>回复客户查询的标准模板。</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>支持：含解决方案的个案回复（示例）</name>
+    <style>none</style>
+    <subject>个案 {!Case.CaseNumber}：  {!Case.Subject}</subject>
+    <type>text</type>
+</EmailTemplate>

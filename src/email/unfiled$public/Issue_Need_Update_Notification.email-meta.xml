@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Issue Need Update Notification</name>
+    <style>none</style>
+    <subject>Reminder: {!Issue__c.Name} due on {!Issue__c.Due_Date__c} is not closed yet. Please update the status and comment before 9:30AM tomorrow (regular PMO meeting) if necessary.</subject>
+    <type>text</type>
+</EmailTemplate>

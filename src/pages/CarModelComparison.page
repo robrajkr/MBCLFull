@@ -1,0 +1,299 @@
+<apex:page controller="CarModelComparisonController" sidebar="false" tabStyle="Car_Model__c" showHeader="false">
+    <!--
+    <apex:includeScript value="{!$Resource.jQuery_JS}"/>
+    <apex:includeScript value="{!URLFOR($Resource.CarModelComparison, 'js/compare.js')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.CarModelComparison, 'css/compare.css')}"/>
+    -->
+    <style>
+        .rollup td {
+            padding: 5px 5px 5px 20px;
+            height:15px;
+            text-align: left;
+            valign: middle;
+            border-bottom: 1px solid #ECECEC;
+        }
+
+        .header td {
+            vertical-align:top; 
+            height:150px;
+            font-size: 14px;
+            text-align: left;
+        }
+         
+        a {
+            color: #015BA7;
+            text-decoration: none;
+        }
+        
+        body a:hover {
+            text-decoration: underline;
+            color: #015BA7;
+        }
+        
+        .differ {
+            background: #D5E8EE;
+        }
+        
+        .type {
+            font-size: 14px;
+            wdith: 15%;
+            border-top: 0px !important;
+            border-radius: 5px 5px 0 0;
+            cursor: pointer;
+            background: transparent url('/img/alohaSkin/metaBar_sprite.png') left -104px repeat-x;
+            box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3), 1px 0px 0px 0px rgba(255,255,255,0.9) inset, 0px 2px 2px rgba(0,0,0,0.1);
+        }
+        
+        .type:hover {
+            background: #c6e1ec;
+            color: #3d7489;
+        }
+        
+        .type:hover:after {
+            background: #c6e1ec;
+            color: #3d7489;
+        }
+                
+        .name {
+            text-align: right !important;
+        }
+        
+        .pageTitleIcon {
+            background-image: url('/img/icon/radarDish32.png');
+        }
+        
+        .headerTitle {
+            width: 100%;
+            text-align: left;
+            border-bottom: 1px dotted #CCC;
+            font-weight: bold;
+        }
+         
+        .headerContent {
+            padding-top: 10px;
+        }
+
+        .headerContent div {
+            padding-bottom: 5px;
+        } 
+         
+        #tool {
+            position: fixed;
+            bottom: 5px;
+            left: 100%;
+            z-index: 1;
+            width: 300px;
+            height: 30px;
+            margin: 10px 0px 0px -320px;
+            padding: 20px 0px 0px 20px;
+            background: #F3F3F3;
+            border: solid #ddd;
+            border-width: 1px 1px 0;
+            border-radius: 5px 5px 0 0;
+            -moz-border-radius: 5px 5px 0 0;
+            -webkit-border-radius: 5px 5px 0 0;
+        }
+    </style>
+    
+    <apex:includeScript value="{!$Resource.jQuery_JS}"/>
+    <script>
+        (function(a) {
+            a.uniq = function(m) {
+                var b = [],
+                    l = m.length,
+                    e = 0,
+                    c = {};
+                for (; e < l; e++) {
+                    c[m[e]] = null;
+                }
+                for (var i in c) {
+                    b.push(i);
+                }
+                return b;
+            }
+        })(jQuery);
+
+        var compareList = function(b, c) {
+            var d, a = [];
+            b = b, c = c;
+            $("table.compare > tbody > tr").each(function(f, e) {
+                d = $("td", e).not(".name").not(".header").not(".type");
+                var g = [];
+                d.each(function(i, k) {
+                    g.push($.trim($(d[i]).text()));
+                });
+                var h = $.uniq(g).length;
+                if (c) {
+                    if (h != 1 && b) {
+                        $(this).addClass("differ");
+                    } else {
+                        if (h != 1 && !b) {
+                            $(this).removeClass("differ");
+                        }
+                    }
+
+                } else {
+                    if (h == 1 && b) {
+                        $(this).css("display", "none");
+                    } else {
+                        if (h == 1 && !b) {
+                            $(this).css("display", "");
+                        }
+                    }
+                }
+            })
+        };
+
+        $(function() {
+            var c = function() {
+                var g = false,
+                    k = false;
+
+                $("#highlightDifference").bind("click", function(l) {
+                    l.preventDefault();
+                    if (!g) {
+                        g = true;
+                        compareList(true, true);
+                        $(this).val("Hide Highlight")
+                    } else {
+                        g = false;
+                        compareList(false, true);
+                        $(this).val("Highligh Difference")
+                    }
+                });
+
+                $("#hideSame").bind("click", function(l) {
+                    l.preventDefault();
+                    if (!k) {
+                        k = true;
+                        compareList(true, false);
+                        $(this).val("Show Same");
+                    } else {
+                        k = false;
+                        compareList(false, false);
+                        $(this).val('Hide Same');
+                    }
+                })
+            };
+            c();
+
+            // Expand or Collapse tbody
+            $(".type").bind("click", function() {
+                $(this).parent().next().toggle();
+            });
+
+            $("#collapse").bind("click", function() {
+                if ($(this).val() == "Collapse All") {
+                    $(this).val("Expand All");
+                    $(".type").each(function() {
+                        $(this).parent().next().hide();
+                    });
+                } else {
+                    $(this).val("Collapse All");
+                    $(".type").each(function() {
+                        $(this).parent().next().show();
+                    });
+                }
+            });
+        });
+    </script>
+    
+    <apex:sectionHeader title="Car Model Comparison" />
+    
+    <apex:form >
+        <apex:pageBlock Id="theBlock">
+            <apex:pageMessages Id="message" />
+
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value="Compare" id="compare" action="{!compare}"/>
+                <apex:commandButton value="Cancel" id="cancel" action="{!cancel}" immediate="true"/>
+            </apex:pageBlockButtons>
+            
+            <apex:pageblockSection columns="2">
+                <apex:repeat value="{!proxySequences}" var="sequence">
+                    <apex:pageblockSectionItem >
+                        <apex:outputLabel value="{!$ObjectType.Car_Model_Attribute__c.fields.Car_Model__c.Label + 
+                            ' ' +  TEXT(sequence + 1)}" />
+                        <apex:inputfield value="{!proxies[sequence]['Car_Model__c']}"/>
+                    </apex:pageblockSectionItem>
+                </apex:repeat>
+            </apex:pageblockSection>
+            
+            <BR />
+            <apex:pageMessage summary="{!$Label.Knowledge_Choose_Car_Model}" severity="INFO"
+                strength="3" rendered="{!chosenProxies.size < 2}"/>
+                
+            <apex:outputPanel Id="detail" rendered="{!chosenProxies.size > 1}">
+                <table cellspacing="0" cellpadding="0" width="100%" align="center" class="rollup compare">
+                    <thead>
+                        <tr class="header">
+                            <td width="10%;"></td>
+                            
+                            <apex:repeat value="{!chosenProxySequences}" var="sequence">
+                                <td width="20%">
+                                    <div class="headerTitle">{!TEXT(sequence + 1)}</div>
+                                    <div class="headerContent">
+                                        <div>
+                                            <apex:outputPanel rendered="{!modelId2AttachmentIdMap[chosenProxies[sequence]['Car_Model__c']] != 'empty'}">
+                                                <apex:image value="/servlet/servlet.FileDownload?file={!modelId2AttachmentIdMap[chosenProxies[sequence]['Car_Model__c']]}" 
+                                                    style="height: 150px; width: 180px;"/>
+                                            </apex:outputPanel>
+                                        </div>
+                                        <div>
+                                            <apex:outputField value="{!chosenProxies[sequence]['Car_Model__c']}"/></div>
+                                        <div>
+                                            <apex:outputField value="{!carModelsMap[chosenProxies[sequence]['Car_Model__c']].Brand__c}"/></div>
+                                        <div>
+                                            <apex:outputField value="{!carModelsMap[chosenProxies[sequence]['Car_Model__c']].Series__c}"/> </div> 
+                                        <div>
+                                            <apex:outputField value="{!carModelsMap[chosenProxies[sequence]['Car_Model__c']].Model__c}"/></div> 
+                                        <div>
+                                            <apex:outputField value="{!carModelsMap[chosenProxies[sequence]['Car_Model__c']].Description__c}"/></div>
+                                    </div>
+                                </td>
+                            </apex:repeat>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <apex:repeat var="type" value="{!typeWithNamesMap}">
+                            <tbody>
+                                <tr class="type" title="Click Here to Collapse/Expand">
+                                    <td colspan="{!chosenProxies.size + 1}" class="type">
+                                        <!--<img src="/img/alohaSkin/setup/setup_minus_lev1.gif" width="11" height="11" class="setupImage" />-->
+                                        <b>{!type}</b>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            
+                            <tbody>
+                                <apex:repeat value="{!typeWithNamesMap[type]}" var="name">
+                                    <tr class="name">
+                                        
+                                        <td class="name">{!name}</td>
+                                    
+                                        <apex:repeat value="{!chosenProxies}" var="proxy">
+                                            <td class="value">
+                                                <apex:outputText value="{!combineMap[type + name + proxy.Car_Model__c]}" /> 
+                                             </td>
+                                        </apex:repeat>
+                                        
+                                    </tr>
+                                </apex:repeat>
+                            </tbody>
+                        </apex:repeat>
+                    </tbody>
+                </table>
+                
+                <div Id="tool">
+                    <input type="button" class="btn" Id="collapse" value="Collapse All" />
+                    <input type="button" class="btn" Id="highlightDifference" 
+                        value="Highlight Difference" />
+                    <input type="button" class="btn" Id="hideSame" value="Hiden Same" />
+                </div>
+                
+                <div style="height: 100px"/>
+            </apex:outputPanel>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Issue</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Issues</value>
+    </caseValues>
+    <fields>
+        <label><!-- Assign To --></label>
+        <name>Assign_To__c</name>
+        <relationshipLabel><!-- Issues --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Close Date --></label>
+        <name>Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Counterpart --></label>
+        <name>Counterpart__c</name>
+    </fields>
+    <fields>
+        <label><!-- Due Date --></label>
+        <name>Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- *Hidden Formula calculates reminder date --></label>
+        <name>Hidden_Formula_calculates_reminder_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue Description --></label>
+        <name>Issue_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue Type --></label>
+        <name>Issue_Type__c</name>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Raise to MB</masterLabel>
+            <translation><!-- Raise to MB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Raise to PMO</masterLabel>
+            <translation><!-- Raise to PMO --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Module --></label>
+        <name>Module__c</name>
+        <picklistValues>
+            <masterLabel>Account/Contact</masterLabel>
+            <translation><!-- Account/Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Campaign</masterLabel>
+            <translation><!-- Campaign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case</masterLabel>
+            <translation><!-- Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DM</masterLabel>
+            <translation><!-- DM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Model</masterLabel>
+            <translation><!-- Data Model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer Portal</masterLabel>
+            <translation><!-- Dealer Portal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integration</masterLabel>
+            <translation><!-- Integration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Knowledge</masterLabel>
+            <translation><!-- Knowledge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead</masterLabel>
+            <translation><!-- Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product/Vehicle</masterLabel>
+            <translation><!-- Product/Vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QC</masterLabel>
+            <translation><!-- QC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Report/Dashboard</masterLabel>
+            <translation><!-- Report/Dashboard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSI</masterLabel>
+            <translation><!-- SSI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales/Aftersales/Warranty</masterLabel>
+            <translation><!-- Sales/Aftersales/Warranty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Security</masterLabel>
+            <translation><!-- Security --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project Log ID --></label>
+        <name>Project_Log_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Raised By --></label>
+        <name>Raised_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Raised Date --></label>
+        <name>Raised_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference No. of Process/UC/BQ --></label>
+        <name>Reference_No_of__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Requirement/User Story --></label>
+        <name>Related_Requirement_User_Story__c</name>
+        <relationshipLabel><!-- Issues --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- *Reminder Date --></label>
+        <name>Reminder_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolution/Solution --></label>
+        <name>Resolution_Solution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Screenshot --></label>
+        <name>Screenshot__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delayed</masterLabel>
+            <translation><!-- Delayed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Propose to Close</masterLabel>
+            <translation><!-- Propose to Close --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Internal Issue Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Detail Info --></label>
+            <section>Detail Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>PMO Issue Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Detail Info --></label>
+            <section>Detail Info</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Non-PMO Issue --></label>
+        <name>Non_PMO_Issue</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PMO Issue --></label>
+        <name>PMO_Issue</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

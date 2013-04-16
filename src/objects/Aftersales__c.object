@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Contact Portfolio: To record MBCL Aftersales record
+Changed object name from &quot;Aftersales Record&quot; to &quot;Aftersales&quot;</description>
+    <enableActivities>true</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Service_Branch__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Aftersales Record 
+Function: The branch of the dealer
+Used in: Pagelayouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/
+Attribute in Data Dictionary object Aftersales is &quot;Service_Branch&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The branch of the dealer</inlineHelpText>
+        <label>Service Branch</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Code__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Aftersales Record 
+Function: Job code for the service type
+Used in: Pagelayouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/
+Attribute in Data Dictionary object Aftersales is &quot;Service_Code&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Job code for the service type</inlineHelpText>
+        <label>Service Code</label>
+        <length>10</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Consultant__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Aftersales Record 
+Function: The service consultant involved in the service
+Used in: Pagelayouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/
+Attribute in Data Dictionary object Aftersales is &quot;Service_Consultant&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The service consultant involved in the service</inlineHelpText>
+        <label>Service Consultant</label>
+        <length>40</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Contact__c</fullName>
+        <description>Who brings the vehicle to service
+Attribute in Data Dictionary object Aftersales is &quot;Service_Contact&quot;</description>
+        <externalId>false</externalId>
+        <label>Service_Contact</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Aftersales</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Service_Content__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Aftersales Record 
+Function: The service content for this aftersale, e.g. repair, paint
+Used in: Pagelayouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/
+Attribute in Data Dictionary object Aftersales is &quot;Service_Content&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The service content for this aftersale, e.g. repair, paint</inlineHelpText>
+        <label>Service Content</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Body &amp; paint repair</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Repair</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Routine Service</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Routine Service incl. repair</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Service_Date_In__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Aftersales Record 
+Function: The date when the vehicle comes in for service
+Used in: Pagelayouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/
+Attribute in Data Dictionary object Aftersales is &quot;Service_DateIn&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date when the vehicle comes in for service</inlineHelpText>
+        <label>Service Date In</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Service_Date_Out__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Aftersales Record 
+Function: The date when complete the service and send vehicle back to customer
+Used in: Pagelayouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/
+Attribute in Data Dictionary object Aftersales is &quot;Service_DateOut&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date when complete the service and send vehicle back to customer</inlineHelpText>
+        <label>Service Date Out</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Service_Date__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Aftersales Record 
+Function: Service/Invoice date
+Used in: Pagelayouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/
+Attribute in Data Dictionary object Aftersales is &quot;Service_Date&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Service/Invoice date</inlineHelpText>
+        <label>Service Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Service_Dealer__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Aftersales Record 
+Function: Code of the dealer that deliver the service
+Used in: Pagelayouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/
+Attribute in Data Dictionary object Aftersales is &quot;Service_Dealer&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Code of the dealer that deliver the service</inlineHelpText>
+        <label>Service Dealer</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Aftersales_Record</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Service_Details__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Aftersales Record 
+Function: Detailed description of service
+Used in: Pagelayouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/
+Attribute in Data Dictionary object Aftersales is &quot;Service_Details&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Detailed description of service</inlineHelpText>
+        <label>Service Details</label>
+        <length>32000</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Service_Invoice_Currency__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Aftersales Record 
+Function: Value Currency for Invoice
+Used in: Pagelayouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/
+Attribute in Data Dictionary object Aftersales is &quot;Service_InvoiceCurrency&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Value Currency for Invoice</inlineHelpText>
+        <label>Service Invoice Currency</label>
+        <picklist>
+            <picklistValues>
+                <fullName>RMB</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HKD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>JPY</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Service_Invoice_Number__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Aftersales Record 
+Function: Invoice number for the service
+Used in: Pagelayouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/
+Attribute in Data Dictionary object Aftersales is &quot;Service_InvoiceNumber&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Invoice number for the service</inlineHelpText>
+        <label>Service Invoice Number</label>
+        <length>10</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Invoice_Value__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Aftersales Record 
+Function: Invoice amount for the service
+Used in: Pagelayouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/
+Attribute in Data Dictionary object Aftersales is &quot;Service_InvoiceValue&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Invoice amount for the service</inlineHelpText>
+        <label>Service Invoice Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Service_Mileage__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Aftersales Record 
+Function: Mileage at service time
+Used in: Pagelayouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/
+Attribute in Data Dictionary object Aftersales is &quot;Service_Mileage&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Mileage at service time</inlineHelpText>
+        <label>Service Mileage</label>
+        <length>40</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_PaymentStatus_Reason__c</fullName>
+        <description>Attribute in Data Dictionary object Aftersales is &quot;Service_PaymentStatusReason&quot;</description>
+        <externalId>false</externalId>
+        <label>Service PaymentStatus Reason</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Goodwill</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Warranty</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Service_Payment_Status__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Aftersales Record 
+Function: Whether the service was paid in full, in part of not at all
+Used in: Pagelayouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/
+Attribute in Data Dictionary object Aftersales is &quot;Service_PaymentStatus&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Whether the service was paid in full, in part of not at all</inlineHelpText>
+        <label>Service Payment Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Full</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partially</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Service_Position__c</fullName>
+        <description>/* 
+Created by: Amy Liang 
+Used by: Aftersales Record 
+Function: Position number (for several items in the service)
+Used in: Pagelayouts, Reports 
+
+Modify History 
+Modify By: 
+Modify Reason: 
+*/
+Attribute in Data Dictionary object Aftersales is &quot;Service_Position&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Position number (for several items in the service)</inlineHelpText>
+        <label>Service Position</label>
+        <length>10</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Vehicle__c</fullName>
+        <description>Attribute in Data Dictionary object Aftersales is &quot;Service_Vehicle&quot;</description>
+        <externalId>false</externalId>
+        <label>Service Vehicle</label>
+        <referenceTo>Vehicle__c</referenceTo>
+        <relationshipName>Aftersales_Record</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Valid__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>To flag whether the aftersales record is valid</description>
+        <externalId>false</externalId>
+        <label>Validity</label>
+        <type>Checkbox</type>
+    </fields>
+    <label>Aftersales</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Service No*</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Aftersales</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+</CustomObject>
